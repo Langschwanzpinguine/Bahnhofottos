@@ -1,19 +1,21 @@
 let map;
+let markersLayer;
 //document.addEventListener("turbolinks:load", initMap);
 document.addEventListener("DOMContentLoaded", initMap);
 
 function initMap(){
-    console.log("STARTED SCRIPT AS I SHOULD");
     map = L.map('map').setView([49, 8.5], 6.5);
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '© OSM x Schako'
     }).addTo(map);
+    markersLayer = L.layerGroup().addTo(map);
 }
 
 
 function fetchTrainStationsInView(){
+    markersLayer.clearLayers();
     const bounding_box = map.getBounds();
     const request_body = {
         start_lat: bounding_box["_northEast"]["lat"],
@@ -43,6 +45,14 @@ function fetchTrainStationsInView(){
             return res.json();
         }).then(data => {
         console.log('Response data:', data);
+        let allStations = data.elements;
+        for (const station of allStations) {
+            let lat = station.lat;
+            let lon = station.lon;
+            let marker = L.marker([lat, lon]).addTo(map);
+            marker.bindPopup(station.tags.name);
+            markersLayer.addLayer(marker);
+        }
     }).catch(error => {
         console.error('Fetch error:', error);
     });
