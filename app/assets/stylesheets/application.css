@@ -35,14 +35,7 @@ body {
   padding-right: 10px;
   padding-left:  10px;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-
   min-height: 20vh;
-}
-.outer_wrapper > *{
-  margin-bottom: 10em;
 }
 
 .main_header {
@@ -77,4 +70,8 @@ body {
   text-decoration: none;
   font-weight: bolder;
   text-align: center;
+}
+
+#map {
+  height: 80vh;
 }
