@@ -1,9 +1,17 @@
-let map = L.map('map').setView([49, 8.5], 6.5);
+let map;
+//document.addEventListener("turbolinks:load", initMap);
+document.addEventListener("DOMContentLoaded", initMap);
 
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '© OSM x Schako'
-}).addTo(map);
+function initMap(){
+    console.log("STARTED SCRIPT AS I SHOULD");
+    map = L.map('map').setView([49, 8.5], 6.5);
+
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '© OSM x Schako'
+    }).addTo(map);
+}
+
 
 function fetchTrainStationsInView(){
     const bounding_box = map.getBounds();
@@ -34,8 +42,8 @@ function fetchTrainStationsInView(){
             console.log(res)
             return res.json();
         }).then(data => {
-            console.log('Response data:', data);
-        }).catch(error => {
-            console.error('Fetch error:', error);
-        });
+        console.log('Response data:', data);
+    }).catch(error => {
+        console.error('Fetch error:', error);
+    });
 }
