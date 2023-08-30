@@ -11,10 +11,15 @@
     <%= favicon_link_tag 'Ottos.ico' %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
             integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-            crossorigin=""></script>
+            crossorigin="">
+    </script>
+
+    <% if @page_libs&.include?(:leaflet) %>
+      <script type="text/javascript" src="<%= "/javascripts/lib/map_functions.js" %>" defer></script>
+    <% end %>
+    <%= javascript_importmap_tags%>
   </head>
 
   <body>

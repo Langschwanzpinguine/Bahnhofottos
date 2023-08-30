@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   get "/map", to: "map#index", as: :map
 
+  post "/api/overpass/stations", to: "overpass#stations"
   # Defines the root path route ("/")
   # root "articles#index"
 end
