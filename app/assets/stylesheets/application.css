@@ -13,8 +13,29 @@
  *= require_tree .
  *= require_self
  */
+:root {
+  --color-primary: #2589ff;
+  --color-secondary: #8188df;
+  --color-text: #f1e5ff;
+  --color-accent: #73ffb1;
+}
+
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.outer_wrapper{
+  margin-right: auto;
+  margin-left:  auto;
+
+  max-width: 960px;
+
+  padding-right: 10px;
+  padding-left:  10px;
+
+  min-height: 20vh;
 }
 
 .main_header {
@@ -28,15 +49,29 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
 }
 
 #main_logo {
-  max-width: 70vh;
-  max-height: 70vh;
+  max-width: 35vh;
+  max-height: 35vh;
   transition: all 0.5s ease-in-out;
 }
 
 #main_logo:hover {
   transform: scale(1.05);
+}
+
+.generic_button_primary{
+  padding: 1em 2em;
+  border: none;
+  border-radius: 10px;
+  background: var(--color-primary);
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#map {
+  height: 60vh;
 }
