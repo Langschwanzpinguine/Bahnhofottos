@@ -37,14 +37,14 @@ body {
 
 .outer_wrapper::before {
   content: "";
-  background: url("https://media.discordapp.net/attachments/823895453660741635/1146794672958746747/image.png") repeat-x; /* Adjust the path to your train image */
+  background: url("https://media.discordapp.net/attachments/823895453660741635/1146794672958746747/image.png") repeat-x;
   background-size: contain;
   position: absolute;
   bottom: 0;
-  left: 0; /* Train starts out of frame */
+  left: 0;
   width: 1055%;
-  height: 100px; /* Adjust the height of the train image */
-  animation: runTrain 60s linear infinite; /* Adjust animation duration as needed */
+  height: 100px;
+  animation: runTrain 60s linear infinite;
 }
 
 @keyframes runTrain {
