@@ -2,8 +2,17 @@
   <%= javascript_include_tag "map_functions"%>
 <% end %>
 
-<h1>Map of Train Stations and Halts</h1>
-<h2 style="color: red; font-weight: bold">ACHTUNG! Sehr lange Ladezeiten bei grossen Kartenausschnitten...</h2>
-<h4 style="color: red; font-weight: bold">Muss noch durch Langschwanzpinguine e.V. optimiert werden</h4>
-<div id="map"></div>
-<button onclick="fetchTrainStationsInView()" class="generic_button_primary">Show Stations</button>
+<div class="map_container">
+  <div id="map"></div>
+</div>
+
+<div class="map_toolbar">
+  <button onclick="fetchTrainStationsInView()" class="toolbar_button">+</button>
+  <button onclick="fetchTrainStationsInView()" class="toolbar_button">+</button>
+  <button onclick="fetchTrainStationsInView()" class="toolbar_button">+</button>
+  <button onclick="fetchTrainStationsInView()" class="toolbar_button">+</button>
+  <button onclick="fetchTrainStationsInView()" class="toolbar_button">+</button>
+  <button onclick="fetchTrainStationsInView()" class="toolbar_button">+</button>
+  <button onclick="fetchTrainStationsInView()" class="toolbar_button">+</button>
+
+</div>

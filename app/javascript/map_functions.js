@@ -44,14 +44,14 @@ function fetchTrainStationsInView(){
             console.log(res)
             return res.json();
         }).then(data => {
-        console.log('Response data:', data);
-        let allStations = data.elements;
-        for (const station of allStations) {
-            let lat = station.lat;
-            let lon = station.lon;
-            let marker = L.marker([lat, lon]).addTo(map);
-            marker.bindPopup(station.tags.name);
-            markersLayer.addLayer(marker);
+            console.log('Response data:', data);
+            let allStations = data.elements;
+            for (const station of allStations) {
+                let lat = station.lat;
+                let lon = station.lon;
+                let marker = L.marker([lat, lon]).addTo(map);
+                marker.bindPopup(station.tags.name ?? station.tags.description);
+                markersLayer.addLayer(marker);
         }
     }).catch(error => {
         console.error('Fetch error:', error);
