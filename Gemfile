@@ -30,6 +30,12 @@ gem "jbuilder"
 # CORS Middleware
 gem 'rack-cors'
 
+# .env
+gem 'dotenv-rails'
+
+# Easier HTTP Requests
+gem 'httparty'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 

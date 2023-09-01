@@ -5,10 +5,16 @@ document.addEventListener("DOMContentLoaded", initMap);
 
 function initMap(){
     map = L.map('map').setView([49, 8.5], 6.5);
-    L.tileLayer('https://tile.thunderforest.com/atlas/{z}/{x}/{y}.png?apikey=0a871bb7314b4b35a403c1f02db167a7', {
+     //Thunderforest
+    L.tileLayer('http://localhost:3000/proxy/map-tiles/thunderforest?z={z}&x={x}&y={y}', {
         maxZoom: 19,
         attribution: '© OSM x Langschwanzpinguine e.V.'
     }).addTo(map);
+
+    //JAWG
+    // L.tileLayer('http://localhost:3000/proxy/map-tiles/jawg?z={z}&x={x}&y={y}&r={r}', {})
+    //     .addTo(map);
+    map.attributionControl.addAttribution("OSM x <a href='https://github.com/Langschwanzpinguine' target='_blank'>Langschwanzpinguine e.V.</a>")
     markersLayer = L.layerGroup().addTo(map);
 }
 

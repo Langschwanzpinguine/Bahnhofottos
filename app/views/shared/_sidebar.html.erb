@@ -4,8 +4,22 @@
       <%= image_tag "Bahnhofottos_logo.png", alt: "Bahnhofottos Logo"%>
     <% end %>
   </div>
-  <%= link_to "Map", map_path %>
-  <%= link_to "Account", map_path %>
-  <%= link_to "Friends", map_path %>
-  <%= link_to "Settings", map_path %>
+
+  <%= link_to '/' do %>
+    <i class="fa-solid fa-map"></i>
+  <% end %>
+  <%= link_to '/' do %>
+    <i class="fa-solid fa-message"></i>
+  <% end %>
+  <%= link_to '/' do %>
+    <i class="fa-solid fa-user-group"></i>
+  <% end %>
+  <%= link_to '/' do %>
+    <i class="fa-solid fa-user"></i>
+  <% end %>
+
+  <%= link_to '/' do %>
+    <i class="fa-solid fa-gear"></i>
+  <% end %>
+
 </nav>
