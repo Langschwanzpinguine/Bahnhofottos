@@ -5,10 +5,9 @@ document.addEventListener("DOMContentLoaded", initMap);
 
 function initMap(){
     map = L.map('map').setView([49, 8.5], 6.5);
-
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    L.tileLayer('https://tile.thunderforest.com/atlas/{z}/{x}/{y}.png?apikey=0a871bb7314b4b35a403c1f02db167a7', {
         maxZoom: 19,
-        attribution: '© OSM x Schako'
+        attribution: '© OSM x Langschwanzpinguine e.V.'
     }).addTo(map);
     markersLayer = L.layerGroup().addTo(map);
 }
