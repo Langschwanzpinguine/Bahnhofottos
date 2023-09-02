@@ -5,11 +5,16 @@ document.addEventListener("DOMContentLoaded", initMap);
 
 function initMap(){
     map = L.map('map').setView([49, 8.5], 6.5);
+     //Thunderforest
+    // L.tileLayer('http://localhost:3000/proxy/map-tiles/thunderforest?z={z}&x={x}&y={y}', {
+    //     maxZoom: 19,
+    //     attribution: '© OSM x Langschwanzpinguine e.V.'
+    // }).addTo(map);
 
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '© OSM x Schako'
-    }).addTo(map);
+    //JAWG
+    L.tileLayer('http://localhost:3000/proxy/map-tiles/jawg?z={z}&x={x}&y={y}&r={r}', {})
+        .addTo(map);
+    map.attributionControl.addAttribution("OSM x <a href='https://github.com/Langschwanzpinguine' target='_blank'>Langschwanzpinguine e.V.</a>")
     markersLayer = L.layerGroup().addTo(map);
 }
 

@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   get "/map", to: "map#index", as: :map
 
   post "/api/overpass/stations", to: "overpass#stations"
+
+  get "/proxy/map-tiles/thunderforest", to: "proxy#maptiles_thunderforest"
+  get "/proxy/map-tiles/jawg", to: "proxy#maptiles_jawg"
   # Defines the root path route ("/")
   # root "articles#index"
 end
