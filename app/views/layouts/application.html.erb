@@ -24,6 +24,9 @@
   <body>
     <%= render partial: "shared/sidebar" %>
     <div class="outer_wrapper">
+      <!--notice and alert tags necessary for devise-->
+      <p class="notice"><%= notice %></p> 
+      <p class="alert"><%= alert %></p>
       <%= yield %>
     </div>
   </body>
