@@ -9,15 +9,26 @@ class ProxyController < ApplicationController
     y = params[:y]
     z = params[:z]
 
-    request_url = "8https://tile.thunderforest.com/atlas/#{z}/#{x}/#{y}.png?apikey=#{api_key}"
+    cache_key = "thunderforest_tile_#{z}_#{x}_#{y}"
 
-    response = HTTParty.get(request_url)
+    cached_tile = Rails.cache.read(cache_key)
 
-    if response.success?
-      headers['Content-Type'] = 'image/png'
-      send_data response.body, disposition: 'inline'
+    if cached_tile
+      # If the tile is cached, serve it directly from the cache
+      send_data cached_tile, type: 'image/png', disposition: 'inline'
     else
-      render plain: 'Error fetching tile', status: response.code
+      request_url = "https://tile.thunderforest.com/atlas/#{z}/#{x}/#{y}.png?apikey=#{api_key}"
+
+      response = HTTParty.get(request_url)
+
+      if response.success?
+        Rails.cache.write(cache_key, response.body, expires_in: 1.hour)
+
+        headers['Content-Type'] = 'image/png'
+        send_data response.body, disposition: 'inline'
+      else
+        render plain: 'Error fetching tile', status: response.code
+      end
     end
   end
 
