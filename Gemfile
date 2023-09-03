@@ -30,7 +30,7 @@ gem "jbuilder"
 # CORS Middleware
 gem 'rack-cors'
 
-# ..env
+# .env
 gem 'dotenv-rails'
 
 # Easier HTTP Requests
