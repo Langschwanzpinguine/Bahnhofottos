@@ -1,6 +1,7 @@
 <div class="user_forms_wrapper">
-  <h2>Sign Up</h2>
-  <%= form_with model: @user, url: signup_path, data: { turbo: false } do |f|%>
+  <h2>Reset your password</h2>
+  <%= form_with model: @user, url: auth_reset_edit_path(token: params[:token]), data: { turbo: false } do |f|%>
+
     <%if f.object.errors.any? %>
       <div class="form_errors">
         <ul>
@@ -12,10 +13,6 @@
     <%end %>
 
     <div class="form_field">
-      <%= f.label :email %><br />
-      <%= f.text_field :email %>
-    </div>
-    <div class="form_field">
       <%= f.label :password %><br />
       <%= f.password_field :password %>
     </div>
@@ -23,7 +20,7 @@
       <%= f.label :password_confirmation %><br />
       <%= f.password_field :password_confirmation %>
     </div>
-    <div class="actions"><%= f.submit "Sign Up" %></div>
-    <%= link_to "Log In instead", login_path %>
+
+    <div class="actions"><%= f.submit "Reset password" %></div>
   <%end %>
 </div>

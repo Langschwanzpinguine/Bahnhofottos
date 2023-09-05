@@ -10,6 +10,7 @@
       <%= password_field_tag :password %>
     </div>
     <div class="actions"><%= submit_tag "Log In" %></div>
+    <%= link_to "Forgot password", auth_reset_path %> <br>
     <%= link_to "Create account", signup_path %>
   <% end %>
 </div>

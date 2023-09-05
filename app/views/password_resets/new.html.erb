@@ -1,0 +1,11 @@
+<div class="user_forms_wrapper">
+  <h2>Reset your password</h2>
+  <%= form_with url: auth_reset_path, data: { turbo: false } do |f|%>
+    <div class="form_field">
+      <%= f.label :email %><br />
+      <%= f.text_field :email %>
+    </div>
+
+    <div class="actions"><%= f.submit "Reset password" %></div>
+  <%end %>
+</div>
