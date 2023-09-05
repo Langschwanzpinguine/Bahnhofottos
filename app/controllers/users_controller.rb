@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_action :require_user_logged_in!, only: [:destroy, :profile]
   def new
     @user = User.new
   end
@@ -21,14 +22,9 @@ class UsersController < ApplicationController
   end
 
   def profile
-    unless session[:user_id]
-      redirect_to login_path, notice: "Please sign in to access this site"
-    end
-
   end
 
   def settings
-
   end
 
   private def user_params

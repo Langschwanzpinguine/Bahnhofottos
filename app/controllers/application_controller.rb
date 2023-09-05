@@ -6,6 +6,10 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def require_user_logged_in!
+    redirect_to login_path, alert: "Please sign in to access" if Current.user.nil?
+  end
+
   private
   def current_user
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
