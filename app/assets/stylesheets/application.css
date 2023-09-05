@@ -234,4 +234,18 @@ input[type="submit"] {
   margin-bottom: 5px;
 }
 
+.content_wrapper{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.main_button{
+  border: none;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  background: var(--bg);
+  color: var(--color-text);
+  border-radius: 10px;
+}
+
 

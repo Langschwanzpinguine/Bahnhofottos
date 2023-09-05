@@ -27,8 +27,10 @@
   <body>
     <%= render partial: "shared/sidebar" %>
     <div class="outer_wrapper">
-      <%= render partial: "shared/popup" %>
-      <%= yield %>
+      <div class="content_wrapper">
+        <%= render partial: "shared/popup" %>
+        <%= yield %>
+      </div>
     </div>
   </body>
 </html>

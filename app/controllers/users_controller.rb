@@ -14,6 +14,17 @@ class UsersController < ApplicationController
     end
   end
 
+  def profile
+    unless session[:user_id]
+      redirect_to login_path, notice: "Please sign in to access this site"
+    end
+
+  end
+
+  def settings
+
+  end
+
   private def user_params
     params.require(:user).permit(:email, :password, :password_confirmation)
   end
