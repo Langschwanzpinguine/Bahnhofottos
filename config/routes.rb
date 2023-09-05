@@ -16,5 +16,8 @@ Rails.application.routes.draw do
   post '/users/login', to: 'sessions#create'
 
   get '/users/profile', to: 'users#profile', as: 'profile'
+  delete '/users/profile', to: 'users#destroy', as: 'destroy_user'
   get '/users/settings', to: 'users#settings', as: 'settings'
+
+
 end

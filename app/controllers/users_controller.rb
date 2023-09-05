@@ -14,6 +14,12 @@ class UsersController < ApplicationController
     end
   end
 
+  def destroy
+    Current.user.destroy
+    session[:user_id] = nil
+    redirect_to root_url, notice: "Logged out and destroyed user!"
+  end
+
   def profile
     unless session[:user_id]
       redirect_to login_path, notice: "Please sign in to access this site"
