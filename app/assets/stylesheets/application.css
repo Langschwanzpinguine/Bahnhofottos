@@ -245,6 +245,7 @@ input[type="submit"] {
   font-size: 1em;
   border-radius: 10px;
   margin-bottom: 1em;
+  text-decoration: none;
 }
 
 .main_button{

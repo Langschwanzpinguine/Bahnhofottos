@@ -19,5 +19,6 @@ Rails.application.routes.draw do
   delete '/users/profile', to: 'users#destroy', as: 'destroy_user'
   get '/users/settings', to: 'users#settings', as: 'settings'
 
-
+  get '/auth/password', to: 'auth#edit_password', as: 'edit_password'
+  patch '/auth/password', to: 'auth#update_password'
 end
