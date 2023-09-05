@@ -30,6 +30,15 @@
       <div class="content_wrapper">
         <%= render partial: "shared/popup" %>
         <%= yield %>
+        <dialog id="turbo-confirm" class="custom_modal">
+          <form method="dialog">
+            <p>Are you sure?</p>
+            <div>
+              <button value="cancel" class="button off_button">Cancel</button>
+              <button value="confirm" class="button secondary_button">Confirm</button>
+            </div>
+          </form>
+        </dialog>
       </div>
     </div>
   </body>

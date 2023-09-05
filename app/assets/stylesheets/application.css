@@ -239,13 +239,35 @@ input[type="submit"] {
   margin: 0 auto;
 }
 
-.main_button{
+.button{
   border: none;
   padding: 0.5em 1em;
   font-size: 1em;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+
+.main_button{
   background: var(--bg);
   color: var(--color-text);
+}
+.secondary_button{
+  background: var(--color-accent);
+  color: var(--color-text);
+}
+
+.custom_modal{
+  background: var(--bg);
+  color: var(--color-text);
+  padding: 1em 4em;
   border-radius: 10px;
+}
+
+.custom_modal p{
+  margin: 0 0 1em 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 
