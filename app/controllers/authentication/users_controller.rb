@@ -1,5 +1,6 @@
 class Authentication::UsersController < ApplicationController
-  before_action :require_user_logged_in!, only: [:destroy, :profile]
+  before_action :user_logged_in!, only: [:destroy, :profile, :settings]
+  before_action :user_logged_out!, only: [:new, :create]
   def new
     @user = User.new
   end

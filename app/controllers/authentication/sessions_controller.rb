@@ -1,4 +1,6 @@
 class Authentication::SessionsController < ApplicationController
+  before_action :user_logged_in!, only: [:destroy]
+  before_action :user_logged_out!, only: [:new, :create]
   def new
   end
 

@@ -260,7 +260,7 @@ input[type="submit"] {
 .custom_modal{
   background: var(--bg);
   color: var(--color-text);
-  padding: 1em 4em;
+  padding: 1em 2em;
   border-radius: 10px;
 }
 
@@ -269,6 +269,16 @@ input[type="submit"] {
   text-align: center;
   font-weight: bold;
   font-size: 1.2em;
+}
+
+.custom_modal div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.custom_modal button{
+  margin: 0 .5em;
 }
 
 

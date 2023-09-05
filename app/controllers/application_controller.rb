@@ -6,8 +6,12 @@ class ApplicationController < ActionController::Base
     end
   end
 
-  def require_user_logged_in!
+  def user_logged_in!
     redirect_to login_path, alert: "Please sign in to access" if Current.user.nil?
+  end
+
+  def user_logged_out!
+    redirect_to profile_path, notice: "Already signed in" unless Current.user.nil?
   end
 
   private
@@ -15,8 +19,4 @@ class ApplicationController < ActionController::Base
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
   end
   helper_method :current_user
-
-  def authorize
-    redirect_to login_url, alert: "Not authorized" if current_user.nil?
-  end
 end
