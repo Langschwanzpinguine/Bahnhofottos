@@ -1,4 +1,4 @@
-class AuthController < ApplicationController
+class Authentication::AuthController < ApplicationController
   before_action :require_user_logged_in!
   def edit_password
 

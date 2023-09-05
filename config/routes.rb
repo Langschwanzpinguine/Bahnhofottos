@@ -9,22 +9,25 @@ Rails.application.routes.draw do
   get "/proxy/map-tiles/jawg", to: "proxy#maptiles_jawg"
 
   #Account system
-  get '/users/sign_up', to: 'users#new', as: 'signup'
-  post "/users/sign_up", to: 'users#create'
-  get '/users/login', to: 'sessions#new', as: 'login'
-  delete 'users/logout', to: 'sessions#destroy', as: 'logout'
-  post '/users/login', to: 'sessions#create'
+  scope module: "authentication" do
+    get '/users/sign_up', to: 'users#new', as: 'signup'
+    post "/users/sign_up", to: 'users#create'
 
-  get '/users/profile', to: 'users#profile', as: 'profile'
-  delete '/users/profile', to: 'users#destroy', as: 'destroy_user'
-  get '/users/settings', to: 'users#settings', as: 'settings'
+    get '/users/login', to: 'sessions#new', as: 'login'
+    delete 'users/logout', to: 'sessions#destroy', as: 'logout'
+    post '/users/login', to: 'sessions#create'
 
-  get '/auth/password', to: 'auth#edit_password', as: 'edit_password'
-  patch '/auth/password', to: 'auth#update_password'
+    get '/users/profile', to: 'users#profile', as: 'profile'
+    delete '/users/profile', to: 'users#destroy', as: 'destroy_user'
+    get '/users/settings', to: 'users#settings', as: 'settings'
 
-  get '/auth/reset', to: 'password_resets#new'
-  post '/auth/reset', to: 'password_resets#create'
+    get '/auth/password', to: 'auth#edit_password', as: 'edit_password'
+    patch '/auth/password', to: 'auth#update_password'
 
-  get '/auth/reset/edit', to: 'password_resets#edit'
-  patch '/auth/reset/edit', to: 'password_resets#update'
+    get '/auth/reset', to: 'password_resets#new'
+    post '/auth/reset', to: 'password_resets#create'
+
+    get '/auth/reset/edit', to: 'password_resets#edit'
+    patch '/auth/reset/edit', to: 'password_resets#update'
+  end
 end
