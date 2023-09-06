@@ -19,6 +19,10 @@
     <td style="padding: 10px;">Hashed Password</td>
     <td style="padding: 10px;"><%= current_user.password_digest %></td>
   </tr>
+  <tr>
+    <td style="padding: 10px;">Username</td>
+    <td style="padding: 10px;"><%= current_user.username %></td>
+  </tr>
 </table>
 
 <%= button_to "Log out", logout_path, class: "button main_button", method: :delete %>
