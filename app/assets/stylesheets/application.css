@@ -29,6 +29,14 @@ body {
   overflow: hidden; /*Only for train. Remove if necessary*/
 }
 
+.hidden{
+  display: none;
+}
+
+.popup_form{
+  max-width: 40%;
+}
+
 .outer_wrapper {
   flex: 1;
   padding: 0;

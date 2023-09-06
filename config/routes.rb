@@ -29,5 +29,7 @@ Rails.application.routes.draw do
 
     get '/auth/reset/edit', to: 'password_resets#edit'
     patch '/auth/reset/edit', to: 'password_resets#update'
+
+    patch '/users/change_name', to: 'users#change_username'
   end
 end

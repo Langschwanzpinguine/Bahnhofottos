@@ -28,7 +28,19 @@ class Account::UsersController < ApplicationController
   def settings
   end
 
+  def change_username
+    if Current.user.update(username_params)
+      redirect_to profile_path, notice: "Username changed"
+    else
+      render :settings
+    end
+  end
+
   private def user_params
     params.require(:user).permit(:email, :password, :password_confirmation)
+  end
+
+  private def username_params
+    params.require(:user).permit(:username)
   end
 end
