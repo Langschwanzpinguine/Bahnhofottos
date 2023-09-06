@@ -1,4 +1,4 @@
-class Authentication::AuthController < ApplicationController
+class Account::AuthController < ApplicationController
   before_action :user_logged_in!
   def edit_password
 

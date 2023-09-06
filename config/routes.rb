@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get "/proxy/map-tiles/jawg", to: "proxy#maptiles_jawg"
 
   #Account system
-  scope module: "authentication" do
+  scope module: "account" do
     get '/users/sign_up', to: 'users#new', as: 'signup'
     post "/users/sign_up", to: 'users#create'
 

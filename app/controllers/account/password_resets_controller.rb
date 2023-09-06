@@ -1,4 +1,4 @@
-class Authentication::PasswordResetsController < ApplicationController
+class Account::PasswordResetsController < ApplicationController
   before_action :user_logged_out!
   def new
   end

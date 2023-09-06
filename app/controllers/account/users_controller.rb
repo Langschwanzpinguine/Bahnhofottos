@@ -1,4 +1,4 @@
-class Authentication::UsersController < ApplicationController
+class Account::UsersController < ApplicationController
   before_action :user_logged_in!, only: [:destroy, :profile, :settings]
   before_action :user_logged_out!, only: [:new, :create]
   def new
