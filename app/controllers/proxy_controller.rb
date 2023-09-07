@@ -3,8 +3,8 @@ class ProxyController < ApplicationController
   #Prallelisieren und Caching implementieren
 
   def maptiles_thunderforest
-    api_key = ENV['API_KEY_THUNDERFOREST']
-    #api_key = Rails.application.credentials.dig(:thunderforest, :api_key)
+    #api_key = ENV['API_KEY_THUNDERFOREST']
+    api_key = Rails.application.credentials.dig(:thunderforest, :api_key)
 
     x = params[:x]
     y = params[:y]
@@ -34,8 +34,8 @@ class ProxyController < ApplicationController
   end
 
   def maptiles_jawg
-    api_key = ENV['API_KEY_JAWG']
-    #api_key = Rails.application.credentials.dig(:jawg, :api_key)
+    # api_key = ENV['API_KEY_JAWG']
+    api_key = Rails.application.credentials.dig(:jawg, :api_key)
 
     x = params[:x]
     y = params[:y]
