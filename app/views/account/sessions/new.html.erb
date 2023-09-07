@@ -1,0 +1,16 @@
+<div class="user_forms_wrapper">
+  <h2>Log In</h2>
+  <%= form_tag login_path, data: { turbo: false } do %>
+    <div class="field">
+      <%= label_tag :email %><br />
+      <%= text_field_tag :email, params[:email] %>
+    </div>
+    <div class="field">
+      <%= label_tag :password %><br />
+      <%= password_field_tag :password %>
+    </div>
+    <div class="actions"><%= submit_tag "Log In" %></div>
+    <%= link_to "Forgot password", auth_reset_path %> <br>
+    <%= link_to "Create account", signup_path %>
+  <% end %>
+</div>

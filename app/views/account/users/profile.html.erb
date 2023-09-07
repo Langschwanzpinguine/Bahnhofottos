@@ -1,0 +1,28 @@
+
+<h1>Your User Profile</h1>
+<sub>Please someone else make this pretty</sub>
+
+<table style="width: 50%; margin: 20px auto; border-collapse: collapse; background-color: #ffffff; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);">
+  <tr style="background-color: #f2f2f2;">
+    <th style="padding: 10px; text-align: left;">Key</th>
+    <th style="padding: 10px; text-align: left;">Value</th>
+  </tr>
+  <tr>
+    <td style="padding: 10px;">Email</td>
+    <td style="padding: 10px;"><%= current_user.email %></td>
+  </tr>
+  <tr>
+    <td style="padding: 10px;">ID</td>
+    <td style="padding: 10px;"><%= current_user.id %></td>
+  </tr>
+  <tr>
+    <td style="padding: 10px;">Hashed Password</td>
+    <td style="padding: 10px;"><%= current_user.password_digest %></td>
+  </tr>
+  <tr>
+    <td style="padding: 10px;">Username</td>
+    <td style="padding: 10px;"><%= current_user.username %></td>
+  </tr>
+</table>
+
+<%= button_to "Log out", logout_path, class: "button main_button", method: :delete %>

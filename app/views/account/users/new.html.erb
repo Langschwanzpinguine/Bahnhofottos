@@ -1,0 +1,29 @@
+<div class="user_forms_wrapper">
+  <h2>Sign Up</h2>
+  <%= form_with model: @user, url: signup_path, data: { turbo: false } do |f|%>
+    <%if f.object.errors.any? %>
+      <div class="form_errors">
+        <ul>
+          <% f.object.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <%end %>
+
+    <div class="form_field">
+      <%= f.label :email %><br />
+      <%= f.text_field :email %>
+    </div>
+    <div class="form_field">
+      <%= f.label :password %><br />
+      <%= f.password_field :password %>
+    </div>
+    <div class="form_field">
+      <%= f.label :password_confirmation %><br />
+      <%= f.password_field :password_confirmation %>
+    </div>
+    <div class="actions"><%= f.submit "Sign Up" %></div>
+    <%= link_to "Log In instead", login_path %>
+  <%end %>
+</div>

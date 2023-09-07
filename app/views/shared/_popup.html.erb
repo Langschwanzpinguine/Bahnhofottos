@@ -1,0 +1,14 @@
+<%if flash[:notice] %>
+  <p class="popup popup_notice">
+    <i class="fa-solid fa-circle-info"></i>
+    <%= flash[:notice] %>
+  </p>
+<%end %>
+<%if flash[:alert] %>
+  <p class="popup popup_alert">
+    <i class="fa-solid fa-triangle-exclamation"></i>
+    <%= flash[:alert] %>
+  </p>
+<%end %>
+
+
