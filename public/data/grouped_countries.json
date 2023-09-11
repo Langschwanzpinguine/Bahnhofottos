@@ -1,4 +1,103 @@
 {
+    "Western Europe": [
+        {
+            "name": "Austria",
+            "country_code": "AT",
+            "flag": "🇦🇹"
+        },
+        {
+            "name": "Belgium",
+            "country_code": "BE",
+            "flag": "🇧🇪"
+        },
+        {
+            "name": "France",
+            "country_code": "FR",
+            "flag": "🇫🇷"
+        },
+        {
+            "name": "Germany",
+            "country_code": "DE",
+            "flag": "🇩🇪"
+        },
+        {
+            "name": "Liechtenstein",
+            "country_code": "LI",
+            "flag": "🇱🇮"
+        },
+        {
+            "name": "Luxembourg",
+            "country_code": "LU",
+            "flag": "🇱🇺"
+        },
+        {
+            "name": "Monaco",
+            "country_code": "MC",
+            "flag": "🇲🇨"
+        },
+        {
+            "name": "Netherlands",
+            "country_code": "NL",
+            "flag": "🇳🇱"
+        },
+        {
+            "name": "Switzerland",
+            "country_code": "CH",
+            "flag": "🇨🇭"
+        }
+    ],
+    "Eastern Europe": [
+        {
+            "name": "Belarus",
+            "country_code": "BY",
+            "flag": "🇧🇾"
+        },
+        {
+            "name": "Bulgaria",
+            "country_code": "BG",
+            "flag": "🇧🇬"
+        },
+        {
+            "name": "Czechia",
+            "country_code": "CZ",
+            "flag": "🇨🇿"
+        },
+        {
+            "name": "Hungary",
+            "country_code": "HU",
+            "flag": "🇭🇺"
+        },
+        {
+            "name": "Poland",
+            "country_code": "PL",
+            "flag": "🇵🇱"
+        },
+        {
+            "name": "Moldova",
+            "country_code": "MD",
+            "flag": "🇲🇩"
+        },
+        {
+            "name": "Romania",
+            "country_code": "RO",
+            "flag": "🇷🇴"
+        },
+        {
+            "name": "Russia",
+            "country_code": "RU",
+            "flag": "🇷🇺"
+        },
+        {
+            "name": "Slovakia",
+            "country_code": "SK",
+            "flag": "🇸🇰"
+        },
+        {
+            "name": "Ukraine",
+            "country_code": "UA",
+            "flag": "🇺🇦"
+        }
+    ],
     "Antarctica": [
         {
             "name": "Antarctica",
@@ -877,105 +976,6 @@
             "flag": "🇳🇫"
         }
     ],
-    "Western Europe": [
-        {
-            "name": "Austria",
-            "country_code": "AT",
-            "flag": "🇦🇹"
-        },
-        {
-            "name": "Belgium",
-            "country_code": "BE",
-            "flag": "🇧🇪"
-        },
-        {
-            "name": "France",
-            "country_code": "FR",
-            "flag": "🇫🇷"
-        },
-        {
-            "name": "Germany",
-            "country_code": "DE",
-            "flag": "🇩🇪"
-        },
-        {
-            "name": "Liechtenstein",
-            "country_code": "LI",
-            "flag": "🇱🇮"
-        },
-        {
-            "name": "Luxembourg",
-            "country_code": "LU",
-            "flag": "🇱🇺"
-        },
-        {
-            "name": "Monaco",
-            "country_code": "MC",
-            "flag": "🇲🇨"
-        },
-        {
-            "name": "Netherlands",
-            "country_code": "NL",
-            "flag": "🇳🇱"
-        },
-        {
-            "name": "Switzerland",
-            "country_code": "CH",
-            "flag": "🇨🇭"
-        }
-    ],
-    "Eastern Europe": [
-        {
-            "name": "Belarus",
-            "country_code": "BY",
-            "flag": "🇧🇾"
-        },
-        {
-            "name": "Bulgaria",
-            "country_code": "BG",
-            "flag": "🇧🇬"
-        },
-        {
-            "name": "Czechia",
-            "country_code": "CZ",
-            "flag": "🇨🇿"
-        },
-        {
-            "name": "Hungary",
-            "country_code": "HU",
-            "flag": "🇭🇺"
-        },
-        {
-            "name": "Poland",
-            "country_code": "PL",
-            "flag": "🇵🇱"
-        },
-        {
-            "name": "Moldova",
-            "country_code": "MD",
-            "flag": "🇲🇩"
-        },
-        {
-            "name": "Romania",
-            "country_code": "RO",
-            "flag": "🇷🇴"
-        },
-        {
-            "name": "Russia",
-            "country_code": "RU",
-            "flag": "🇷🇺"
-        },
-        {
-            "name": "Slovakia",
-            "country_code": "SK",
-            "flag": "🇸🇰"
-        },
-        {
-            "name": "Ukraine",
-            "country_code": "UA",
-            "flag": "🇺🇦"
-        }
-    ],
     "Northern America": [
         {
             "name": "Bermuda",
@@ -1162,11 +1162,6 @@
             "name": "Norway",
             "country_code": "NO",
             "flag": "🇳🇴"
-        },
-        {
-            "name": null,
-            "country_code": null,
-            "flag": "🏳️"
         },
         {
             "name": "Svalbard & Jan Mayen",

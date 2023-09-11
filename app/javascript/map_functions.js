@@ -1,10 +1,42 @@
 let map;
 let markersLayer;
-//document.addEventListener("turbolinks:load", initMap);
-document.addEventListener("DOMContentLoaded", initMap);
+let selectedCountry;
+let select_tag;
+document.addEventListener("DOMContentLoaded", initPage);
+
+function countrySelected(){
+    selectedCountry = select_tag.value;
+    const foundCountry = country_info['countries'].find((country) => country.code === selectedCountry);
+    let bbox = foundCountry['bounding_box'];
+    map.fitBounds([
+        [bbox[0], bbox[2]],
+        [bbox[1], bbox[3]]
+    ])
+}
+
+function initPage(){
+    select_tag = document.getElementById('country_selection')
+    selectedCountry = select_tag.value;
+    select_tag.addEventListener('change', countrySelected)
+    const foundCountry = country_info['countries'].find((country) => country.code === selectedCountry);
+    let bbox = foundCountry['bounding_box'];
+
+    initMap();
+    map.fitBounds([
+        [bbox[0], bbox[2]],
+        [bbox[1], bbox[3]]
+    ])
+    const element = document.querySelector('.country_dropdown');
+    const choices = new Choices(element, {
+        searchEnabled: true,
+        itemSelectText: '',
+        searchPlaceholderValue: "Search...",
+        shouldSort: false
+    });
+}
 
 function initMap(){
-    map = L.map('map').setView([49, 8.5], 6.5);
+    map = L.map('map')
      //Thunderforest
     L.tileLayer('http://localhost:3000/proxy/map-tiles/thunderforest?z={z}&x={x}&y={y}', {
         maxZoom: 19,
@@ -34,9 +66,9 @@ function fetchTrainStationsInView(){
         method: 'POST',
         mode: 'cors',
         headers: {
-            'Content-Type': 'application/json', // Specify the content type as JSON
+            'Content-Type': 'application/json',
         },
-        body: JSON.stringify(request_body), // Convert the object to JSON string
+        body: JSON.stringify(request_body),
     };
     console.log(request_body);
 
@@ -62,3 +94,4 @@ function fetchTrainStationsInView(){
         console.error('Fetch error:', error);
     });
 }
+

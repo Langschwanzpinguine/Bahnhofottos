@@ -289,4 +289,42 @@ input[type="submit"] {
   margin: 0 .5em;
 }
 
+.dropdown{
+  position: fixed;
+  top: 2em;
+  right:2em;
+  z-index: 9999;
+}
 
+/*.dropdown select{*/
+/*  padding: .5em 1em;*/
+/*  background: var(--color-text);*/
+/*  border: none;*/
+/*  border-radius: 100px;*/
+/*  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);*/
+/*}*/
+
+.choices__inner{
+  width: 200px;
+  min-height: 0;
+  border-radius: 100px;
+  border: none !important;
+}
+.choices__item{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 0 !important;
+  white-space: nowrap;
+}
+.is-open .choices__inner{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.choices__list{
+  border-bottom-left-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+  border: none !important;
+}
+.choices__input{
+  border: none !important;
+}

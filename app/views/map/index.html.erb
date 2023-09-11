@@ -1,18 +1,30 @@
 <% content_for :head do %>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+          crossorigin="">
+  </script>
+  <%= javascript_include_tag "/javascripts/leaflet-providers" %>
+
+  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
   <%= javascript_include_tag "map_functions"%>
 <% end %>
+
+<script>
+    let country_info = <%= @country_info.to_json.html_safe %>;
+</script>
 
 <div class="map_container">
   <div id="map"></div>
 </div>
 
-<div class="map_toolbar">
-  <button onclick="fetchTrainStationsInView()" class="toolbar_button">+</button>
-  <button onclick="fetchTrainStationsInView()" class="toolbar_button">+</button>
-  <button onclick="fetchTrainStationsInView()" class="toolbar_button">+</button>
-  <button onclick="fetchTrainStationsInView()" class="toolbar_button">+</button>
-  <button onclick="fetchTrainStationsInView()" class="toolbar_button">+</button>
-  <button onclick="fetchTrainStationsInView()" class="toolbar_button">+</button>
-  <button onclick="fetchTrainStationsInView()" class="toolbar_button">+</button>
-
+<div class="dropdown">
+  <select class="country_dropdown" id="country_selection" name="selected_country" data-type="select-one" autocomplete="off" style="display: none">
+    <% @country_data.each do |region, countries| %>
+      <optgroup label="<%=region %>">
+        <% countries.each do |country| %>
+          <option value="<%= country['country_code'] %>" <%= 'selected=selected' if country['country_code'] == 'DE'%>><%= country['flag'] %> <%= country['name'] %></option>
+        <% end %>
+      </optgroup>
+    <% end %>
+  </select>
 </div>

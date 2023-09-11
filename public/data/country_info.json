@@ -57,7 +57,13 @@
             "official_name_es": null,
             "official_name_fr": null,
             "official_name_ru": null,
-            "flag": "🇹🇼"
+            "flag": "🇹🇼",
+            "bounding_box": [
+                10.3267657,
+                26.4372222,
+                114.2857874,
+                122.3283
+            ]
         },
         {
             "CLDR display name": "Afghanistan",
@@ -116,7 +122,13 @@
             "official_name_es": "Afganistán",
             "official_name_fr": "Afghanistan",
             "official_name_ru": "Афганистан",
-            "flag": "🇦🇫"
+            "flag": "🇦🇫",
+            "bounding_box": [
+                29.3772926,
+                38.4910682,
+                60.5176034,
+                74.889862
+            ]
         },
         {
             "CLDR display name": "Albania",
@@ -175,7 +187,13 @@
             "official_name_es": "Albania",
             "official_name_fr": "Albanie",
             "official_name_ru": "Албания",
-            "flag": "🇦🇱"
+            "flag": "🇦🇱",
+            "bounding_box": [
+                39.640394,
+                42.6610848,
+                19.0009866,
+                21.0574335
+            ]
         },
         {
             "CLDR display name": "Algeria",
@@ -234,7 +252,13 @@
             "official_name_es": "Argelia",
             "official_name_fr": "Algérie",
             "official_name_ru": "Алжир",
-            "flag": "🇩🇿"
+            "flag": "🇩🇿",
+            "bounding_box": [
+                18.968147,
+                37.2962055,
+                -8.668908,
+                11.997337
+            ]
         },
         {
             "CLDR display name": "American Samoa",
@@ -293,7 +317,13 @@
             "official_name_es": "Samoa Americana",
             "official_name_fr": "Samoa américaines",
             "official_name_ru": "Американское Самоа",
-            "flag": "🇦🇸"
+            "flag": "🇦🇸",
+            "bounding_box": [
+                -14.601813,
+                -10.997203,
+                -171.141907,
+                -168.101612
+            ]
         },
         {
             "CLDR display name": "Andorra",
@@ -352,7 +382,13 @@
             "official_name_es": "Andorra",
             "official_name_fr": "Andorre",
             "official_name_ru": "Андорра",
-            "flag": "🇦🇩"
+            "flag": "🇦🇩",
+            "bounding_box": [
+                42.4288238,
+                42.6559357,
+                1.407225,
+                1.786664
+            ]
         },
         {
             "CLDR display name": "Angola",
@@ -411,7 +447,13 @@
             "official_name_es": "Angola",
             "official_name_fr": "Angola",
             "official_name_ru": "Ангола",
-            "flag": "🇦🇴"
+            "flag": "🇦🇴",
+            "bounding_box": [
+                -18.0393809,
+                -4.3458006,
+                11.4609793,
+                24.0876359
+            ]
         },
         {
             "CLDR display name": "Anguilla",
@@ -470,7 +512,13 @@
             "official_name_es": "Anguila",
             "official_name_fr": "Anguilla",
             "official_name_ru": "Ангилья",
-            "flag": "🇦🇮"
+            "flag": "🇦🇮",
+            "bounding_box": [
+                18.0615454,
+                18.7951194,
+                -63.6391992,
+                -62.7125449
+            ]
         },
         {
             "CLDR display name": "Antarctica",
@@ -529,7 +577,13 @@
             "official_name_es": "Antártida",
             "official_name_fr": "Antarctique",
             "official_name_ru": "Антарктике",
-            "flag": "🇦🇶"
+            "flag": "🇦🇶",
+            "bounding_box": [
+                -104.4063075,
+                -54.4063075,
+                -24.6850688,
+                25.3149312
+            ]
         },
         {
             "CLDR display name": "Antigua & Barbuda",
@@ -588,7 +642,13 @@
             "official_name_es": "Antigua y Barbuda",
             "official_name_fr": "Antigua-et-Barbuda",
             "official_name_ru": "Антигуа и Барбуда",
-            "flag": "🇦🇬"
+            "flag": "🇦🇬",
+            "bounding_box": [
+                16.755628,
+                17.9473002,
+                -62.5548313,
+                -61.4476424
+            ]
         },
         {
             "CLDR display name": "Argentina",
@@ -647,7 +707,13 @@
             "official_name_es": "Argentina",
             "official_name_fr": "Argentine",
             "official_name_ru": "Аргентина",
-            "flag": "🇦🇷"
+            "flag": "🇦🇷",
+            "bounding_box": [
+                -55.1925709,
+                -21.7808568,
+                -73.5605371,
+                -53.6374515
+            ]
         },
         {
             "CLDR display name": "Armenia",
@@ -706,7 +772,13 @@
             "official_name_es": "Armenia",
             "official_name_fr": "Arménie",
             "official_name_ru": "Армения",
-            "flag": "🇦🇲"
+            "flag": "🇦🇲",
+            "bounding_box": [
+                38.8404775,
+                41.3016463,
+                43.4471395,
+                46.6333087
+            ]
         },
         {
             "CLDR display name": "Aruba",
@@ -765,7 +837,13 @@
             "official_name_es": "Aruba",
             "official_name_fr": "Aruba",
             "official_name_ru": "Аруба",
-            "flag": "🇦🇼"
+            "flag": "🇦🇼",
+            "bounding_box": [
+                12.2578295,
+                12.823,
+                -70.2695876,
+                -69.661226
+            ]
         },
         {
             "CLDR display name": "Australia",
@@ -824,7 +902,13 @@
             "official_name_es": "Australia",
             "official_name_fr": "Australie",
             "official_name_ru": "Австралия",
-            "flag": "🇦🇺"
+            "flag": "🇦🇺",
+            "bounding_box": [
+                -55.3228175,
+                -9.0880125,
+                72.2461932,
+                168.2261259
+            ]
         },
         {
             "CLDR display name": "Austria",
@@ -883,7 +967,13 @@
             "official_name_es": "Austria",
             "official_name_fr": "Autriche",
             "official_name_ru": "Австрия",
-            "flag": "🇦🇹"
+            "flag": "🇦🇹",
+            "bounding_box": [
+                46.3722987,
+                49.0205249,
+                9.5307487,
+                17.1607728
+            ]
         },
         {
             "CLDR display name": "Azerbaijan",
@@ -942,7 +1032,13 @@
             "official_name_es": "Azerbaiyán",
             "official_name_fr": "Azerbaïdjan",
             "official_name_ru": "Азербайджан",
-            "flag": "🇦🇿"
+            "flag": "🇦🇿",
+            "bounding_box": [
+                38.3929551,
+                41.9646768,
+                44.7633701,
+                51.1765554
+            ]
         },
         {
             "CLDR display name": "Bahamas",
@@ -1001,7 +1097,13 @@
             "official_name_es": "Bahamas",
             "official_name_fr": "Bahamas",
             "official_name_ru": "Багамские Острова",
-            "flag": "🇧🇸"
+            "flag": "🇧🇸",
+            "bounding_box": [
+                20.7059846,
+                27.4734551,
+                -80.7001941,
+                -72.4477521
+            ]
         },
         {
             "CLDR display name": "Bahrain",
@@ -1060,7 +1162,13 @@
             "official_name_es": "Bahrein",
             "official_name_fr": "Bahreïn",
             "official_name_ru": "Бахрейн",
-            "flag": "🇧🇭"
+            "flag": "🇧🇭",
+            "bounding_box": [
+                25.535,
+                26.6872444,
+                50.2697989,
+                50.9233651
+            ]
         },
         {
             "CLDR display name": "Bangladesh",
@@ -1119,7 +1227,13 @@
             "official_name_es": "Bangladesh",
             "official_name_fr": "Bangladesh",
             "official_name_ru": "Бангладеш",
-            "flag": "🇧🇩"
+            "flag": "🇧🇩",
+            "bounding_box": [
+                20.3679092,
+                26.6382534,
+                88.007915,
+                92.6802967
+            ]
         },
         {
             "CLDR display name": "Barbados",
@@ -1178,7 +1292,13 @@
             "official_name_es": "Barbados",
             "official_name_fr": "Barbade",
             "official_name_ru": "Барбадос",
-            "flag": "🇧🇧"
+            "flag": "🇧🇧",
+            "bounding_box": [
+                12.845,
+                13.535,
+                -59.8562115,
+                -59.2147175
+            ]
         },
         {
             "CLDR display name": "Belarus",
@@ -1237,7 +1357,13 @@
             "official_name_es": "Belarús",
             "official_name_fr": "Bélarus",
             "official_name_ru": "Беларусь",
-            "flag": "🇧🇾"
+            "flag": "🇧🇾",
+            "bounding_box": [
+                51.2626864,
+                56.1722484,
+                23.1783313,
+                32.7627809
+            ]
         },
         {
             "CLDR display name": "Belgium",
@@ -1296,7 +1422,13 @@
             "official_name_es": "Bélgica",
             "official_name_fr": "Belgique",
             "official_name_ru": "Бельгия",
-            "flag": "🇧🇪"
+            "flag": "🇧🇪",
+            "bounding_box": [
+                49.4969821,
+                51.550781,
+                2.3889137,
+                6.408097
+            ]
         },
         {
             "CLDR display name": "Belize",
@@ -1355,7 +1487,13 @@
             "official_name_es": "Belice",
             "official_name_fr": "Belize",
             "official_name_ru": "Белиз",
-            "flag": "🇧🇿"
+            "flag": "🇧🇿",
+            "bounding_box": [
+                15.8857286,
+                18.4959143,
+                -89.2275905,
+                -87.2765017
+            ]
         },
         {
             "CLDR display name": "Benin",
@@ -1414,7 +1552,13 @@
             "official_name_es": "Benin",
             "official_name_fr": "Bénin",
             "official_name_ru": "Бенин",
-            "flag": "🇧🇯"
+            "flag": "🇧🇯",
+            "bounding_box": [
+                6.0398696,
+                12.4092028,
+                0.776667,
+                3.8451454
+            ]
         },
         {
             "CLDR display name": "Bermuda",
@@ -1473,7 +1617,13 @@
             "official_name_es": "Bermuda",
             "official_name_fr": "Bermudes",
             "official_name_ru": "Бермудские острова",
-            "flag": "🇧🇲"
+            "flag": "🇧🇲",
+            "bounding_box": [
+                32.0469651,
+                32.5913693,
+                -65.1232222,
+                -64.4109842
+            ]
         },
         {
             "CLDR display name": "Bhutan",
@@ -1532,7 +1682,13 @@
             "official_name_es": "Bhután",
             "official_name_fr": "Bhoutan",
             "official_name_ru": "Бутан",
-            "flag": "🇧🇹"
+            "flag": "🇧🇹",
+            "bounding_box": [
+                26.7016859,
+                28.2474194,
+                88.7464856,
+                92.1252321
+            ]
         },
         {
             "CLDR display name": "Bolivia",
@@ -1591,7 +1747,13 @@
             "official_name_es": "Bolivia (Estado Plurinacional de)",
             "official_name_fr": "Bolivie (État plurinational de)",
             "official_name_ru": "Боливия (Многонациональное Государство)",
-            "flag": "🇧🇴"
+            "flag": "🇧🇴",
+            "bounding_box": [
+                -22.8982742,
+                -9.6689438,
+                -69.6450073,
+                -57.453
+            ]
         },
         {
             "CLDR display name": "Caribbean Netherlands",
@@ -1650,7 +1812,13 @@
             "official_name_es": "Bonaire, San Eustaquio y Saba",
             "official_name_fr": "Bonaire, Saint-Eustache et Saba",
             "official_name_ru": "Бонайре, Саба и Синт-Эстатиус",
-            "flag": "🏳️"
+            "flag": "🏳️",
+            "bounding_box": [
+                11.825,
+                17.85,
+                -68.6255319,
+                -62.7847057
+            ]
         },
         {
             "CLDR display name": "Bosnia",
@@ -1709,7 +1877,13 @@
             "official_name_es": "Bosnia y Herzegovina",
             "official_name_fr": "Bosnie-Herzégovine",
             "official_name_ru": "Босния и Герцеговина",
-            "flag": "🇧🇦"
+            "flag": "🇧🇦",
+            "bounding_box": [
+                42.5553114,
+                45.2764135,
+                15.7287433,
+                19.6237311
+            ]
         },
         {
             "CLDR display name": "Botswana",
@@ -1768,7 +1942,13 @@
             "official_name_es": "Botswana",
             "official_name_fr": "Botswana",
             "official_name_ru": "Ботсвана",
-            "flag": "🇧🇼"
+            "flag": "🇧🇼",
+            "bounding_box": [
+                -26.9070073,
+                -17.778137,
+                19.9986486,
+                29.3738868
+            ]
         },
         {
             "CLDR display name": "Bouvet Island",
@@ -1827,7 +2007,13 @@
             "official_name_es": "Isla Bouvet",
             "official_name_fr": "Île Bouvet",
             "official_name_ru": "Остров Буве",
-            "flag": "🇧🇻"
+            "flag": "🇧🇻",
+            "bounding_box": [
+                -54.654,
+                -54.187,
+                2.9345531,
+                3.7791099
+            ]
         },
         {
             "CLDR display name": "Brazil",
@@ -1886,7 +2072,13 @@
             "official_name_es": "Brasil",
             "official_name_fr": "Brésil",
             "official_name_ru": "Бразилия",
-            "flag": "🇧🇷"
+            "flag": "🇧🇷",
+            "bounding_box": [
+                -33.8689056,
+                5.2695808,
+                -73.9830625,
+                -28.6289646
+            ]
         },
         {
             "CLDR display name": "British Indian Ocean Territory",
@@ -1945,7 +2137,13 @@
             "official_name_es": "Territorio Británico del Océano Índico",
             "official_name_fr": "Territoire britannique de l'océan Indien",
             "official_name_ru": "Британская территория в Индийском океане",
-            "flag": "🇮🇴"
+            "flag": "🇮🇴",
+            "bounding_box": [
+                -7.4941087,
+                -5.185707,
+                71.1872897,
+                72.5450142
+            ]
         },
         {
             "CLDR display name": "British Virgin Islands",
@@ -2004,7 +2202,13 @@
             "official_name_es": "Islas Vírgenes Británicas",
             "official_name_fr": "Îles Vierges britanniques",
             "official_name_ru": "Британские Виргинские острова",
-            "flag": "🇻🇬"
+            "flag": "🇻🇬",
+            "bounding_box": [
+                18.1055311,
+                18.9503802,
+                -64.9559611,
+                -64.0597294
+            ]
         },
         {
             "CLDR display name": "Brunei",
@@ -2063,7 +2267,13 @@
             "official_name_es": "Brunei Darussalam",
             "official_name_fr": "Brunéi Darussalam",
             "official_name_ru": "Бруней-Даруссалам",
-            "flag": "🇧🇳"
+            "flag": "🇧🇳",
+            "bounding_box": [
+                4.002508,
+                6.546584,
+                113.017925,
+                115.3635623
+            ]
         },
         {
             "CLDR display name": "Bulgaria",
@@ -2122,7 +2332,13 @@
             "official_name_es": "Bulgaria",
             "official_name_fr": "Bulgarie",
             "official_name_ru": "Болгария",
-            "flag": "🇧🇬"
+            "flag": "🇧🇬",
+            "bounding_box": [
+                41.2353678,
+                44.2155388,
+                22.3571459,
+                28.8875409
+            ]
         },
         {
             "CLDR display name": "Burkina Faso",
@@ -2181,7 +2397,13 @@
             "official_name_es": "Burkina Faso",
             "official_name_fr": "Burkina Faso",
             "official_name_ru": "Буркина-Фасо",
-            "flag": "🇧🇫"
+            "flag": "🇧🇫",
+            "bounding_box": [
+                9.4104718,
+                15.0840044,
+                -5.513207,
+                2.4089717
+            ]
         },
         {
             "CLDR display name": "Burundi",
@@ -2240,7 +2462,13 @@
             "official_name_es": "Burundi",
             "official_name_fr": "Burundi",
             "official_name_ru": "Бурунди",
-            "flag": "🇧🇮"
+            "flag": "🇧🇮",
+            "bounding_box": [
+                -4.4693155,
+                -2.3096796,
+                29.000716,
+                30.8498462
+            ]
         },
         {
             "CLDR display name": "Cape Verde",
@@ -2299,7 +2527,13 @@
             "official_name_es": "Cabo Verde",
             "official_name_fr": "Cabo Verde",
             "official_name_ru": "Кабо-Верде",
-            "flag": "🇨🇻"
+            "flag": "🇨🇻",
+            "bounding_box": [
+                14.6066229,
+                17.407117,
+                -25.5731073,
+                -22.4547752
+            ]
         },
         {
             "CLDR display name": "Cambodia",
@@ -2358,7 +2592,13 @@
             "official_name_es": "Camboya",
             "official_name_fr": "Cambodge",
             "official_name_ru": "Камбоджа",
-            "flag": "🇰🇭"
+            "flag": "🇰🇭",
+            "bounding_box": [
+                9.4110961,
+                14.6904224,
+                102.3338282,
+                107.6276788
+            ]
         },
         {
             "CLDR display name": "Cameroon",
@@ -2417,7 +2657,13 @@
             "official_name_es": "Camerún",
             "official_name_fr": "Cameroun",
             "official_name_ru": "Камерун",
-            "flag": "🇨🇲"
+            "flag": "🇨🇲",
+            "bounding_box": [
+                1.6517945,
+                13.083333,
+                8.3822176,
+                16.1911011
+            ]
         },
         {
             "CLDR display name": "Canada",
@@ -2476,7 +2722,13 @@
             "official_name_es": "Canadá",
             "official_name_fr": "Canada",
             "official_name_ru": "Канада",
-            "flag": "🇨🇦"
+            "flag": "🇨🇦",
+            "bounding_box": [
+                41.6765556,
+                83.3362128,
+                -141.00275,
+                -52.3237664
+            ]
         },
         {
             "CLDR display name": "Cayman Islands",
@@ -2535,7 +2787,13 @@
             "official_name_es": "Islas Caimán",
             "official_name_fr": "Îles Caïmanes",
             "official_name_ru": "Кайман острова",
-            "flag": "🇰🇾"
+            "flag": "🇰🇾",
+            "bounding_box": [
+                19.0620619,
+                19.9573759,
+                -81.6313748,
+                -79.5110954
+            ]
         },
         {
             "CLDR display name": "Central African Republic",
@@ -2594,7 +2852,13 @@
             "official_name_es": "República Centroafricana",
             "official_name_fr": "République centrafricaine",
             "official_name_ru": "Центральноафриканская Республика",
-            "flag": "🇨🇫"
+            "flag": "🇨🇫",
+            "bounding_box": [
+                2.2256092,
+                11.001389,
+                14.4148457,
+                27.4665499
+            ]
         },
         {
             "CLDR display name": "Chad",
@@ -2653,7 +2917,13 @@
             "official_name_es": "Chad",
             "official_name_fr": "Tchad",
             "official_name_ru": "Чад",
-            "flag": "🇹🇩"
+            "flag": "🇹🇩",
+            "bounding_box": [
+                7.44107,
+                23.4507957,
+                13.47348,
+                24.0
+            ]
         },
         {
             "CLDR display name": "Chile",
@@ -2712,7 +2982,13 @@
             "official_name_es": "Chile",
             "official_name_fr": "Chili",
             "official_name_ru": "Чили",
-            "flag": "🇨🇱"
+            "flag": "🇨🇱",
+            "bounding_box": [
+                -56.725,
+                -17.4983832,
+                -109.6795789,
+                -66.0753474
+            ]
         },
         {
             "CLDR display name": "China",
@@ -2771,7 +3047,13 @@
             "official_name_es": "China",
             "official_name_fr": "Chine",
             "official_name_ru": "Китай",
-            "flag": "🇨🇳"
+            "flag": "🇨🇳",
+            "bounding_box": [
+                8.6650385,
+                53.5608154,
+                73.4997347,
+                134.7754563
+            ]
         },
         {
             "CLDR display name": "Hong Kong",
@@ -2830,7 +3112,13 @@
             "official_name_es": "China, región administrativa especial de Hong Kong",
             "official_name_fr": "Chine, région administrative spéciale de Hong Kong",
             "official_name_ru": "Китай, Специальный административный район Гонконг",
-            "flag": "🇭🇰"
+            "flag": "🇭🇰",
+            "bounding_box": [
+                22.1926504,
+                22.3002834,
+                114.1098795,
+                114.3090495
+            ]
         },
         {
             "CLDR display name": "Macau",
@@ -2889,7 +3177,13 @@
             "official_name_es": "China, región administrativa especial de Macao",
             "official_name_fr": "Chine, région administrative spéciale de Macao",
             "official_name_ru": "Китай, Специальный административный район Макао",
-            "flag": "🇲🇴"
+            "flag": "🇲🇴",
+            "bounding_box": [
+                22.0766667,
+                22.2170361,
+                113.5281666,
+                113.6301389
+            ]
         },
         {
             "CLDR display name": "Christmas Island",
@@ -2948,7 +3242,13 @@
             "official_name_es": "Isla de Navidad",
             "official_name_fr": "Île Christmas",
             "official_name_ru": "остров Рождества",
-            "flag": "🇨🇽"
+            "flag": "🇨🇽",
+            "bounding_box": [
+                -10.7714068,
+                -10.2114751,
+                105.330145,
+                105.9158048
+            ]
         },
         {
             "CLDR display name": "Cocos (Keeling) Islands",
@@ -3007,7 +3307,13 @@
             "official_name_es": "Islas Cocos (Keeling)",
             "official_name_fr": "Îles des Cocos (Keeling)",
             "official_name_ru": "Кокосовых (Килинг) островов",
-            "flag": "🇨🇨"
+            "flag": "🇨🇨",
+            "bounding_box": [
+                -12.4118829,
+                -11.6212366,
+                96.6115772,
+                97.1349614
+            ]
         },
         {
             "CLDR display name": "Colombia",
@@ -3066,7 +3372,13 @@
             "official_name_es": "Colombia",
             "official_name_fr": "Colombie",
             "official_name_ru": "Колумбия",
-            "flag": "🇨🇴"
+            "flag": "🇨🇴",
+            "bounding_box": [
+                -4.2294028,
+                16.0495518,
+                -82.1243611,
+                -66.8490386
+            ]
         },
         {
             "CLDR display name": "Comoros",
@@ -3125,7 +3437,13 @@
             "official_name_es": "Comoras",
             "official_name_fr": "Comores",
             "official_name_ru": "Коморские Острова",
-            "flag": "🇰🇲"
+            "flag": "🇰🇲",
+            "bounding_box": [
+                -12.9854371,
+                -11.1624399,
+                42.8262181,
+                44.9730591
+            ]
         },
         {
             "CLDR display name": "Congo - Brazzaville",
@@ -3184,7 +3502,13 @@
             "official_name_es": "Congo",
             "official_name_fr": "Congo",
             "official_name_ru": "Конго",
-            "flag": "🇨🇬"
+            "flag": "🇨🇬",
+            "bounding_box": [
+                -5.149089,
+                3.713056,
+                11.0048205,
+                18.643611
+            ]
         },
         {
             "CLDR display name": "Cook Islands",
@@ -3243,7 +3567,13 @@
             "official_name_es": "Islas Cook",
             "official_name_fr": "Îles Cook",
             "official_name_ru": "Острова Кука",
-            "flag": "🇨🇰"
+            "flag": "🇨🇰",
+            "bounding_box": [
+                -22.1599634,
+                -8.7150148,
+                -166.1318843,
+                -157.1089326
+            ]
         },
         {
             "CLDR display name": "Costa Rica",
@@ -3302,7 +3632,13 @@
             "official_name_es": "Costa Rica",
             "official_name_fr": "Costa Rica",
             "official_name_ru": "Коста-Рика",
-            "flag": "🇨🇷"
+            "flag": "🇨🇷",
+            "bounding_box": [
+                5.2980534,
+                11.2195684,
+                -87.2951397,
+                -82.4299043
+            ]
         },
         {
             "CLDR display name": "Croatia",
@@ -3361,7 +3697,13 @@
             "official_name_es": "Croacia",
             "official_name_fr": "Croatie",
             "official_name_ru": "Хорватия",
-            "flag": "🇭🇷"
+            "flag": "🇭🇷",
+            "bounding_box": [
+                42.1765993,
+                46.555029,
+                13.2104814,
+                19.4472713
+            ]
         },
         {
             "CLDR display name": "Cuba",
@@ -3420,7 +3762,13 @@
             "official_name_es": "Cuba",
             "official_name_fr": "Cuba",
             "official_name_ru": "Куба",
-            "flag": "🇨🇺"
+            "flag": "🇨🇺",
+            "bounding_box": [
+                19.6275294,
+                23.4816972,
+                -85.1679702,
+                -73.9190004
+            ]
         },
         {
             "CLDR display name": "Curaçao",
@@ -3479,7 +3827,13 @@
             "official_name_es": "Curaçao",
             "official_name_fr": "Curaçao",
             "official_name_ru": "Кюрасао",
-            "flag": "🏳️"
+            "flag": "🏳️",
+            "bounding_box": [
+                11.777,
+                12.592,
+                -69.3673493,
+                -68.4413348
+            ]
         },
         {
             "CLDR display name": "Cyprus",
@@ -3538,7 +3892,13 @@
             "official_name_es": "Chipre",
             "official_name_fr": "Chypre",
             "official_name_ru": "Кипр",
-            "flag": "🇨🇾"
+            "flag": "🇨🇾",
+            "bounding_box": [
+                34.4383706,
+                35.913252,
+                32.0227581,
+                34.8553182
+            ]
         },
         {
             "CLDR display name": "Czechia",
@@ -3597,7 +3957,13 @@
             "official_name_es": "Chequia",
             "official_name_fr": "Tchéquie",
             "official_name_ru": "Чехия",
-            "flag": "🇨🇿"
+            "flag": "🇨🇿",
+            "bounding_box": [
+                48.5518081,
+                51.0556945,
+                12.0905752,
+                18.8592538
+            ]
         },
         {
             "CLDR display name": "Côte d’Ivoire",
@@ -3656,7 +4022,13 @@
             "official_name_es": "Côte d'Ivoire",
             "official_name_fr": "Côte d'Ivoire",
             "official_name_ru": "Кот-д'Ивуар",
-            "flag": "🇨🇮"
+            "flag": "🇨🇮",
+            "bounding_box": [
+                4.1621205,
+                10.740197,
+                -8.6014675,
+                -2.4948836
+            ]
         },
         {
             "CLDR display name": "North Korea",
@@ -3715,7 +4087,13 @@
             "official_name_es": "República Popular Democrática de Corea",
             "official_name_fr": "République populaire démocratique de Corée",
             "official_name_ru": "Корейская Народно-Демократическая Республика",
-            "flag": "🇰🇵"
+            "flag": "🇰🇵",
+            "bounding_box": [
+                37.5833302,
+                43.0089642,
+                124.092355,
+                130.8861177
+            ]
         },
         {
             "CLDR display name": "Congo - Kinshasa",
@@ -3774,7 +4152,13 @@
             "official_name_es": "República Democrática del Congo",
             "official_name_fr": "République démocratique du Congo",
             "official_name_ru": "Демократическая Республика Конго",
-            "flag": "🇨🇩"
+            "flag": "🇨🇩",
+            "bounding_box": [
+                -13.459035,
+                5.3920026,
+                12.039074,
+                31.3056758
+            ]
         },
         {
             "CLDR display name": "Denmark",
@@ -3833,7 +4217,13 @@
             "official_name_es": "Dinamarca",
             "official_name_fr": "Danemark",
             "official_name_ru": "Дания",
-            "flag": "🇩🇰"
+            "flag": "🇩🇰",
+            "bounding_box": [
+                54.4516667,
+                57.9524297,
+                7.7153255,
+                15.5530641
+            ]
         },
         {
             "CLDR display name": "Djibouti",
@@ -3892,7 +4282,13 @@
             "official_name_es": "Djibouti",
             "official_name_fr": "Djibouti",
             "official_name_ru": "Джибути",
-            "flag": "🇩🇯"
+            "flag": "🇩🇯",
+            "bounding_box": [
+                10.9149547,
+                12.7923081,
+                41.7713139,
+                43.6579046
+            ]
         },
         {
             "CLDR display name": "Dominica",
@@ -3951,7 +4347,13 @@
             "official_name_es": "Dominica",
             "official_name_fr": "Dominique",
             "official_name_ru": "Доминика",
-            "flag": "🇩🇲"
+            "flag": "🇩🇲",
+            "bounding_box": [
+                17.2701708,
+                21.2928771,
+                -72.0574706,
+                -68.1101463
+            ]
         },
         {
             "CLDR display name": "Dominican Republic",
@@ -4010,7 +4412,13 @@
             "official_name_es": "República Dominicana",
             "official_name_fr": "République dominicaine",
             "official_name_ru": "Доминиканская Республика",
-            "flag": "🇩🇴"
+            "flag": "🇩🇴",
+            "bounding_box": [
+                17.2701708,
+                21.2928771,
+                -72.0574706,
+                -68.1101463
+            ]
         },
         {
             "CLDR display name": "Ecuador",
@@ -4069,7 +4477,13 @@
             "official_name_es": "Ecuador",
             "official_name_fr": "Équateur",
             "official_name_ru": "Эквадор",
-            "flag": "🇪🇨"
+            "flag": "🇪🇨",
+            "bounding_box": [
+                -5.0159314,
+                1.8835964,
+                -92.2072392,
+                -75.192504
+            ]
         },
         {
             "CLDR display name": "Egypt",
@@ -4128,7 +4542,13 @@
             "official_name_es": "Egipto",
             "official_name_fr": "Égypte",
             "official_name_ru": "Египет",
-            "flag": "🇪🇬"
+            "flag": "🇪🇬",
+            "bounding_box": [
+                21.9936736,
+                31.8330854,
+                24.6499112,
+                37.1153517
+            ]
         },
         {
             "CLDR display name": "El Salvador",
@@ -4187,7 +4607,13 @@
             "official_name_es": "El Salvador",
             "official_name_fr": "El Salvador",
             "official_name_ru": "Сальвадор",
-            "flag": "🇸🇻"
+            "flag": "🇸🇻",
+            "bounding_box": [
+                12.9518017,
+                14.4510488,
+                -90.2089183,
+                -87.5971467
+            ]
         },
         {
             "CLDR display name": "Equatorial Guinea",
@@ -4246,7 +4672,13 @@
             "official_name_es": "Guinea Ecuatorial",
             "official_name_fr": "Guinée équatoriale",
             "official_name_ru": "Экваториальная Гвинея",
-            "flag": "🇬🇶"
+            "flag": "🇬🇶",
+            "bounding_box": [
+                -1.6732196,
+                3.989,
+                5.4172943,
+                11.4113617
+            ]
         },
         {
             "CLDR display name": "Eritrea",
@@ -4305,7 +4737,13 @@
             "official_name_es": "Eritrea",
             "official_name_fr": "Érythrée",
             "official_name_ru": "Эритрея",
-            "flag": "🇪🇷"
+            "flag": "🇪🇷",
+            "bounding_box": [
+                12.3548219,
+                18.0709917,
+                36.4333653,
+                43.3001714
+            ]
         },
         {
             "CLDR display name": "Estonia",
@@ -4364,7 +4802,13 @@
             "official_name_es": "Estonia",
             "official_name_fr": "Estonie",
             "official_name_ru": "Эстония",
-            "flag": "🇪🇪"
+            "flag": "🇪🇪",
+            "bounding_box": [
+                57.5093328,
+                59.9383333,
+                21.3826069,
+                28.2100175
+            ]
         },
         {
             "CLDR display name": "Eswatini",
@@ -4423,7 +4867,13 @@
             "official_name_es": "Eswatini",
             "official_name_fr": "Eswatini",
             "official_name_ru": "Эсватини",
-            "flag": "🇸🇿"
+            "flag": "🇸🇿",
+            "bounding_box": [
+                -27.3175201,
+                -25.71876,
+                30.7908,
+                32.1349834
+            ]
         },
         {
             "CLDR display name": "Ethiopia",
@@ -4482,7 +4932,13 @@
             "official_name_es": "Etiopía",
             "official_name_fr": "Éthiopie",
             "official_name_ru": "Эфиопия",
-            "flag": "🇪🇹"
+            "flag": "🇪🇹",
+            "bounding_box": [
+                3.397448,
+                14.8943383,
+                32.9975838,
+                47.9823797
+            ]
         },
         {
             "CLDR display name": "Falkland Islands",
@@ -4541,7 +4997,13 @@
             "official_name_es": "Islas Malvinas (Falkland)",
             "official_name_fr": "Îles Falkland (Malvinas)",
             "official_name_ru": "Фолклендские (Мальвинские) острова",
-            "flag": "🇫🇰"
+            "flag": "🇫🇰",
+            "bounding_box": [
+                -53.1186766,
+                -50.7973007,
+                -61.7726772,
+                -57.3662367
+            ]
         },
         {
             "CLDR display name": "Faroe Islands",
@@ -4600,7 +5062,13 @@
             "official_name_es": "Islas Feroe",
             "official_name_fr": "Îles Féroé",
             "official_name_ru": "Фарерские острова",
-            "flag": "🇫🇴"
+            "flag": "🇫🇴",
+            "bounding_box": [
+                61.1367723,
+                62.5958399,
+                -8.1188416,
+                -5.8254974
+            ]
         },
         {
             "CLDR display name": "Fiji",
@@ -4659,7 +5127,13 @@
             "official_name_es": "Fiji",
             "official_name_fr": "Fidji",
             "official_name_ru": "Фиджи",
-            "flag": "🇫🇯"
+            "flag": "🇫🇯",
+            "bounding_box": [
+                -21.9434274,
+                -12.2613866,
+                -180.0,
+                180.0
+            ]
         },
         {
             "CLDR display name": "Finland",
@@ -4718,7 +5192,13 @@
             "official_name_es": "Finlandia",
             "official_name_fr": "Finlande",
             "official_name_ru": "Финляндия",
-            "flag": "🇫🇮"
+            "flag": "🇫🇮",
+            "bounding_box": [
+                59.4541578,
+                70.0922939,
+                19.0832,
+                31.5867071
+            ]
         },
         {
             "CLDR display name": "France",
@@ -4777,7 +5257,13 @@
             "official_name_es": "Francia",
             "official_name_fr": "France",
             "official_name_ru": "Франция",
-            "flag": "🇫🇷"
+            "flag": "🇫🇷",
+            "bounding_box": [
+                -50.2187169,
+                51.3055721,
+                -178.3873749,
+                172.3057152
+            ]
         },
         {
             "CLDR display name": "French Guiana",
@@ -4836,7 +5322,13 @@
             "official_name_es": "Guayana Francesa",
             "official_name_fr": "Guyane française",
             "official_name_ru": "Французская Гвиана",
-            "flag": "🇬🇫"
+            "flag": "🇬🇫",
+            "bounding_box": [
+                2.1109401,
+                5.7769491,
+                -54.6026945,
+                -51.6346139
+            ]
         },
         {
             "CLDR display name": "French Polynesia",
@@ -4895,7 +5387,13 @@
             "official_name_es": "Polinesia Francesa",
             "official_name_fr": "Polynésie française",
             "official_name_ru": "Французская Полинезия",
-            "flag": "🇵🇫"
+            "flag": "🇵🇫",
+            "bounding_box": [
+                -28.0990232,
+                -7.6592173,
+                -154.9360599,
+                -134.244799
+            ]
         },
         {
             "CLDR display name": "French Southern Territories",
@@ -4954,7 +5452,13 @@
             "official_name_es": "Territorio de las Tierras Australes Francesas",
             "official_name_fr": "Terres australes françaises",
             "official_name_ru": "Южные земли (французская заморская территория)",
-            "flag": "🇹🇫"
+            "flag": "🇹🇫",
+            "bounding_box": [
+                -50.2187169,
+                -11.3139928,
+                39.4138676,
+                77.8494974
+            ]
         },
         {
             "CLDR display name": "Gabon",
@@ -5013,7 +5517,13 @@
             "official_name_es": "Gabón",
             "official_name_fr": "Gabon",
             "official_name_ru": "Габон",
-            "flag": "🇬🇦"
+            "flag": "🇬🇦",
+            "bounding_box": [
+                -4.1012261,
+                2.3192896,
+                8.5002246,
+                14.539444
+            ]
         },
         {
             "CLDR display name": "Gambia",
@@ -5072,7 +5582,13 @@
             "official_name_es": "Gambia",
             "official_name_fr": "Gambie",
             "official_name_ru": "Гамбия",
-            "flag": "🇬🇲"
+            "flag": "🇬🇲",
+            "bounding_box": [
+                13.0558333,
+                13.8253137,
+                -17.0223778,
+                -13.797778
+            ]
         },
         {
             "CLDR display name": "Georgia",
@@ -5131,7 +5647,13 @@
             "official_name_es": "Georgia",
             "official_name_fr": "Géorgie",
             "official_name_ru": "Грузия",
-            "flag": "🇬🇪"
+            "flag": "🇬🇪",
+            "bounding_box": [
+                41.0551284,
+                43.5864294,
+                39.8844803,
+                46.7365373
+            ]
         },
         {
             "CLDR display name": "Germany",
@@ -5190,7 +5712,13 @@
             "official_name_es": "Alemania",
             "official_name_fr": "Allemagne",
             "official_name_ru": "Германия",
-            "flag": "🇩🇪"
+            "flag": "🇩🇪",
+            "bounding_box": [
+                47.2701114,
+                55.099161,
+                5.8663153,
+                15.0419309
+            ]
         },
         {
             "CLDR display name": "Ghana",
@@ -5249,7 +5777,13 @@
             "official_name_es": "Ghana",
             "official_name_fr": "Ghana",
             "official_name_ru": "Гана",
-            "flag": "🇬🇭"
+            "flag": "🇬🇭",
+            "bounding_box": [
+                4.5392525,
+                11.1748562,
+                -3.260786,
+                1.2732942
+            ]
         },
         {
             "CLDR display name": "Gibraltar",
@@ -5308,7 +5842,13 @@
             "official_name_es": "Gibraltar",
             "official_name_fr": "Gibraltar",
             "official_name_ru": "Гибралтар",
-            "flag": "🇬🇮"
+            "flag": "🇬🇮",
+            "bounding_box": [
+                36.058755,
+                36.1550376,
+                -5.4006553,
+                -5.2766611
+            ]
         },
         {
             "CLDR display name": "Greece",
@@ -5367,7 +5907,13 @@
             "official_name_es": "Grecia",
             "official_name_fr": "Grèce",
             "official_name_ru": "Греция",
-            "flag": "🇬🇷"
+            "flag": "🇬🇷",
+            "bounding_box": [
+                34.7188863,
+                41.7488889,
+                19.1127535,
+                29.68381
+            ]
         },
         {
             "CLDR display name": "Greenland",
@@ -5426,7 +5972,13 @@
             "official_name_es": "Groenlandia",
             "official_name_fr": "Groenland",
             "official_name_ru": "Гренландия",
-            "flag": "🇬🇱"
+            "flag": "🇬🇱",
+            "bounding_box": [
+                59.515387,
+                83.875172,
+                -74.1250416,
+                -10.0288759
+            ]
         },
         {
             "CLDR display name": "Grenada",
@@ -5485,7 +6037,13 @@
             "official_name_es": "Granada",
             "official_name_fr": "Grenade",
             "official_name_ru": "Гренада",
-            "flag": "🇬🇩"
+            "flag": "🇬🇩",
+            "bounding_box": [
+                11.7759051,
+                12.6097247,
+                -62.0072687,
+                -61.2095018
+            ]
         },
         {
             "CLDR display name": "Guadeloupe",
@@ -5544,7 +6102,13 @@
             "official_name_es": "Guadalupe",
             "official_name_fr": "Guadeloupe",
             "official_name_ru": "Гваделупа",
-            "flag": "🇬🇵"
+            "flag": "🇬🇵",
+            "bounding_box": [
+                15.8319758,
+                16.5144801,
+                -61.809764,
+                -61.0013039
+            ]
         },
         {
             "CLDR display name": "Guam",
@@ -5603,7 +6167,13 @@
             "official_name_es": "Guam",
             "official_name_fr": "Guam",
             "official_name_ru": "Гуам",
-            "flag": "🇬🇺"
+            "flag": "🇬🇺",
+            "bounding_box": [
+                13.182335,
+                13.706179,
+                144.563426,
+                145.009167
+            ]
         },
         {
             "CLDR display name": "Guatemala",
@@ -5662,7 +6232,13 @@
             "official_name_es": "Guatemala",
             "official_name_fr": "Guatemala",
             "official_name_ru": "Гватемала",
-            "flag": "🇬🇹"
+            "flag": "🇬🇹",
+            "bounding_box": [
+                13.5577935,
+                17.8165947,
+                -92.3743889,
+                -88.2134425
+            ]
         },
         {
             "CLDR display name": "Guernsey",
@@ -5721,7 +6297,13 @@
             "official_name_es": "Guernsey",
             "official_name_fr": "Guernesey",
             "official_name_ru": "Гернси",
-            "flag": "🇬🇬"
+            "flag": "🇬🇬",
+            "bounding_box": [
+                49.219875,
+                49.9403001,
+                -3.0209018,
+                -2.0502773
+            ]
         },
         {
             "CLDR display name": "Guinea",
@@ -5780,7 +6362,13 @@
             "official_name_es": "Guinea",
             "official_name_fr": "Guinée",
             "official_name_ru": "Гвинея",
-            "flag": "🇬🇳"
+            "flag": "🇬🇳",
+            "bounding_box": [
+                7.1906045,
+                12.67563,
+                -15.5680508,
+                -7.6379222
+            ]
         },
         {
             "CLDR display name": "Guinea-Bissau",
@@ -5839,7 +6427,13 @@
             "official_name_es": "Guinea-Bissau",
             "official_name_fr": "Guinée-Bissau",
             "official_name_ru": "Гвинея-Бисау",
-            "flag": "🇬🇼"
+            "flag": "🇬🇼",
+            "bounding_box": [
+                10.6514215,
+                12.6862384,
+                -16.897501,
+                -13.6348777
+            ]
         },
         {
             "CLDR display name": "Guyana",
@@ -5898,7 +6492,13 @@
             "official_name_es": "Guyana",
             "official_name_fr": "Guyana",
             "official_name_ru": "Гайана",
-            "flag": "🇬🇾"
+            "flag": "🇬🇾",
+            "bounding_box": [
+                1.1710017,
+                8.6038842,
+                -61.3827449,
+                -56.4689543
+            ]
         },
         {
             "CLDR display name": "Haiti",
@@ -5957,7 +6557,13 @@
             "official_name_es": "Haití",
             "official_name_fr": "Haïti",
             "official_name_ru": "Гаити",
-            "flag": "🇭🇹"
+            "flag": "🇭🇹",
+            "bounding_box": [
+                17.820859,
+                20.2911852,
+                -75.2384618,
+                -71.6217461
+            ]
         },
         {
             "CLDR display name": "Heard & McDonald Islands",
@@ -6016,7 +6622,13 @@
             "official_name_es": "Islas Heard y McDonald",
             "official_name_fr": "Île Heard-et-Îles MacDonald",
             "official_name_ru": "Остров Херд и острова Макдональд",
-            "flag": "🇭🇲"
+            "flag": "🇭🇲",
+            "bounding_box": [
+                -53.1949116,
+                -52.9712946,
+                73.2512342,
+                73.8767533
+            ]
         },
         {
             "CLDR display name": "Vatican City",
@@ -6075,7 +6687,13 @@
             "official_name_es": "Santa Sede",
             "official_name_fr": "Saint-Siège",
             "official_name_ru": "Святой Престол",
-            "flag": "🇻🇦"
+            "flag": "🇻🇦",
+            "bounding_box": [
+                41.9002044,
+                41.9073829,
+                12.4457878,
+                12.4583653
+            ]
         },
         {
             "CLDR display name": "Honduras",
@@ -6134,7 +6752,13 @@
             "official_name_es": "Honduras",
             "official_name_fr": "Honduras",
             "official_name_ru": "Гондурас",
-            "flag": "🇭🇳"
+            "flag": "🇭🇳",
+            "bounding_box": [
+                12.9808485,
+                17.619522,
+                -89.3568207,
+                -82.18164
+            ]
         },
         {
             "CLDR display name": "Hungary",
@@ -6193,7 +6817,13 @@
             "official_name_es": "Hungría",
             "official_name_fr": "Hongrie",
             "official_name_ru": "Венгрия",
-            "flag": "🇭🇺"
+            "flag": "🇭🇺",
+            "bounding_box": [
+                45.737128,
+                48.585257,
+                16.1138866,
+                22.8977094
+            ]
         },
         {
             "CLDR display name": "Iceland",
@@ -6252,7 +6882,13 @@
             "official_name_es": "Islandia",
             "official_name_fr": "Islande",
             "official_name_ru": "Исландия",
-            "flag": "🇮🇸"
+            "flag": "🇮🇸",
+            "bounding_box": [
+                63.0859177,
+                67.353,
+                -25.0135069,
+                -12.8046162
+            ]
         },
         {
             "CLDR display name": "India",
@@ -6311,7 +6947,13 @@
             "official_name_es": "India",
             "official_name_fr": "Inde",
             "official_name_ru": "Индия",
-            "flag": "🇮🇳"
+            "flag": "🇮🇳",
+            "bounding_box": [
+                6.5531169,
+                35.6745457,
+                67.9544415,
+                97.395561
+            ]
         },
         {
             "CLDR display name": "Indonesia",
@@ -6370,7 +7012,13 @@
             "official_name_es": "Indonesia",
             "official_name_fr": "Indonésie",
             "official_name_ru": "Индонезия",
-            "flag": "🇮🇩"
+            "flag": "🇮🇩",
+            "bounding_box": [
+                -11.2085669,
+                6.2744496,
+                94.7717124,
+                141.0194444
+            ]
         },
         {
             "CLDR display name": "Iran",
@@ -6429,7 +7077,13 @@
             "official_name_es": "Irán (República Islámica del)",
             "official_name_fr": "Iran (République islamique d')",
             "official_name_ru": "Иран (Исламская Республика)",
-            "flag": "🇮🇷"
+            "flag": "🇮🇷",
+            "bounding_box": [
+                24.8353084,
+                39.7824624,
+                44.0318908,
+                63.3332704
+            ]
         },
         {
             "CLDR display name": "Iraq",
@@ -6488,7 +7142,13 @@
             "official_name_es": "Iraq",
             "official_name_fr": "Iraq",
             "official_name_ru": "Ирак",
-            "flag": "🇮🇶"
+            "flag": "🇮🇶",
+            "bounding_box": [
+                29.0585661,
+                37.3806687,
+                38.7936719,
+                49.1067706
+            ]
         },
         {
             "CLDR display name": "Ireland",
@@ -6547,7 +7207,13 @@
             "official_name_es": "Irlanda",
             "official_name_fr": "Irlande",
             "official_name_ru": "Ирландия",
-            "flag": "🇮🇪"
+            "flag": "🇮🇪",
+            "bounding_box": [
+                51.222,
+                55.636,
+                -11.0133788,
+                -5.6582363
+            ]
         },
         {
             "CLDR display name": "Isle of Man",
@@ -6606,7 +7272,13 @@
             "official_name_es": "Isla de Man",
             "official_name_fr": "Île de Man",
             "official_name_ru": "Остров Мэн",
-            "flag": "🇮🇲"
+            "flag": "🇮🇲",
+            "bounding_box": [
+                53.845,
+                54.5534288,
+                -5.1707285,
+                -3.9654061
+            ]
         },
         {
             "CLDR display name": "Israel",
@@ -6665,7 +7337,13 @@
             "official_name_es": "Israel",
             "official_name_fr": "Israël",
             "official_name_ru": "Израиль",
-            "flag": "🇮🇱"
+            "flag": "🇮🇱",
+            "bounding_box": [
+                29.4533796,
+                33.3356317,
+                34.2674994,
+                35.8950234
+            ]
         },
         {
             "CLDR display name": "Italy",
@@ -6724,7 +7402,13 @@
             "official_name_es": "Italia",
             "official_name_fr": "Italie",
             "official_name_ru": "Италия",
-            "flag": "🇮🇹"
+            "flag": "🇮🇹",
+            "bounding_box": [
+                35.2889616,
+                47.0921462,
+                6.6272658,
+                18.7844746
+            ]
         },
         {
             "CLDR display name": "Jamaica",
@@ -6783,7 +7467,13 @@
             "official_name_es": "Jamaica",
             "official_name_fr": "Jamaïque",
             "official_name_ru": "Ямайка",
-            "flag": "🇯🇲"
+            "flag": "🇯🇲",
+            "bounding_box": [
+                16.5899443,
+                18.7256394,
+                -78.5782366,
+                -75.7541143
+            ]
         },
         {
             "CLDR display name": "Japan",
@@ -6842,7 +7532,13 @@
             "official_name_es": "Japón",
             "official_name_fr": "Japon",
             "official_name_ru": "Япония",
-            "flag": "🇯🇵"
+            "flag": "🇯🇵",
+            "bounding_box": [
+                20.2145811,
+                45.7112046,
+                122.7141754,
+                154.205541
+            ]
         },
         {
             "CLDR display name": "Jersey",
@@ -6901,7 +7597,13 @@
             "official_name_es": "Jersey",
             "official_name_fr": "Jersey",
             "official_name_ru": "Джерси",
-            "flag": "🇯🇪"
+            "flag": "🇯🇪",
+            "bounding_box": [
+                48.871203,
+                49.4596091,
+                -2.5605483,
+                -1.8347
+            ]
         },
         {
             "CLDR display name": "Jordan",
@@ -6960,7 +7662,13 @@
             "official_name_es": "Jordania",
             "official_name_fr": "Jordanie",
             "official_name_ru": "Иордания",
-            "flag": "🇯🇴"
+            "flag": "🇯🇴",
+            "bounding_box": [
+                29.183401,
+                33.3750617,
+                34.8844372,
+                39.3012981
+            ]
         },
         {
             "CLDR display name": "Kazakhstan",
@@ -7019,7 +7727,13 @@
             "official_name_es": "Kazajstán",
             "official_name_fr": "Kazakhstan",
             "official_name_ru": "Казахстан",
-            "flag": "🇰🇿"
+            "flag": "🇰🇿",
+            "bounding_box": [
+                40.5686476,
+                55.4421701,
+                46.4932179,
+                87.3156336
+            ]
         },
         {
             "CLDR display name": "Kenya",
@@ -7078,7 +7792,13 @@
             "official_name_es": "Kenya",
             "official_name_fr": "Kenya",
             "official_name_ru": "Кения",
-            "flag": "🇰🇪"
+            "flag": "🇰🇪",
+            "bounding_box": [
+                -4.8995204,
+                4.62,
+                33.9096888,
+                41.9067502
+            ]
         },
         {
             "CLDR display name": "Kiribati",
@@ -7137,7 +7857,13 @@
             "official_name_es": "Kiribati",
             "official_name_fr": "Kiribati",
             "official_name_ru": "Кирибати",
-            "flag": "🇰🇮"
+            "flag": "🇰🇮",
+            "bounding_box": [
+                -11.646,
+                4.9,
+                -174.743355,
+                177.0491167
+            ]
         },
         {
             "CLDR display name": "Kuwait",
@@ -7196,7 +7922,13 @@
             "official_name_es": "Kuwait",
             "official_name_fr": "Koweït",
             "official_name_ru": "Кувейт",
-            "flag": "🇰🇼"
+            "flag": "🇰🇼",
+            "bounding_box": [
+                28.5243622,
+                30.1038082,
+                46.5526837,
+                49.0046809
+            ]
         },
         {
             "CLDR display name": "Kyrgyzstan",
@@ -7255,7 +7987,13 @@
             "official_name_es": "Kirguistán",
             "official_name_fr": "Kirghizistan",
             "official_name_ru": "Кыргызстан",
-            "flag": "🇰🇬"
+            "flag": "🇰🇬",
+            "bounding_box": [
+                39.1727382,
+                43.2669041,
+                69.2649523,
+                80.2295793
+            ]
         },
         {
             "CLDR display name": "Laos",
@@ -7314,7 +8052,13 @@
             "official_name_es": "República Democrática Popular Lao",
             "official_name_fr": "République démocratique populaire lao",
             "official_name_ru": "Лаосская Народно-Демократическая Республика",
-            "flag": "🇱🇦"
+            "flag": "🇱🇦",
+            "bounding_box": [
+                13.9096752,
+                22.5086717,
+                100.0843247,
+                107.6349989
+            ]
         },
         {
             "CLDR display name": "Latvia",
@@ -7373,7 +8117,13 @@
             "official_name_es": "Letonia",
             "official_name_fr": "Lettonie",
             "official_name_ru": "Латвия",
-            "flag": "🇱🇻"
+            "flag": "🇱🇻",
+            "bounding_box": [
+                55.6746505,
+                58.0855688,
+                20.6009852,
+                28.2414904
+            ]
         },
         {
             "CLDR display name": "Lebanon",
@@ -7432,7 +8182,13 @@
             "official_name_es": "Líbano",
             "official_name_fr": "Liban",
             "official_name_ru": "Ливан",
-            "flag": "🇱🇧"
+            "flag": "🇱🇧",
+            "bounding_box": [
+                33.0550325,
+                34.6921448,
+                34.8825667,
+                36.625
+            ]
         },
         {
             "CLDR display name": "Lesotho",
@@ -7491,7 +8247,13 @@
             "official_name_es": "Lesotho",
             "official_name_fr": "Lesotho",
             "official_name_ru": "Лесото",
-            "flag": "🇱🇸"
+            "flag": "🇱🇸",
+            "bounding_box": [
+                -30.6772773,
+                -28.5705652,
+                27.0113763,
+                29.4557099
+            ]
         },
         {
             "CLDR display name": "Liberia",
@@ -7550,7 +8312,13 @@
             "official_name_es": "Liberia",
             "official_name_fr": "Libéria",
             "official_name_ru": "Либерия",
-            "flag": "🇱🇷"
+            "flag": "🇱🇷",
+            "bounding_box": [
+                4.1555907,
+                8.5519251,
+                -11.6080764,
+                -7.367323
+            ]
         },
         {
             "CLDR display name": "Libya",
@@ -7609,7 +8377,13 @@
             "official_name_es": "Libia",
             "official_name_fr": "Libye",
             "official_name_ru": "Ливия",
-            "flag": "🇱🇾"
+            "flag": "🇱🇾",
+            "bounding_box": [
+                19.4999907,
+                33.3545898,
+                9.391081,
+                25.3770629
+            ]
         },
         {
             "CLDR display name": "Liechtenstein",
@@ -7668,7 +8442,13 @@
             "official_name_es": "Liechtenstein",
             "official_name_fr": "Liechtenstein",
             "official_name_ru": "Лихтенштейн",
-            "flag": "🇱🇮"
+            "flag": "🇱🇮",
+            "bounding_box": [
+                47.0484291,
+                47.270581,
+                9.4716736,
+                9.6357143
+            ]
         },
         {
             "CLDR display name": "Lithuania",
@@ -7727,7 +8507,13 @@
             "official_name_es": "Lituania",
             "official_name_fr": "Lituanie",
             "official_name_ru": "Литва",
-            "flag": "🇱🇹"
+            "flag": "🇱🇹",
+            "bounding_box": [
+                53.8967893,
+                56.4504213,
+                20.6557167,
+                26.8355198
+            ]
         },
         {
             "CLDR display name": "Luxembourg",
@@ -7786,7 +8572,13 @@
             "official_name_es": "Luxemburgo",
             "official_name_fr": "Luxembourg",
             "official_name_ru": "Люксембург",
-            "flag": "🇱🇺"
+            "flag": "🇱🇺",
+            "bounding_box": [
+                49.4478587,
+                50.1827726,
+                5.7357006,
+                6.5312481
+            ]
         },
         {
             "CLDR display name": "Madagascar",
@@ -7845,7 +8637,13 @@
             "official_name_es": "Madagascar",
             "official_name_fr": "Madagascar",
             "official_name_ru": "Мадагаскар",
-            "flag": "🇲🇬"
+            "flag": "🇲🇬",
+            "bounding_box": [
+                -25.784021,
+                -11.732889,
+                42.9680076,
+                50.6727307
+            ]
         },
         {
             "CLDR display name": "Malawi",
@@ -7904,7 +8702,13 @@
             "official_name_es": "Malawi",
             "official_name_fr": "Malawi",
             "official_name_ru": "Малави",
-            "flag": "🇲🇼"
+            "flag": "🇲🇼",
+            "bounding_box": [
+                -17.1296031,
+                -9.368301,
+                32.6718589,
+                35.9185731
+            ]
         },
         {
             "CLDR display name": "Malaysia",
@@ -7963,7 +8767,13 @@
             "official_name_es": "Malasia",
             "official_name_fr": "Malaisie",
             "official_name_ru": "Малайзия",
-            "flag": "🇲🇾"
+            "flag": "🇲🇾",
+            "bounding_box": [
+                0.8538205,
+                8.3801468,
+                98.7365109,
+                119.4699634
+            ]
         },
         {
             "CLDR display name": "Maldives",
@@ -8022,7 +8832,13 @@
             "official_name_es": "Maldivas",
             "official_name_fr": "Maldives",
             "official_name_ru": "Мальдивские Острова",
-            "flag": "🇲🇻"
+            "flag": "🇲🇻",
+            "bounding_box": [
+                -0.9074935,
+                7.3106246,
+                72.3554187,
+                73.9700962
+            ]
         },
         {
             "CLDR display name": "Mali",
@@ -8081,7 +8897,13 @@
             "official_name_es": "Malí",
             "official_name_fr": "Mali",
             "official_name_ru": "Мали",
-            "flag": "🇲🇱"
+            "flag": "🇲🇱",
+            "bounding_box": [
+                10.147811,
+                25.001084,
+                -12.2402835,
+                4.2673828
+            ]
         },
         {
             "CLDR display name": "Malta",
@@ -8140,7 +8962,13 @@
             "official_name_es": "Malta",
             "official_name_fr": "Malte",
             "official_name_ru": "Мальта",
-            "flag": "🇲🇹"
+            "flag": "🇲🇹",
+            "bounding_box": [
+                35.5853691,
+                36.2825455,
+                13.9360446,
+                14.822786
+            ]
         },
         {
             "CLDR display name": "Marshall Islands",
@@ -8199,7 +9027,13 @@
             "official_name_es": "Islas Marshall",
             "official_name_fr": "Îles Marshall",
             "official_name_ru": "Маршалловы Острова",
-            "flag": "🇲🇭"
+            "flag": "🇲🇭",
+            "bounding_box": [
+                4.369699,
+                14.924073,
+                160.591134,
+                172.374008
+            ]
         },
         {
             "CLDR display name": "Martinique",
@@ -8258,7 +9092,13 @@
             "official_name_es": "Martinica",
             "official_name_fr": "Martinique",
             "official_name_ru": "Мартиника",
-            "flag": "🇲🇶"
+            "flag": "🇲🇶",
+            "bounding_box": [
+                14.3886707,
+                14.8787327,
+                -61.2290255,
+                -60.8097044
+            ]
         },
         {
             "CLDR display name": "Mauritania",
@@ -8317,7 +9157,13 @@
             "official_name_es": "Mauritania",
             "official_name_fr": "Mauritanie",
             "official_name_ru": "Мавритания",
-            "flag": "🇲🇷"
+            "flag": "🇲🇷",
+            "bounding_box": [
+                14.7209909,
+                27.314942,
+                -17.2380959,
+                -4.8333344
+            ]
         },
         {
             "CLDR display name": "Mauritius",
@@ -8376,7 +9222,13 @@
             "official_name_es": "Mauricio",
             "official_name_fr": "Maurice",
             "official_name_ru": "Маврикий",
-            "flag": "🇲🇺"
+            "flag": "🇲🇺",
+            "bounding_box": [
+                -20.725,
+                -10.138,
+                56.3825151,
+                63.7151319
+            ]
         },
         {
             "CLDR display name": "Mayotte",
@@ -8435,7 +9287,13 @@
             "official_name_es": "Mayotte",
             "official_name_fr": "Mayotte",
             "official_name_ru": "Острове Майотта",
-            "flag": "🇾🇹"
+            "flag": "🇾🇹",
+            "bounding_box": [
+                -13.0210439,
+                -12.6365002,
+                45.0182323,
+                45.3000242
+            ]
         },
         {
             "CLDR display name": "Mexico",
@@ -8494,7 +9352,13 @@
             "official_name_es": "México",
             "official_name_fr": "Mexique",
             "official_name_ru": "Мексика",
-            "flag": "🇲🇽"
+            "flag": "🇲🇽",
+            "bounding_box": [
+                14.3886243,
+                32.7186679,
+                -118.599188,
+                -86.493266
+            ]
         },
         {
             "CLDR display name": "Micronesia",
@@ -8553,7 +9417,13 @@
             "official_name_es": "Micronesia (Estados Federados de)",
             "official_name_fr": "Micronésie (États fédérés de)",
             "official_name_ru": "Микронезия (Федеративные Штаты)",
-            "flag": "🇫🇲"
+            "flag": "🇫🇲",
+            "bounding_box": [
+                0.8232833,
+                10.2933306,
+                137.1344444,
+                163.2374639
+            ]
         },
         {
             "CLDR display name": "Monaco",
@@ -8612,7 +9482,13 @@
             "official_name_es": "Mónaco",
             "official_name_fr": "Monaco",
             "official_name_ru": "Монако",
-            "flag": "🇲🇨"
+            "flag": "🇲🇨",
+            "bounding_box": [
+                48.0616244,
+                48.2481162,
+                11.360777,
+                11.7229099
+            ]
         },
         {
             "CLDR display name": "Mongolia",
@@ -8671,7 +9547,13 @@
             "official_name_es": "Mongolia",
             "official_name_fr": "Mongolie",
             "official_name_ru": "Монголия",
-            "flag": "🇲🇳"
+            "flag": "🇲🇳",
+            "bounding_box": [
+                41.5800276,
+                52.1496,
+                87.7345852,
+                119.9322079
+            ]
         },
         {
             "CLDR display name": "Montenegro",
@@ -8730,7 +9612,13 @@
             "official_name_es": "Montenegro",
             "official_name_fr": "Monténégro",
             "official_name_ru": "Черногория",
-            "flag": "🇲🇪"
+            "flag": "🇲🇪",
+            "bounding_box": [
+                41.6849866,
+                43.5585061,
+                18.4195781,
+                20.3529276
+            ]
         },
         {
             "CLDR display name": "Montserrat",
@@ -8789,7 +9677,13 @@
             "official_name_es": "Montserrat",
             "official_name_fr": "Montserrat",
             "official_name_ru": "Монтсеррат",
-            "flag": "🇲🇸"
+            "flag": "🇲🇸",
+            "bounding_box": [
+                16.4737398,
+                16.8885156,
+                -62.4502432,
+                -61.9359751
+            ]
         },
         {
             "CLDR display name": "Morocco",
@@ -8848,7 +9742,13 @@
             "official_name_es": "Marruecos",
             "official_name_fr": "Maroc",
             "official_name_ru": "Марокко",
-            "flag": "🇲🇦"
+            "flag": "🇲🇦",
+            "bounding_box": [
+                21.333462,
+                36.0021392,
+                -17.2448353,
+                -0.998429
+            ]
         },
         {
             "CLDR display name": "Mozambique",
@@ -8907,7 +9807,13 @@
             "official_name_es": "Mozambique",
             "official_name_fr": "Mozambique",
             "official_name_ru": "Мозамбик",
-            "flag": "🇲🇿"
+            "flag": "🇲🇿",
+            "bounding_box": [
+                -26.9209427,
+                -10.3252149,
+                30.2121663,
+                41.0545908
+            ]
         },
         {
             "CLDR display name": "Myanmar",
@@ -8966,7 +9872,13 @@
             "official_name_es": "Myanmar",
             "official_name_fr": "Myanmar",
             "official_name_ru": "Мьянма",
-            "flag": "🇲🇲"
+            "flag": "🇲🇲",
+            "bounding_box": [
+                9.526084,
+                28.547835,
+                92.1729181,
+                101.1700796
+            ]
         },
         {
             "CLDR display name": "Namibia",
@@ -9025,7 +9937,13 @@
             "official_name_es": "Namibia",
             "official_name_fr": "Namibie",
             "official_name_ru": "Намибия",
-            "flag": "🇳🇦"
+            "flag": "🇳🇦",
+            "bounding_box": [
+                -28.96945,
+                -16.9635105,
+                11.5280384,
+                25.2617292
+            ]
         },
         {
             "CLDR display name": "Nauru",
@@ -9084,7 +10002,13 @@
             "official_name_es": "Nauru",
             "official_name_fr": "Nauru",
             "official_name_ru": "Науру",
-            "flag": "🇳🇷"
+            "flag": "🇳🇷",
+            "bounding_box": [
+                -0.753,
+                -0.303,
+                166.7099864,
+                167.1597301
+            ]
         },
         {
             "CLDR display name": "Nepal",
@@ -9143,7 +10067,13 @@
             "official_name_es": "Nepal",
             "official_name_fr": "Népal",
             "official_name_ru": "Непал",
-            "flag": "🇳🇵"
+            "flag": "🇳🇵",
+            "bounding_box": [
+                26.3477581,
+                30.471487,
+                80.0570812,
+                88.2015257
+            ]
         },
         {
             "CLDR display name": "Netherlands",
@@ -9202,7 +10132,13 @@
             "official_name_es": "Países Bajos",
             "official_name_fr": "Pays-Bas",
             "official_name_ru": "Нидерланды",
-            "flag": "🇳🇱"
+            "flag": "🇳🇱",
+            "bounding_box": [
+                11.825,
+                53.744395,
+                -68.6255319,
+                7.2274985
+            ]
         },
         {
             "CLDR display name": "New Caledonia",
@@ -9261,7 +10197,13 @@
             "official_name_es": "Nueva Caledonia",
             "official_name_fr": "Nouvelle-Calédonie",
             "official_name_ru": "Новая Каледония",
-            "flag": "🇳🇨"
+            "flag": "🇳🇨",
+            "bounding_box": [
+                -23.2217509,
+                -17.6868616,
+                157.9847541,
+                172.3057152
+            ]
         },
         {
             "CLDR display name": "New Zealand",
@@ -9320,7 +10262,13 @@
             "official_name_es": "Nueva Zelandia",
             "official_name_fr": "Nouvelle-Zélande",
             "official_name_ru": "Новая Зеландия",
-            "flag": "🇳🇿"
+            "flag": "🇳🇿",
+            "bounding_box": [
+                -52.8213687,
+                -29.0303303,
+                -179.059153,
+                179.3643594
+            ]
         },
         {
             "CLDR display name": "Nicaragua",
@@ -9379,7 +10327,13 @@
             "official_name_es": "Nicaragua",
             "official_name_fr": "Nicaragua",
             "official_name_ru": "Никарагуа",
-            "flag": "🇳🇮"
+            "flag": "🇳🇮",
+            "bounding_box": [
+                10.7073945,
+                15.0902778,
+                -87.8958171,
+                -82.4767247
+            ]
         },
         {
             "CLDR display name": "Niger",
@@ -9438,7 +10392,13 @@
             "official_name_es": "Níger",
             "official_name_fr": "Niger",
             "official_name_ru": "Нигер",
-            "flag": "🇳🇪"
+            "flag": "🇳🇪",
+            "bounding_box": [
+                11.6936071,
+                23.517178,
+                0.1689653,
+                15.996667
+            ]
         },
         {
             "CLDR display name": "Nigeria",
@@ -9497,7 +10457,13 @@
             "official_name_es": "Nigeria",
             "official_name_fr": "Nigéria",
             "official_name_ru": "Нигерия",
-            "flag": "🇳🇬"
+            "flag": "🇳🇬",
+            "bounding_box": [
+                4.0690959,
+                13.885645,
+                2.676932,
+                14.678014
+            ]
         },
         {
             "CLDR display name": "Niue",
@@ -9556,7 +10522,13 @@
             "official_name_es": "Niue",
             "official_name_fr": "Nioué",
             "official_name_ru": "Ниуэ",
-            "flag": "🇳🇺"
+            "flag": "🇳🇺",
+            "bounding_box": [
+                -19.3548665,
+                -18.7534559,
+                -170.1595029,
+                -169.5647229
+            ]
         },
         {
             "CLDR display name": "Norfolk Island",
@@ -9615,7 +10587,13 @@
             "official_name_es": "Islas Norfolk",
             "official_name_fr": "Île Norfolk",
             "official_name_ru": "Остров Норфолк",
-            "flag": "🇳🇫"
+            "flag": "🇳🇫",
+            "bounding_box": [
+                -29.3370694,
+                -28.7936626,
+                167.6856728,
+                168.2261259
+            ]
         },
         {
             "CLDR display name": "Northern Mariana Islands",
@@ -9674,7 +10652,13 @@
             "official_name_es": "Islas Marianas Septentrionales",
             "official_name_fr": "Îles Mariannes du Nord",
             "official_name_ru": "Северные Марианские острова",
-            "flag": "🇲🇵"
+            "flag": "🇲🇵",
+            "bounding_box": [
+                14.036565,
+                20.616556,
+                144.813338,
+                146.154418
+            ]
         },
         {
             "CLDR display name": "Norway",
@@ -9733,7 +10717,13 @@
             "official_name_es": "Noruega",
             "official_name_fr": "Norvège",
             "official_name_ru": "Норвегия",
-            "flag": "🇳🇴"
+            "flag": "🇳🇴",
+            "bounding_box": [
+                -54.654,
+                81.0280176,
+                -9.6846279,
+                34.6889114
+            ]
         },
         {
             "CLDR display name": "Oman",
@@ -9792,7 +10782,13 @@
             "official_name_es": "Omán",
             "official_name_fr": "Oman",
             "official_name_ru": "Оман",
-            "flag": "🇴🇲"
+            "flag": "🇴🇲",
+            "bounding_box": [
+                16.4649608,
+                26.7026737,
+                52.0000004,
+                60.054577
+            ]
         },
         {
             "CLDR display name": "Pakistan",
@@ -9851,7 +10847,13 @@
             "official_name_es": "Pakistán",
             "official_name_fr": "Pakistan",
             "official_name_ru": "Пакистан",
-            "flag": "🇵🇰"
+            "flag": "🇵🇰",
+            "bounding_box": [
+                23.4341977,
+                37.084107,
+                60.872855,
+                77.1203914
+            ]
         },
         {
             "CLDR display name": "Palau",
@@ -9910,7 +10912,13 @@
             "official_name_es": "Palau",
             "official_name_fr": "Palaos",
             "official_name_ru": "Палау",
-            "flag": "🇵🇼"
+            "flag": "🇵🇼",
+            "bounding_box": [
+                2.595824,
+                8.405805,
+                130.9193911,
+                134.9295484
+            ]
         },
         {
             "CLDR display name": "Panama",
@@ -9969,7 +10977,13 @@
             "official_name_es": "Panamá",
             "official_name_fr": "Panama",
             "official_name_ru": "Панама",
-            "flag": "🇵🇦"
+            "flag": "🇵🇦",
+            "bounding_box": [
+                7.0027171,
+                9.8469028,
+                -83.0517245,
+                -77.1585751
+            ]
         },
         {
             "CLDR display name": "Papua New Guinea",
@@ -10028,7 +11042,13 @@
             "official_name_es": "Papua Nueva Guinea",
             "official_name_fr": "Papouasie-Nouvelle-Guinée",
             "official_name_ru": "Папуа-Новая Гвинея",
-            "flag": "🇵🇬"
+            "flag": "🇵🇬",
+            "bounding_box": [
+                -11.8555739,
+                -0.5573576,
+                140.8416553,
+                159.6934961
+            ]
         },
         {
             "CLDR display name": "Paraguay",
@@ -10087,7 +11107,13 @@
             "official_name_es": "Paraguay",
             "official_name_fr": "Paraguay",
             "official_name_ru": "Парагвай",
-            "flag": "🇵🇾"
+            "flag": "🇵🇾",
+            "bounding_box": [
+                -27.6063935,
+                -19.2876472,
+                -62.6406685,
+                -54.258
+            ]
         },
         {
             "CLDR display name": "Peru",
@@ -10146,7 +11172,13 @@
             "official_name_es": "Perú",
             "official_name_fr": "Pérou",
             "official_name_ru": "Перу",
-            "flag": "🇵🇪"
+            "flag": "🇵🇪",
+            "bounding_box": [
+                -20.1984472,
+                -0.0392818,
+                -84.6356535,
+                -68.6519906
+            ]
         },
         {
             "CLDR display name": "Philippines",
@@ -10205,7 +11237,13 @@
             "official_name_es": "Filipinas",
             "official_name_fr": "Philippines",
             "official_name_ru": "Филиппины",
-            "flag": "🇵🇭"
+            "flag": "🇵🇭",
+            "bounding_box": [
+                4.3833333,
+                21.321928,
+                114.1036921,
+                126.803083
+            ]
         },
         {
             "CLDR display name": "Pitcairn Islands",
@@ -10264,7 +11302,13 @@
             "official_name_es": "Pitcairn",
             "official_name_fr": "Pitcairn",
             "official_name_ru": "Питкэрн",
-            "flag": "🇵🇳"
+            "flag": "🇵🇳",
+            "bounding_box": [
+                -25.2802053,
+                -23.7069813,
+                -130.9746722,
+                -124.5518294
+            ]
         },
         {
             "CLDR display name": "Poland",
@@ -10323,7 +11367,13 @@
             "official_name_es": "Polonia",
             "official_name_fr": "Pologne",
             "official_name_ru": "Польша",
-            "flag": "🇵🇱"
+            "flag": "🇵🇱",
+            "bounding_box": [
+                49.0020468,
+                55.03605,
+                14.0696389,
+                24.145783
+            ]
         },
         {
             "CLDR display name": "Portugal",
@@ -10382,7 +11432,13 @@
             "official_name_es": "Portugal",
             "official_name_fr": "Portugal",
             "official_name_ru": "Португалия",
-            "flag": "🇵🇹"
+            "flag": "🇵🇹",
+            "bounding_box": [
+                29.828247,
+                42.1543112,
+                -31.5575303,
+                -6.1891593
+            ]
         },
         {
             "CLDR display name": "Puerto Rico",
@@ -10441,7 +11497,13 @@
             "official_name_es": "Puerto Rico",
             "official_name_fr": "Porto Rico",
             "official_name_ru": "Пуэрто-Рико",
-            "flag": "🇵🇷"
+            "flag": "🇵🇷",
+            "bounding_box": [
+                17.7306659,
+                18.6663822,
+                -68.1109184,
+                -65.1100908
+            ]
         },
         {
             "CLDR display name": "Qatar",
@@ -10500,7 +11562,13 @@
             "official_name_es": "Qatar",
             "official_name_fr": "Qatar",
             "official_name_ru": "Катар",
-            "flag": "🇶🇦"
+            "flag": "🇶🇦",
+            "bounding_box": [
+                24.4707534,
+                26.434565,
+                50.5675,
+                52.638011
+            ]
         },
         {
             "CLDR display name": "South Korea",
@@ -10559,7 +11627,13 @@
             "official_name_es": "República de Corea",
             "official_name_fr": "République de Corée",
             "official_name_ru": "Республика Корея",
-            "flag": "🇰🇷"
+            "flag": "🇰🇷",
+            "bounding_box": [
+                32.9104556,
+                38.61772,
+                124.3727348,
+                132.1467806
+            ]
         },
         {
             "CLDR display name": "Moldova",
@@ -10618,7 +11692,13 @@
             "official_name_es": "República de Moldova",
             "official_name_fr": "République de Moldova",
             "official_name_ru": "Республика Молдова",
-            "flag": "🇲🇩"
+            "flag": "🇲🇩",
+            "bounding_box": [
+                45.4672099,
+                48.4920527,
+                26.6164054,
+                30.1637143
+            ]
         },
         {
             "CLDR display name": "Romania",
@@ -10677,7 +11757,13 @@
             "official_name_es": "Rumania",
             "official_name_fr": "Roumanie",
             "official_name_ru": "Румыния",
-            "flag": "🇷🇴"
+            "flag": "🇷🇴",
+            "bounding_box": [
+                43.618682,
+                48.2654738,
+                20.2619955,
+                30.0454257
+            ]
         },
         {
             "CLDR display name": "Russia",
@@ -10736,7 +11822,13 @@
             "official_name_es": "Federación de Rusia",
             "official_name_fr": "Fédération de Russie",
             "official_name_ru": "Российская Федерация",
-            "flag": "🇷🇺"
+            "flag": "🇷🇺",
+            "bounding_box": [
+                41.1850968,
+                82.0586232,
+                -180.0,
+                180.0
+            ]
         },
         {
             "CLDR display name": "Rwanda",
@@ -10795,7 +11887,13 @@
             "official_name_es": "Rwanda",
             "official_name_fr": "Rwanda",
             "official_name_ru": "Руанда",
-            "flag": "🇷🇼"
+            "flag": "🇷🇼",
+            "bounding_box": [
+                -2.8397581,
+                -1.0474083,
+                28.861696,
+                30.8990738
+            ]
         },
         {
             "CLDR display name": "Réunion",
@@ -10854,7 +11952,13 @@
             "official_name_es": "Reunión",
             "official_name_fr": "Réunion",
             "official_name_ru": "Реюньон",
-            "flag": "🇷🇪"
+            "flag": "🇷🇪",
+            "bounding_box": [
+                -21.3897308,
+                -20.8717411,
+                55.2164268,
+                55.8366924
+            ]
         },
         {
             "CLDR display name": "St. Barthélemy",
@@ -10913,7 +12017,13 @@
             "official_name_es": "San Bartolomé",
             "official_name_fr": "Saint-Barthélemy",
             "official_name_ru": "Святой Варфоломей",
-            "flag": "🇧🇱"
+            "flag": "🇧🇱",
+            "bounding_box": [
+                17.670931,
+                18.1375569,
+                -63.06639,
+                -62.5844019
+            ]
         },
         {
             "CLDR display name": "St. Helena",
@@ -10972,7 +12082,13 @@
             "official_name_es": "Santa Elena",
             "official_name_fr": "Sainte-Hélène",
             "official_name_ru": "Остров Святой Елены",
-            "flag": "🇸🇭"
+            "flag": "🇸🇭",
+            "bounding_box": [
+                -16.23,
+                -15.704,
+                -5.9973424,
+                -5.4234153
+            ]
         },
         {
             "CLDR display name": "St. Kitts & Nevis",
@@ -11031,7 +12147,13 @@
             "official_name_es": "Saint Kitts y Nevis",
             "official_name_fr": "Saint-Kitts-et-Nevis",
             "official_name_ru": "Сент-Китс и Невис",
-            "flag": "🇰🇳"
+            "flag": "🇰🇳",
+            "bounding_box": [
+                16.8926227,
+                17.6170552,
+                -63.0491098,
+                -62.3741863
+            ]
         },
         {
             "CLDR display name": "St. Lucia",
@@ -11090,7 +12212,13 @@
             "official_name_es": "Santa Lucía",
             "official_name_fr": "Sainte-Lucie",
             "official_name_ru": "Сент-Люсия",
-            "flag": "🇱🇨"
+            "flag": "🇱🇨",
+            "bounding_box": [
+                13.5060753,
+                14.2725,
+                -61.2855618,
+                -60.6640451
+            ]
         },
         {
             "CLDR display name": "St. Martin",
@@ -11149,7 +12277,13 @@
             "official_name_es": "San Martín (parte francesa)",
             "official_name_fr": "Saint-Martin (partie française)",
             "official_name_ru": "Сен-Мартен",
-            "flag": "🇲🇫"
+            "flag": "🇲🇫",
+            "bounding_box": [
+                17.8963535,
+                18.1902778,
+                -63.3605643,
+                -62.7644063
+            ]
         },
         {
             "CLDR display name": "St. Pierre & Miquelon",
@@ -11208,7 +12342,13 @@
             "official_name_es": "Saint Pierre y Miquelon",
             "official_name_fr": "Saint-Pierre-et-Miquelon",
             "official_name_ru": "Сен-Пьер и Микелон",
-            "flag": "🇵🇲"
+            "flag": "🇵🇲",
+            "bounding_box": [
+                46.5488309,
+                47.3415794,
+                -56.6974627,
+                -55.9066442
+            ]
         },
         {
             "CLDR display name": "St. Vincent & Grenadines",
@@ -11267,7 +12407,13 @@
             "official_name_es": "San Vicente y las Granadinas",
             "official_name_fr": "Saint-Vincent-et-les Grenadines",
             "official_name_ru": "Сент-Винсент и Гренадины",
-            "flag": "🇻🇨"
+            "flag": "🇻🇨",
+            "bounding_box": [
+                12.3983584,
+                13.5843008,
+                -61.6645712,
+                -60.9087552
+            ]
         },
         {
             "CLDR display name": "Samoa",
@@ -11326,7 +12472,13 @@
             "official_name_es": "Samoa",
             "official_name_fr": "Samoa",
             "official_name_ru": "Самоа",
-            "flag": "🇼🇸"
+            "flag": "🇼🇸",
+            "bounding_box": [
+                -14.2770916,
+                -13.2381892,
+                -173.0091864,
+                -171.1929229
+            ]
         },
         {
             "CLDR display name": "San Marino",
@@ -11385,7 +12537,13 @@
             "official_name_es": "San Marino",
             "official_name_fr": "Saint-Marin",
             "official_name_ru": "Сан-Марино",
-            "flag": "🇸🇲"
+            "flag": "🇸🇲",
+            "bounding_box": [
+                43.893632,
+                43.992093,
+                12.4033246,
+                12.516202
+            ]
         },
         {
             "CLDR display name": "São Tomé & Príncipe",
@@ -11444,66 +12602,13 @@
             "official_name_es": "Santo Tomé y Príncipe",
             "official_name_fr": "Sao Tomé-et-Principe",
             "official_name_ru": "Сан-Томе и Принсипи",
-            "flag": "🇸🇹"
-        },
-        {
-            "CLDR display name": null,
-            "Capital": null,
-            "Continent": null,
-            "DS": null,
-            "Developed / Developing Countries": "Developed",
-            "Dial": null,
-            "EDGAR": null,
-            "FIFA": null,
-            "FIPS": null,
-            "GAUL": null,
-            "Geoname ID": null,
-            "Global Code": "True",
-            "Global Name": "World",
-            "IOC": null,
-            "ISO3166-1-Alpha-2": null,
-            "ISO3166-1-Alpha-3": null,
-            "ISO3166-1-numeric": null,
-            "ISO4217-currency_alphabetic_code": null,
-            "ISO4217-currency_country_name": null,
-            "ISO4217-currency_minor_unit": null,
-            "ISO4217-currency_name": null,
-            "ISO4217-currency_numeric_code": null,
-            "ITU": null,
-            "Intermediate Region Code": "830",
-            "Intermediate Region Name": "Channel Islands",
-            "Land Locked Developing Countries (LLDC)": null,
-            "Languages": null,
-            "Least Developed Countries (LDC)": null,
-            "M49": 680.0,
-            "MARC": null,
-            "Region Code": "150",
-            "Region Name": "Europe",
-            "Small Island Developing States (SIDS)": null,
-            "Sub-region Code": "154",
-            "Sub-region Name": "Northern Europe",
-            "TLD": null,
-            "UNTERM Arabic Formal": null,
-            "UNTERM Arabic Short": null,
-            "UNTERM Chinese Formal": null,
-            "UNTERM Chinese Short": null,
-            "UNTERM English Formal": null,
-            "UNTERM English Short": null,
-            "UNTERM French Formal": null,
-            "UNTERM French Short": null,
-            "UNTERM Russian Formal": null,
-            "UNTERM Russian Short": null,
-            "UNTERM Spanish Formal": null,
-            "UNTERM Spanish Short": null,
-            "WMO": null,
-            "is_independent": null,
-            "official_name_ar": "سارك",
-            "official_name_cn": "萨克",
-            "official_name_en": "Sark",
-            "official_name_es": "Sark",
-            "official_name_fr": "Sercq",
-            "official_name_ru": "Сарк",
-            "flag": "🏳️"
+            "flag": "🇸🇹",
+            "bounding_box": [
+                -0.2135137,
+                1.9257601,
+                6.260642,
+                7.6704783
+            ]
         },
         {
             "CLDR display name": "Saudi Arabia",
@@ -11562,7 +12667,13 @@
             "official_name_es": "Arabia Saudita",
             "official_name_fr": "Arabie saoudite",
             "official_name_ru": "Саудовская Аравия",
-            "flag": "🇸🇦"
+            "flag": "🇸🇦",
+            "bounding_box": [
+                16.29,
+                32.1543377,
+                34.4571718,
+                55.6666851
+            ]
         },
         {
             "CLDR display name": "Senegal",
@@ -11621,7 +12732,13 @@
             "official_name_es": "Senegal",
             "official_name_fr": "Sénégal",
             "official_name_ru": "Сенегал",
-            "flag": "🇸🇳"
+            "flag": "🇸🇳",
+            "bounding_box": [
+                12.2402664,
+                16.6919712,
+                -17.7498686,
+                -11.3459503
+            ]
         },
         {
             "CLDR display name": "Serbia",
@@ -11680,7 +12797,13 @@
             "official_name_es": "Serbia",
             "official_name_fr": "Serbie",
             "official_name_ru": "Сербия",
-            "flag": "🇷🇸"
+            "flag": "🇷🇸",
+            "bounding_box": [
+                42.2314466,
+                46.1902839,
+                18.8149945,
+                23.006309
+            ]
         },
         {
             "CLDR display name": "Seychelles",
@@ -11739,7 +12862,13 @@
             "official_name_es": "Seychelles",
             "official_name_fr": "Seychelles",
             "official_name_ru": "Сейшельские Острова",
-            "flag": "🇸🇨"
+            "flag": "🇸🇨",
+            "bounding_box": [
+                -10.4649258,
+                -3.512,
+                45.9988759,
+                56.4979396
+            ]
         },
         {
             "CLDR display name": "Sierra Leone",
@@ -11798,7 +12927,13 @@
             "official_name_es": "Sierra Leona",
             "official_name_fr": "Sierra Leone",
             "official_name_ru": "Сьерра-Леоне",
-            "flag": "🇸🇱"
+            "flag": "🇸🇱",
+            "bounding_box": [
+                6.755,
+                9.999973,
+                -13.5003389,
+                -10.271683
+            ]
         },
         {
             "CLDR display name": "Singapore",
@@ -11857,7 +12992,13 @@
             "official_name_es": "Singapur",
             "official_name_fr": "Singapour",
             "official_name_ru": "Сингапур",
-            "flag": "🇸🇬"
+            "flag": "🇸🇬",
+            "bounding_box": [
+                1.1285402,
+                1.5143183,
+                103.5666667,
+                104.5716696
+            ]
         },
         {
             "CLDR display name": "Sint Maarten",
@@ -11916,7 +13057,13 @@
             "official_name_es": "San Martín (parte holandés)",
             "official_name_fr": "Saint-Martin (partie néerlandaise)",
             "official_name_ru": "Синт-Мартен",
-            "flag": "🏳️"
+            "flag": "🏳️",
+            "bounding_box": [
+                17.806209,
+                18.0639862,
+                -63.2688117,
+                -62.949445
+            ]
         },
         {
             "CLDR display name": "Slovakia",
@@ -11975,7 +13122,13 @@
             "official_name_es": "Eslovaquia",
             "official_name_fr": "Slovaquie",
             "official_name_ru": "Словакия",
-            "flag": "🇸🇰"
+            "flag": "🇸🇰",
+            "bounding_box": [
+                47.7311798,
+                49.6138162,
+                16.8331891,
+                22.56571
+            ]
         },
         {
             "CLDR display name": "Slovenia",
@@ -12034,7 +13187,13 @@
             "official_name_es": "Eslovenia",
             "official_name_fr": "Slovénie",
             "official_name_ru": "Словения",
-            "flag": "🇸🇮"
+            "flag": "🇸🇮",
+            "bounding_box": [
+                45.4214242,
+                46.8766816,
+                13.3754696,
+                16.5968135
+            ]
         },
         {
             "CLDR display name": "Solomon Islands",
@@ -12093,7 +13252,13 @@
             "official_name_es": "Islas Salomón",
             "official_name_fr": "Îles Salomon",
             "official_name_ru": "Соломоновы Острова",
-            "flag": "🇸🇧"
+            "flag": "🇸🇧",
+            "bounding_box": [
+                -13.2424298,
+                -4.8127915,
+                155.3190556,
+                170.3964667
+            ]
         },
         {
             "CLDR display name": "Somalia",
@@ -12152,7 +13317,13 @@
             "official_name_es": "Somalia",
             "official_name_fr": "Somalie",
             "official_name_ru": "Сомали",
-            "flag": "🇸🇴"
+            "flag": "🇸🇴",
+            "bounding_box": [
+                -1.8031969,
+                12.1889121,
+                40.98918,
+                51.6177696
+            ]
         },
         {
             "CLDR display name": "South Africa",
@@ -12211,7 +13382,13 @@
             "official_name_es": "Sudáfrica",
             "official_name_fr": "Afrique du Sud",
             "official_name_ru": "Южная Африка",
-            "flag": "🇿🇦"
+            "flag": "🇿🇦",
+            "bounding_box": [
+                -47.1788335,
+                -22.1250301,
+                16.3335213,
+                38.2898954
+            ]
         },
         {
             "CLDR display name": "South Georgia & South Sandwich Islands",
@@ -12270,7 +13447,13 @@
             "official_name_es": "Georgia del Sur y las Islas Sandwich del Sur",
             "official_name_fr": "Géorgie du Sud-et-les Îles Sandwich du Sud",
             "official_name_ru": "Южная Джорджия и Южные Сандвичевы острова",
-            "flag": "🇬🇸"
+            "flag": "🇬🇸",
+            "bounding_box": [
+                -59.6729648,
+                -53.3471325,
+                -42.3571037,
+                -25.8873267
+            ]
         },
         {
             "CLDR display name": "South Sudan",
@@ -12329,7 +13512,13 @@
             "official_name_es": "Sudán del Sur",
             "official_name_fr": "Soudan du Sud",
             "official_name_ru": "Южный Судан",
-            "flag": "🇸🇸"
+            "flag": "🇸🇸",
+            "bounding_box": [
+                3.48898,
+                12.236389,
+                23.447778,
+                35.948997
+            ]
         },
         {
             "CLDR display name": "Spain",
@@ -12388,7 +13577,13 @@
             "official_name_es": "España",
             "official_name_fr": "Espagne",
             "official_name_ru": "Испания",
-            "flag": "🇪🇸"
+            "flag": "🇪🇸",
+            "bounding_box": [
+                27.4335426,
+                43.9933088,
+                -18.3936845,
+                4.5918885
+            ]
         },
         {
             "CLDR display name": "Sri Lanka",
@@ -12447,7 +13642,13 @@
             "official_name_es": "Sri Lanka",
             "official_name_fr": "Sri Lanka",
             "official_name_ru": "Шри-Ланка",
-            "flag": "🇱🇰"
+            "flag": "🇱🇰",
+            "bounding_box": [
+                5.719,
+                10.035,
+                79.3959205,
+                82.0810141
+            ]
         },
         {
             "CLDR display name": "Palestine",
@@ -12506,7 +13707,13 @@
             "official_name_es": "Estado de Palestina",
             "official_name_fr": "État de Palestine",
             "official_name_ru": "Государство Палестина",
-            "flag": "🇵🇸"
+            "flag": "🇵🇸",
+            "bounding_box": [
+                31.2201289,
+                32.5489422,
+                34.0546906,
+                35.5403583
+            ]
         },
         {
             "CLDR display name": "Sudan",
@@ -12565,7 +13772,13 @@
             "official_name_es": "Sudán",
             "official_name_fr": "Soudan",
             "official_name_ru": "Судан",
-            "flag": "🇸🇩"
+            "flag": "🇸🇩",
+            "bounding_box": [
+                8.685278,
+                22.224918,
+                21.8143904,
+                39.0576252
+            ]
         },
         {
             "CLDR display name": "Suriname",
@@ -12624,7 +13837,13 @@
             "official_name_es": "Suriname",
             "official_name_fr": "Suriname",
             "official_name_ru": "Суринам",
-            "flag": "🇸🇷"
+            "flag": "🇸🇷",
+            "bounding_box": [
+                1.8312802,
+                6.2160842,
+                -58.0711851,
+                -53.8601382
+            ]
         },
         {
             "CLDR display name": "Svalbard & Jan Mayen",
@@ -12683,7 +13902,13 @@
             "official_name_es": "Islas Svalbard y Jan Mayen",
             "official_name_fr": "Îles Svalbard-et-Jan Mayen",
             "official_name_ru": "Острова Свальбард и Ян-Майен",
-            "flag": "🇸🇯"
+            "flag": "🇸🇯",
+            "bounding_box": [
+                74.1354451,
+                81.0280176,
+                9.4208924,
+                34.6889114
+            ]
         },
         {
             "CLDR display name": "Sweden",
@@ -12742,7 +13967,13 @@
             "official_name_es": "Suecia",
             "official_name_fr": "Suède",
             "official_name_ru": "Швеция",
-            "flag": "🇸🇪"
+            "flag": "🇸🇪",
+            "bounding_box": [
+                55.1370957,
+                69.0599735,
+                10.5935025,
+                24.1776819
+            ]
         },
         {
             "CLDR display name": "Switzerland",
@@ -12801,7 +14032,13 @@
             "official_name_es": "Suiza",
             "official_name_fr": "Suisse",
             "official_name_ru": "Швейцария",
-            "flag": "🇨🇭"
+            "flag": "🇨🇭",
+            "bounding_box": [
+                45.8179716,
+                47.8084597,
+                5.9559113,
+                10.4922941
+            ]
         },
         {
             "CLDR display name": "Syria",
@@ -12860,7 +14097,13 @@
             "official_name_es": "República Árabe Siria",
             "official_name_fr": "République arabe syrienne",
             "official_name_ru": "Сирийская Арабская Республика",
-            "flag": "🇸🇾"
+            "flag": "🇸🇾",
+            "bounding_box": [
+                32.311354,
+                37.3186563,
+                35.4714427,
+                42.3745894
+            ]
         },
         {
             "CLDR display name": "Tajikistan",
@@ -12919,7 +14162,13 @@
             "official_name_es": "Tayikistán",
             "official_name_fr": "Tadjikistan",
             "official_name_ru": "Таджикистан",
-            "flag": "🇹🇯"
+            "flag": "🇹🇯",
+            "bounding_box": [
+                36.6711153,
+                41.0450935,
+                67.3332775,
+                75.1539563
+            ]
         },
         {
             "CLDR display name": "Thailand",
@@ -12978,7 +14227,13 @@
             "official_name_es": "Tailandia",
             "official_name_fr": "Thaïlande",
             "official_name_ru": "Таиланд",
-            "flag": "🇹🇭"
+            "flag": "🇹🇭",
+            "bounding_box": [
+                5.612851,
+                20.4648337,
+                97.3438072,
+                105.636812
+            ]
         },
         {
             "CLDR display name": "North Macedonia",
@@ -13037,7 +14292,13 @@
             "official_name_es": "ex República Yugoslava de Macedonia",
             "official_name_fr": "ex-République yougoslave de Macédoine",
             "official_name_ru": "бывшая югославская Республика Македония",
-            "flag": "🇲🇰"
+            "flag": "🇲🇰",
+            "bounding_box": [
+                40.8536596,
+                42.3739044,
+                20.4529023,
+                23.034051
+            ]
         },
         {
             "CLDR display name": "Timor-Leste",
@@ -13096,7 +14357,13 @@
             "official_name_es": "Timor-Leste",
             "official_name_fr": "Timor-Leste",
             "official_name_ru": "Тимор-Лешти",
-            "flag": "🇹🇱"
+            "flag": "🇹🇱",
+            "bounding_box": [
+                -9.6096854,
+                -8.1161123,
+                124.0339863,
+                127.5433663
+            ]
         },
         {
             "CLDR display name": "Togo",
@@ -13155,7 +14422,13 @@
             "official_name_es": "Togo",
             "official_name_fr": "Togo",
             "official_name_ru": "Того",
-            "flag": "🇹🇬"
+            "flag": "🇹🇬",
+            "bounding_box": [
+                5.926547,
+                11.1395102,
+                -0.1439746,
+                1.8087257
+            ]
         },
         {
             "CLDR display name": "Tokelau",
@@ -13214,7 +14487,13 @@
             "official_name_es": "Tokelau",
             "official_name_fr": "Tokélaou",
             "official_name_ru": "Токелау",
-            "flag": "🇹🇰"
+            "flag": "🇹🇰",
+            "bounding_box": [
+                -9.6461035,
+                -8.3304874,
+                -172.7237684,
+                -170.977681
+            ]
         },
         {
             "CLDR display name": "Tonga",
@@ -13273,7 +14552,13 @@
             "official_name_es": "Tonga",
             "official_name_fr": "Tonga",
             "official_name_ru": "Тонга",
-            "flag": "🇹🇴"
+            "flag": "🇹🇴",
+            "bounding_box": [
+                -24.1635435,
+                -15.3655722,
+                -179.3950218,
+                -173.5295458
+            ]
         },
         {
             "CLDR display name": "Trinidad & Tobago",
@@ -13332,7 +14617,13 @@
             "official_name_es": "Trinidad y Tabago",
             "official_name_fr": "Trinité-et-Tobago",
             "official_name_ru": "Тринидад и Тобаго",
-            "flag": "🇹🇹"
+            "flag": "🇹🇹",
+            "bounding_box": [
+                9.8732106,
+                11.5628372,
+                -62.083056,
+                -60.2895848
+            ]
         },
         {
             "CLDR display name": "Tunisia",
@@ -13391,7 +14682,13 @@
             "official_name_es": "Túnez",
             "official_name_fr": "Tunisie",
             "official_name_ru": "Тунис",
-            "flag": "🇹🇳"
+            "flag": "🇹🇳",
+            "bounding_box": [
+                30.229061,
+                37.7612052,
+                7.5219807,
+                11.8801133
+            ]
         },
         {
             "CLDR display name": "Turkey",
@@ -13450,7 +14747,13 @@
             "official_name_es": "Turquía",
             "official_name_fr": "Turquie",
             "official_name_ru": "Турция",
-            "flag": "🇹🇷"
+            "flag": "🇹🇷",
+            "bounding_box": [
+                35.8059015,
+                42.297,
+                25.5656305,
+                44.8176638
+            ]
         },
         {
             "CLDR display name": "Turkmenistan",
@@ -13509,7 +14812,13 @@
             "official_name_es": "Turkmenistán",
             "official_name_fr": "Turkménistan",
             "official_name_ru": "Туркменистан",
-            "flag": "🇹🇲"
+            "flag": "🇹🇲",
+            "bounding_box": [
+                35.129093,
+                42.7996686,
+                52.2643526,
+                66.6903725
+            ]
         },
         {
             "CLDR display name": "Turks & Caicos Islands",
@@ -13568,7 +14877,13 @@
             "official_name_es": "Islas Turcas y Caicos",
             "official_name_fr": "Îles Turques-et-Caïques",
             "official_name_ru": "Острова Тёркс и Кайкос",
-            "flag": "🇹🇨"
+            "flag": "🇹🇨",
+            "bounding_box": [
+                20.9553418,
+                22.1630989,
+                -72.6799046,
+                -70.8643591
+            ]
         },
         {
             "CLDR display name": "Tuvalu",
@@ -13627,7 +14942,13 @@
             "official_name_es": "Tuvalu",
             "official_name_fr": "Tuvalu",
             "official_name_ru": "Тувалу",
-            "flag": "🇹🇻"
+            "flag": "🇹🇻",
+            "bounding_box": [
+                -10.9939389,
+                -5.4369611,
+                -180.0,
+                180.0
+            ]
         },
         {
             "CLDR display name": "Uganda",
@@ -13686,7 +15007,13 @@
             "official_name_es": "Uganda",
             "official_name_fr": "Ouganda",
             "official_name_ru": "Уганда",
-            "flag": "🇺🇬"
+            "flag": "🇺🇬",
+            "bounding_box": [
+                -1.4823179,
+                4.2340766,
+                29.573433,
+                35.000308
+            ]
         },
         {
             "CLDR display name": "Ukraine",
@@ -13745,7 +15072,13 @@
             "official_name_es": "Ucrania",
             "official_name_fr": "Ukraine",
             "official_name_ru": "Украина",
-            "flag": "🇺🇦"
+            "flag": "🇺🇦",
+            "bounding_box": [
+                44.184598,
+                52.3797464,
+                22.137059,
+                40.2275801
+            ]
         },
         {
             "CLDR display name": "United Arab Emirates",
@@ -13804,7 +15137,13 @@
             "official_name_es": "Emiratos Árabes Unidos",
             "official_name_fr": "Émirats arabes unis",
             "official_name_ru": "Объединенные Арабские Эмираты",
-            "flag": "🇦🇪"
+            "flag": "🇦🇪",
+            "bounding_box": [
+                22.6316214,
+                26.1517219,
+                51.4160714,
+                56.6024458
+            ]
         },
         {
             "CLDR display name": "UK",
@@ -13863,7 +15202,13 @@
             "official_name_es": "Reino Unido de Gran Bretaña e Irlanda del Norte",
             "official_name_fr": "Royaume-Uni de Grande-Bretagne et d'Irlande du Nord",
             "official_name_ru": "Соединенное Королевство Великобритании и Северной Ирландии",
-            "flag": "🇬🇧"
+            "flag": "🇬🇧",
+            "bounding_box": [
+                49.674,
+                61.061,
+                -14.015517,
+                2.0919117
+            ]
         },
         {
             "CLDR display name": "Tanzania",
@@ -13922,7 +15267,13 @@
             "official_name_es": "República Unida de Tanzanía",
             "official_name_fr": "République-Unie de Tanzanie",
             "official_name_ru": "Объединенная Республика Танзания",
-            "flag": "🇹🇿"
+            "flag": "🇹🇿",
+            "bounding_box": [
+                -11.761254,
+                -0.9854812,
+                29.3269773,
+                40.6584071
+            ]
         },
         {
             "CLDR display name": "U.S. Outlying Islands",
@@ -13981,7 +15332,8 @@
             "official_name_es": "Islas menores alejadas de Estados Unidos",
             "official_name_fr": "Îles mineures éloignées des États-Unis",
             "official_name_ru": "Внешние малые острова Coeдинeнныx Штaтoв",
-            "flag": "🏳️"
+            "flag": "🏳️",
+            "bounding_box": []
         },
         {
             "CLDR display name": "U.S. Virgin Islands",
@@ -14040,7 +15392,13 @@
             "official_name_es": "Islas Vírgenes de los Estados Unidos",
             "official_name_fr": "Îles Vierges américaines",
             "official_name_ru": "Виргинские oстрова Coeдинeнныx Штaтoв",
-            "flag": "🇻🇮"
+            "flag": "🇻🇮",
+            "bounding_box": [
+                17.623468,
+                18.464984,
+                -65.1541175,
+                -64.512674
+            ]
         },
         {
             "CLDR display name": "US",
@@ -14099,7 +15457,13 @@
             "official_name_es": "Estados Unidos de América",
             "official_name_fr": "États-Unis d'Amérique",
             "official_name_ru": "Соединенные Штаты Америки",
-            "flag": "🇺🇸"
+            "flag": "🇺🇸",
+            "bounding_box": [
+                -14.7608358,
+                71.5889534,
+                -180.0,
+                180.0
+            ]
         },
         {
             "CLDR display name": "Uruguay",
@@ -14158,7 +15522,13 @@
             "official_name_es": "Uruguay",
             "official_name_fr": "Uruguay",
             "official_name_ru": "Уругвай",
-            "flag": "🇺🇾"
+            "flag": "🇺🇾",
+            "bounding_box": [
+                -35.7824481,
+                -30.0853962,
+                -58.4947729,
+                -53.0755833
+            ]
         },
         {
             "CLDR display name": "Uzbekistan",
@@ -14217,7 +15587,13 @@
             "official_name_es": "Uzbekistán",
             "official_name_fr": "Ouzbékistan",
             "official_name_ru": "Узбекистан",
-            "flag": "🇺🇿"
+            "flag": "🇺🇿",
+            "bounding_box": [
+                37.1816004,
+                45.5906784,
+                55.9985531,
+                73.2147728
+            ]
         },
         {
             "CLDR display name": "Vanuatu",
@@ -14276,7 +15652,13 @@
             "official_name_es": "Vanuatu",
             "official_name_fr": "Vanuatu",
             "official_name_ru": "Вануату",
-            "flag": "🇻🇺"
+            "flag": "🇻🇺",
+            "bounding_box": [
+                -20.4627425,
+                -12.8713777,
+                166.3355255,
+                170.449982
+            ]
         },
         {
             "CLDR display name": "Venezuela",
@@ -14335,7 +15717,13 @@
             "official_name_es": "Venezuela (República Bolivariana de)",
             "official_name_fr": "Venezuela (République bolivarienne du)",
             "official_name_ru": "Венесуэла (Боливарианская Республика)",
-            "flag": "🇻🇪"
+            "flag": "🇻🇪",
+            "bounding_box": [
+                0.6473964,
+                15.9158431,
+                -73.3529632,
+                -59.7707163
+            ]
         },
         {
             "CLDR display name": "Vietnam",
@@ -14394,7 +15782,13 @@
             "official_name_es": "Viet Nam",
             "official_name_fr": "Viet Nam",
             "official_name_ru": "Вьетнам",
-            "flag": "🇻🇳"
+            "flag": "🇻🇳",
+            "bounding_box": [
+                7.6920852,
+                23.3926918,
+                102.1438643,
+                114.8572578
+            ]
         },
         {
             "CLDR display name": "Wallis & Futuna",
@@ -14453,7 +15847,13 @@
             "official_name_es": "Islas Wallis y Futuna",
             "official_name_fr": "Îles Wallis-et-Futuna",
             "official_name_ru": "Острова Уоллис и Футуна",
-            "flag": "🇼🇫"
+            "flag": "🇼🇫",
+            "bounding_box": [
+                -14.5630748,
+                -12.9827961,
+                -178.3873749,
+                -175.9190391
+            ]
         },
         {
             "CLDR display name": "Western Sahara",
@@ -14512,7 +15912,13 @@
             "official_name_es": "Sáhara Occidental",
             "official_name_fr": "Sahara occidental",
             "official_name_ru": "Западная Сахара",
-            "flag": "🏳️"
+            "flag": "🏳️",
+            "bounding_box": [
+                20.667252,
+                27.6706253,
+                -17.3190239,
+                -8.6662523
+            ]
         },
         {
             "CLDR display name": "Yemen",
@@ -14571,7 +15977,13 @@
             "official_name_es": "Yemen",
             "official_name_fr": "Yémen",
             "official_name_ru": "Йемен",
-            "flag": "🇾🇪"
+            "flag": "🇾🇪",
+            "bounding_box": [
+                11.9084802,
+                19.0,
+                41.60825,
+                54.7389375
+            ]
         },
         {
             "CLDR display name": "Zambia",
@@ -14630,7 +16042,13 @@
             "official_name_es": "Zambia",
             "official_name_fr": "Zambie",
             "official_name_ru": "Замбия",
-            "flag": "🇿🇲"
+            "flag": "🇿🇲",
+            "bounding_box": [
+                -18.0762145,
+                -8.2749338,
+                21.9993509,
+                33.7095027
+            ]
         },
         {
             "CLDR display name": "Zimbabwe",
@@ -14689,7 +16107,13 @@
             "official_name_es": "Zimbabwe",
             "official_name_fr": "Zimbabwe",
             "official_name_ru": "Зимбабве",
-            "flag": "🇿🇼"
+            "flag": "🇿🇼",
+            "bounding_box": [
+                -22.4241096,
+                -15.6097033,
+                25.2373,
+                33.0683501
+            ]
         },
         {
             "CLDR display name": "Åland Islands",
@@ -14748,7 +16172,13 @@
             "official_name_es": "Islas Åland",
             "official_name_fr": "Îles d'Åland",
             "official_name_ru": "Аландские острова",
-            "flag": "🇦🇽"
+            "flag": "🇦🇽",
+            "bounding_box": [
+                59.4541578,
+                60.87665,
+                19.0832,
+                21.3456452
+            ]
         }
     ]
 }

@@ -1,0 +1,3236 @@
+{
+    "countries": [
+        {
+            "name": "Taiwan",
+            "flag": "🇹🇼",
+            "code": "TW",
+            "bounding_box": [
+                10.3267657,
+                26.4372222,
+                114.2857874,
+                122.3283
+            ],
+            "continent": "AS",
+            "sub-region name": null
+        },
+        {
+            "name": "Afghanistan",
+            "flag": "🇦🇫",
+            "code": "AF",
+            "bounding_box": [
+                29.3772926,
+                38.4910682,
+                60.5176034,
+                74.889862
+            ],
+            "continent": "AS",
+            "sub-region name": "Southern Asia"
+        },
+        {
+            "name": "Albania",
+            "flag": "🇦🇱",
+            "code": "AL",
+            "bounding_box": [
+                39.640394,
+                42.6610848,
+                19.0009866,
+                21.0574335
+            ],
+            "continent": "EU",
+            "sub-region name": "Southern Europe"
+        },
+        {
+            "name": "Algeria",
+            "flag": "🇩🇿",
+            "code": "DZ",
+            "bounding_box": [
+                18.968147,
+                37.2962055,
+                -8.668908,
+                11.997337
+            ],
+            "continent": "AF",
+            "sub-region name": "Northern Africa"
+        },
+        {
+            "name": "American Samoa",
+            "flag": "🇦🇸",
+            "code": "AS",
+            "bounding_box": [
+                -14.601813,
+                -10.997203,
+                -171.141907,
+                -168.101612
+            ],
+            "continent": "OC",
+            "sub-region name": "Polynesia"
+        },
+        {
+            "name": "Andorra",
+            "flag": "🇦🇩",
+            "code": "AD",
+            "bounding_box": [
+                42.4288238,
+                42.6559357,
+                1.407225,
+                1.786664
+            ],
+            "continent": "EU",
+            "sub-region name": "Southern Europe"
+        },
+        {
+            "name": "Angola",
+            "flag": "🇦🇴",
+            "code": "AO",
+            "bounding_box": [
+                -18.0393809,
+                -4.3458006,
+                11.4609793,
+                24.0876359
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Anguilla",
+            "flag": "🇦🇮",
+            "code": "AI",
+            "bounding_box": [
+                18.0615454,
+                18.7951194,
+                -63.6391992,
+                -62.7125449
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Antarctica",
+            "flag": "🇦🇶",
+            "code": "AQ",
+            "bounding_box": [
+                -104.4063075,
+                -54.4063075,
+                -24.6850688,
+                25.3149312
+            ],
+            "continent": "AN",
+            "sub-region name": null
+        },
+        {
+            "name": "Antigua & Barbuda",
+            "flag": "🇦🇬",
+            "code": "AG",
+            "bounding_box": [
+                16.755628,
+                17.9473002,
+                -62.5548313,
+                -61.4476424
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Argentina",
+            "flag": "🇦🇷",
+            "code": "AR",
+            "bounding_box": [
+                -55.1925709,
+                -21.7808568,
+                -73.5605371,
+                -53.6374515
+            ],
+            "continent": "SA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Armenia",
+            "flag": "🇦🇲",
+            "code": "AM",
+            "bounding_box": [
+                38.8404775,
+                41.3016463,
+                43.4471395,
+                46.6333087
+            ],
+            "continent": "AS",
+            "sub-region name": "Western Asia"
+        },
+        {
+            "name": "Aruba",
+            "flag": "🇦🇼",
+            "code": "AW",
+            "bounding_box": [
+                12.2578295,
+                12.823,
+                -70.2695876,
+                -69.661226
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Australia",
+            "flag": "🇦🇺",
+            "code": "AU",
+            "bounding_box": [
+                -55.3228175,
+                -9.0880125,
+                72.2461932,
+                168.2261259
+            ],
+            "continent": "OC",
+            "sub-region name": "Australia and New Zealand"
+        },
+        {
+            "name": "Austria",
+            "flag": "🇦🇹",
+            "code": "AT",
+            "bounding_box": [
+                46.3722987,
+                49.0205249,
+                9.5307487,
+                17.1607728
+            ],
+            "continent": "EU",
+            "sub-region name": "Western Europe"
+        },
+        {
+            "name": "Azerbaijan",
+            "flag": "🇦🇿",
+            "code": "AZ",
+            "bounding_box": [
+                38.3929551,
+                41.9646768,
+                44.7633701,
+                51.1765554
+            ],
+            "continent": "AS",
+            "sub-region name": "Western Asia"
+        },
+        {
+            "name": "Bahamas",
+            "flag": "🇧🇸",
+            "code": "BS",
+            "bounding_box": [
+                20.7059846,
+                27.4734551,
+                -80.7001941,
+                -72.4477521
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Bahrain",
+            "flag": "🇧🇭",
+            "code": "BH",
+            "bounding_box": [
+                25.535,
+                26.6872444,
+                50.2697989,
+                50.9233651
+            ],
+            "continent": "AS",
+            "sub-region name": "Western Asia"
+        },
+        {
+            "name": "Bangladesh",
+            "flag": "🇧🇩",
+            "code": "BD",
+            "bounding_box": [
+                20.3679092,
+                26.6382534,
+                88.007915,
+                92.6802967
+            ],
+            "continent": "AS",
+            "sub-region name": "Southern Asia"
+        },
+        {
+            "name": "Barbados",
+            "flag": "🇧🇧",
+            "code": "BB",
+            "bounding_box": [
+                12.845,
+                13.535,
+                -59.8562115,
+                -59.2147175
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Belarus",
+            "flag": "🇧🇾",
+            "code": "BY",
+            "bounding_box": [
+                51.2626864,
+                56.1722484,
+                23.1783313,
+                32.7627809
+            ],
+            "continent": "EU",
+            "sub-region name": "Eastern Europe"
+        },
+        {
+            "name": "Belgium",
+            "flag": "🇧🇪",
+            "code": "BE",
+            "bounding_box": [
+                49.4969821,
+                51.550781,
+                2.3889137,
+                6.408097
+            ],
+            "continent": "EU",
+            "sub-region name": "Western Europe"
+        },
+        {
+            "name": "Belize",
+            "flag": "🇧🇿",
+            "code": "BZ",
+            "bounding_box": [
+                15.8857286,
+                18.4959143,
+                -89.2275905,
+                -87.2765017
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Benin",
+            "flag": "🇧🇯",
+            "code": "BJ",
+            "bounding_box": [
+                6.0398696,
+                12.4092028,
+                0.776667,
+                3.8451454
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Bermuda",
+            "flag": "🇧🇲",
+            "code": "BM",
+            "bounding_box": [
+                32.0469651,
+                32.5913693,
+                -65.1232222,
+                -64.4109842
+            ],
+            "continent": "NA",
+            "sub-region name": "Northern America"
+        },
+        {
+            "name": "Bhutan",
+            "flag": "🇧🇹",
+            "code": "BT",
+            "bounding_box": [
+                26.7016859,
+                28.2474194,
+                88.7464856,
+                92.1252321
+            ],
+            "continent": "AS",
+            "sub-region name": "Southern Asia"
+        },
+        {
+            "name": "Bolivia",
+            "flag": "🇧🇴",
+            "code": "BO",
+            "bounding_box": [
+                -22.8982742,
+                -9.6689438,
+                -69.6450073,
+                -57.453
+            ],
+            "continent": "SA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Caribbean Netherlands",
+            "flag": "🏳️",
+            "code": "BQ",
+            "bounding_box": [
+                11.825,
+                17.85,
+                -68.6255319,
+                -62.7847057
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Bosnia",
+            "flag": "🇧🇦",
+            "code": "BA",
+            "bounding_box": [
+                42.5553114,
+                45.2764135,
+                15.7287433,
+                19.6237311
+            ],
+            "continent": "EU",
+            "sub-region name": "Southern Europe"
+        },
+        {
+            "name": "Botswana",
+            "flag": "🇧🇼",
+            "code": "BW",
+            "bounding_box": [
+                -26.9070073,
+                -17.778137,
+                19.9986486,
+                29.3738868
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Bouvet Island",
+            "flag": "🇧🇻",
+            "code": "BV",
+            "bounding_box": [
+                -54.654,
+                -54.187,
+                2.9345531,
+                3.7791099
+            ],
+            "continent": "AN",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Brazil",
+            "flag": "🇧🇷",
+            "code": "BR",
+            "bounding_box": [
+                -33.8689056,
+                5.2695808,
+                -73.9830625,
+                -28.6289646
+            ],
+            "continent": "SA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "British Indian Ocean Territory",
+            "flag": "🇮🇴",
+            "code": "IO",
+            "bounding_box": [
+                -7.4941087,
+                -5.185707,
+                71.1872897,
+                72.5450142
+            ],
+            "continent": "AS",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "British Virgin Islands",
+            "flag": "🇻🇬",
+            "code": "VG",
+            "bounding_box": [
+                18.1055311,
+                18.9503802,
+                -64.9559611,
+                -64.0597294
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Brunei",
+            "flag": "🇧🇳",
+            "code": "BN",
+            "bounding_box": [
+                4.002508,
+                6.546584,
+                113.017925,
+                115.3635623
+            ],
+            "continent": "AS",
+            "sub-region name": "South-eastern Asia"
+        },
+        {
+            "name": "Bulgaria",
+            "flag": "🇧🇬",
+            "code": "BG",
+            "bounding_box": [
+                41.2353678,
+                44.2155388,
+                22.3571459,
+                28.8875409
+            ],
+            "continent": "EU",
+            "sub-region name": "Eastern Europe"
+        },
+        {
+            "name": "Burkina Faso",
+            "flag": "🇧🇫",
+            "code": "BF",
+            "bounding_box": [
+                9.4104718,
+                15.0840044,
+                -5.513207,
+                2.4089717
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Burundi",
+            "flag": "🇧🇮",
+            "code": "BI",
+            "bounding_box": [
+                -4.4693155,
+                -2.3096796,
+                29.000716,
+                30.8498462
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Cape Verde",
+            "flag": "🇨🇻",
+            "code": "CV",
+            "bounding_box": [
+                14.6066229,
+                17.407117,
+                -25.5731073,
+                -22.4547752
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Cambodia",
+            "flag": "🇰🇭",
+            "code": "KH",
+            "bounding_box": [
+                9.4110961,
+                14.6904224,
+                102.3338282,
+                107.6276788
+            ],
+            "continent": "AS",
+            "sub-region name": "South-eastern Asia"
+        },
+        {
+            "name": "Cameroon",
+            "flag": "🇨🇲",
+            "code": "CM",
+            "bounding_box": [
+                1.6517945,
+                13.083333,
+                8.3822176,
+                16.1911011
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Canada",
+            "flag": "🇨🇦",
+            "code": "CA",
+            "bounding_box": [
+                41.6765556,
+                83.3362128,
+                -141.00275,
+                -52.3237664
+            ],
+            "continent": "NA",
+            "sub-region name": "Northern America"
+        },
+        {
+            "name": "Cayman Islands",
+            "flag": "🇰🇾",
+            "code": "KY",
+            "bounding_box": [
+                19.0620619,
+                19.9573759,
+                -81.6313748,
+                -79.5110954
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Central African Republic",
+            "flag": "🇨🇫",
+            "code": "CF",
+            "bounding_box": [
+                2.2256092,
+                11.001389,
+                14.4148457,
+                27.4665499
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Chad",
+            "flag": "🇹🇩",
+            "code": "TD",
+            "bounding_box": [
+                7.44107,
+                23.4507957,
+                13.47348,
+                24.0
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Chile",
+            "flag": "🇨🇱",
+            "code": "CL",
+            "bounding_box": [
+                -56.725,
+                -17.4983832,
+                -109.6795789,
+                -66.0753474
+            ],
+            "continent": "SA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "China",
+            "flag": "🇨🇳",
+            "code": "CN",
+            "bounding_box": [
+                8.6650385,
+                53.5608154,
+                73.4997347,
+                134.7754563
+            ],
+            "continent": "AS",
+            "sub-region name": "Eastern Asia"
+        },
+        {
+            "name": "Hong Kong",
+            "flag": "🇭🇰",
+            "code": "HK",
+            "bounding_box": [
+                22.1926504,
+                22.3002834,
+                114.1098795,
+                114.3090495
+            ],
+            "continent": "AS",
+            "sub-region name": "Eastern Asia"
+        },
+        {
+            "name": "Macau",
+            "flag": "🇲🇴",
+            "code": "MO",
+            "bounding_box": [
+                22.0766667,
+                22.2170361,
+                113.5281666,
+                113.6301389
+            ],
+            "continent": "AS",
+            "sub-region name": "Eastern Asia"
+        },
+        {
+            "name": "Christmas Island",
+            "flag": "🇨🇽",
+            "code": "CX",
+            "bounding_box": [
+                -10.7714068,
+                -10.2114751,
+                105.330145,
+                105.9158048
+            ],
+            "continent": "OC",
+            "sub-region name": "Australia and New Zealand"
+        },
+        {
+            "name": "Cocos (Keeling) Islands",
+            "flag": "🇨🇨",
+            "code": "CC",
+            "bounding_box": [
+                -12.4118829,
+                -11.6212366,
+                96.6115772,
+                97.1349614
+            ],
+            "continent": "AS",
+            "sub-region name": "Australia and New Zealand"
+        },
+        {
+            "name": "Colombia",
+            "flag": "🇨🇴",
+            "code": "CO",
+            "bounding_box": [
+                -4.2294028,
+                16.0495518,
+                -82.1243611,
+                -66.8490386
+            ],
+            "continent": "SA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Comoros",
+            "flag": "🇰🇲",
+            "code": "KM",
+            "bounding_box": [
+                -12.9854371,
+                -11.1624399,
+                42.8262181,
+                44.9730591
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Congo - Brazzaville",
+            "flag": "🇨🇬",
+            "code": "CG",
+            "bounding_box": [
+                -5.149089,
+                3.713056,
+                11.0048205,
+                18.643611
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Cook Islands",
+            "flag": "🇨🇰",
+            "code": "CK",
+            "bounding_box": [
+                -22.1599634,
+                -8.7150148,
+                -166.1318843,
+                -157.1089326
+            ],
+            "continent": "OC",
+            "sub-region name": "Polynesia"
+        },
+        {
+            "name": "Costa Rica",
+            "flag": "🇨🇷",
+            "code": "CR",
+            "bounding_box": [
+                5.2980534,
+                11.2195684,
+                -87.2951397,
+                -82.4299043
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Croatia",
+            "flag": "🇭🇷",
+            "code": "HR",
+            "bounding_box": [
+                42.1765993,
+                46.555029,
+                13.2104814,
+                19.4472713
+            ],
+            "continent": "EU",
+            "sub-region name": "Southern Europe"
+        },
+        {
+            "name": "Cuba",
+            "flag": "🇨🇺",
+            "code": "CU",
+            "bounding_box": [
+                19.6275294,
+                23.4816972,
+                -85.1679702,
+                -73.9190004
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Curaçao",
+            "flag": "🏳️",
+            "code": "CW",
+            "bounding_box": [
+                11.777,
+                12.592,
+                -69.3673493,
+                -68.4413348
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Cyprus",
+            "flag": "🇨🇾",
+            "code": "CY",
+            "bounding_box": [
+                34.4383706,
+                35.913252,
+                32.0227581,
+                34.8553182
+            ],
+            "continent": "EU",
+            "sub-region name": "Western Asia"
+        },
+        {
+            "name": "Czechia",
+            "flag": "🇨🇿",
+            "code": "CZ",
+            "bounding_box": [
+                48.5518081,
+                51.0556945,
+                12.0905752,
+                18.8592538
+            ],
+            "continent": "EU",
+            "sub-region name": "Eastern Europe"
+        },
+        {
+            "name": "Côte d’Ivoire",
+            "flag": "🇨🇮",
+            "code": "CI",
+            "bounding_box": [
+                4.1621205,
+                10.740197,
+                -8.6014675,
+                -2.4948836
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "North Korea",
+            "flag": "🇰🇵",
+            "code": "KP",
+            "bounding_box": [
+                37.5833302,
+                43.0089642,
+                124.092355,
+                130.8861177
+            ],
+            "continent": "AS",
+            "sub-region name": "Eastern Asia"
+        },
+        {
+            "name": "Congo - Kinshasa",
+            "flag": "🇨🇩",
+            "code": "CD",
+            "bounding_box": [
+                -13.459035,
+                5.3920026,
+                12.039074,
+                31.3056758
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Denmark",
+            "flag": "🇩🇰",
+            "code": "DK",
+            "bounding_box": [
+                54.4516667,
+                57.9524297,
+                7.7153255,
+                15.5530641
+            ],
+            "continent": "EU",
+            "sub-region name": "Northern Europe"
+        },
+        {
+            "name": "Djibouti",
+            "flag": "🇩🇯",
+            "code": "DJ",
+            "bounding_box": [
+                10.9149547,
+                12.7923081,
+                41.7713139,
+                43.6579046
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Dominica",
+            "flag": "🇩🇲",
+            "code": "DM",
+            "bounding_box": [
+                17.2701708,
+                21.2928771,
+                -72.0574706,
+                -68.1101463
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Dominican Republic",
+            "flag": "🇩🇴",
+            "code": "DO",
+            "bounding_box": [
+                17.2701708,
+                21.2928771,
+                -72.0574706,
+                -68.1101463
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Ecuador",
+            "flag": "🇪🇨",
+            "code": "EC",
+            "bounding_box": [
+                -5.0159314,
+                1.8835964,
+                -92.2072392,
+                -75.192504
+            ],
+            "continent": "SA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Egypt",
+            "flag": "🇪🇬",
+            "code": "EG",
+            "bounding_box": [
+                21.9936736,
+                31.8330854,
+                24.6499112,
+                37.1153517
+            ],
+            "continent": "AF",
+            "sub-region name": "Northern Africa"
+        },
+        {
+            "name": "El Salvador",
+            "flag": "🇸🇻",
+            "code": "SV",
+            "bounding_box": [
+                12.9518017,
+                14.4510488,
+                -90.2089183,
+                -87.5971467
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Equatorial Guinea",
+            "flag": "🇬🇶",
+            "code": "GQ",
+            "bounding_box": [
+                -1.6732196,
+                3.989,
+                5.4172943,
+                11.4113617
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Eritrea",
+            "flag": "🇪🇷",
+            "code": "ER",
+            "bounding_box": [
+                12.3548219,
+                18.0709917,
+                36.4333653,
+                43.3001714
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Estonia",
+            "flag": "🇪🇪",
+            "code": "EE",
+            "bounding_box": [
+                57.5093328,
+                59.9383333,
+                21.3826069,
+                28.2100175
+            ],
+            "continent": "EU",
+            "sub-region name": "Northern Europe"
+        },
+        {
+            "name": "Eswatini",
+            "flag": "🇸🇿",
+            "code": "SZ",
+            "bounding_box": [
+                -27.3175201,
+                -25.71876,
+                30.7908,
+                32.1349834
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Ethiopia",
+            "flag": "🇪🇹",
+            "code": "ET",
+            "bounding_box": [
+                3.397448,
+                14.8943383,
+                32.9975838,
+                47.9823797
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Falkland Islands",
+            "flag": "🇫🇰",
+            "code": "FK",
+            "bounding_box": [
+                -53.1186766,
+                -50.7973007,
+                -61.7726772,
+                -57.3662367
+            ],
+            "continent": "SA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Faroe Islands",
+            "flag": "🇫🇴",
+            "code": "FO",
+            "bounding_box": [
+                61.1367723,
+                62.5958399,
+                -8.1188416,
+                -5.8254974
+            ],
+            "continent": "EU",
+            "sub-region name": "Northern Europe"
+        },
+        {
+            "name": "Fiji",
+            "flag": "🇫🇯",
+            "code": "FJ",
+            "bounding_box": [
+                -21.9434274,
+                -12.2613866,
+                -180.0,
+                180.0
+            ],
+            "continent": "OC",
+            "sub-region name": "Melanesia"
+        },
+        {
+            "name": "Finland",
+            "flag": "🇫🇮",
+            "code": "FI",
+            "bounding_box": [
+                59.4541578,
+                70.0922939,
+                19.0832,
+                31.5867071
+            ],
+            "continent": "EU",
+            "sub-region name": "Northern Europe"
+        },
+        {
+            "name": "France",
+            "flag": "🇫🇷",
+            "code": "FR",
+            "bounding_box": [
+                41.195190,
+                51.248163,
+                -5.734863,
+                11.315918
+            ],
+            "continent": "EU",
+            "sub-region name": "Western Europe"
+        },
+        {
+            "name": "French Guiana",
+            "flag": "🇬🇫",
+            "code": "GF",
+            "bounding_box": [
+                2.1109401,
+                5.7769491,
+                -54.6026945,
+                -51.6346139
+            ],
+            "continent": "SA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "French Polynesia",
+            "flag": "🇵🇫",
+            "code": "PF",
+            "bounding_box": [
+                -28.0990232,
+                -7.6592173,
+                -154.9360599,
+                -134.244799
+            ],
+            "continent": "OC",
+            "sub-region name": "Polynesia"
+        },
+        {
+            "name": "French Southern Territories",
+            "flag": "🇹🇫",
+            "code": "TF",
+            "bounding_box": [
+                -50.2187169,
+                -11.3139928,
+                39.4138676,
+                77.8494974
+            ],
+            "continent": "AN",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Gabon",
+            "flag": "🇬🇦",
+            "code": "GA",
+            "bounding_box": [
+                -4.1012261,
+                2.3192896,
+                8.5002246,
+                14.539444
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Gambia",
+            "flag": "🇬🇲",
+            "code": "GM",
+            "bounding_box": [
+                13.0558333,
+                13.8253137,
+                -17.0223778,
+                -13.797778
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Georgia",
+            "flag": "🇬🇪",
+            "code": "GE",
+            "bounding_box": [
+                41.0551284,
+                43.5864294,
+                39.8844803,
+                46.7365373
+            ],
+            "continent": "AS",
+            "sub-region name": "Western Asia"
+        },
+        {
+            "name": "Germany",
+            "flag": "🇩🇪",
+            "code": "DE",
+            "bounding_box": [
+                47.2701114,
+                55.099161,
+                5.8663153,
+                15.0419309
+            ],
+            "continent": "EU",
+            "sub-region name": "Western Europe"
+        },
+        {
+            "name": "Ghana",
+            "flag": "🇬🇭",
+            "code": "GH",
+            "bounding_box": [
+                4.5392525,
+                11.1748562,
+                -3.260786,
+                1.2732942
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Gibraltar",
+            "flag": "🇬🇮",
+            "code": "GI",
+            "bounding_box": [
+                36.058755,
+                36.1550376,
+                -5.4006553,
+                -5.2766611
+            ],
+            "continent": "EU",
+            "sub-region name": "Southern Europe"
+        },
+        {
+            "name": "Greece",
+            "flag": "🇬🇷",
+            "code": "GR",
+            "bounding_box": [
+                34.7188863,
+                41.7488889,
+                19.1127535,
+                29.68381
+            ],
+            "continent": "EU",
+            "sub-region name": "Southern Europe"
+        },
+        {
+            "name": "Greenland",
+            "flag": "🇬🇱",
+            "code": "GL",
+            "bounding_box": [
+                59.515387,
+                83.875172,
+                -74.1250416,
+                -10.0288759
+            ],
+            "continent": "NA",
+            "sub-region name": "Northern America"
+        },
+        {
+            "name": "Grenada",
+            "flag": "🇬🇩",
+            "code": "GD",
+            "bounding_box": [
+                11.7759051,
+                12.6097247,
+                -62.0072687,
+                -61.2095018
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Guadeloupe",
+            "flag": "🇬🇵",
+            "code": "GP",
+            "bounding_box": [
+                15.8319758,
+                16.5144801,
+                -61.809764,
+                -61.0013039
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Guam",
+            "flag": "🇬🇺",
+            "code": "GU",
+            "bounding_box": [
+                13.182335,
+                13.706179,
+                144.563426,
+                145.009167
+            ],
+            "continent": "OC",
+            "sub-region name": "Micronesia"
+        },
+        {
+            "name": "Guatemala",
+            "flag": "🇬🇹",
+            "code": "GT",
+            "bounding_box": [
+                13.5577935,
+                17.8165947,
+                -92.3743889,
+                -88.2134425
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Guernsey",
+            "flag": "🇬🇬",
+            "code": "GG",
+            "bounding_box": [
+                49.219875,
+                49.9403001,
+                -3.0209018,
+                -2.0502773
+            ],
+            "continent": "EU",
+            "sub-region name": "Northern Europe"
+        },
+        {
+            "name": "Guinea",
+            "flag": "🇬🇳",
+            "code": "GN",
+            "bounding_box": [
+                7.1906045,
+                12.67563,
+                -15.5680508,
+                -7.6379222
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Guinea-Bissau",
+            "flag": "🇬🇼",
+            "code": "GW",
+            "bounding_box": [
+                10.6514215,
+                12.6862384,
+                -16.897501,
+                -13.6348777
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Guyana",
+            "flag": "🇬🇾",
+            "code": "GY",
+            "bounding_box": [
+                1.1710017,
+                8.6038842,
+                -61.3827449,
+                -56.4689543
+            ],
+            "continent": "SA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Haiti",
+            "flag": "🇭🇹",
+            "code": "HT",
+            "bounding_box": [
+                17.820859,
+                20.2911852,
+                -75.2384618,
+                -71.6217461
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Heard & McDonald Islands",
+            "flag": "🇭🇲",
+            "code": "HM",
+            "bounding_box": [
+                -53.1949116,
+                -52.9712946,
+                73.2512342,
+                73.8767533
+            ],
+            "continent": "AN",
+            "sub-region name": "Australia and New Zealand"
+        },
+        {
+            "name": "Vatican City",
+            "flag": "🇻🇦",
+            "code": "VA",
+            "bounding_box": [
+                41.9002044,
+                41.9073829,
+                12.4457878,
+                12.4583653
+            ],
+            "continent": "EU",
+            "sub-region name": "Southern Europe"
+        },
+        {
+            "name": "Honduras",
+            "flag": "🇭🇳",
+            "code": "HN",
+            "bounding_box": [
+                12.9808485,
+                17.619522,
+                -89.3568207,
+                -82.18164
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Hungary",
+            "flag": "🇭🇺",
+            "code": "HU",
+            "bounding_box": [
+                45.737128,
+                48.585257,
+                16.1138866,
+                22.8977094
+            ],
+            "continent": "EU",
+            "sub-region name": "Eastern Europe"
+        },
+        {
+            "name": "Iceland",
+            "flag": "🇮🇸",
+            "code": "IS",
+            "bounding_box": [
+                63.0859177,
+                67.353,
+                -25.0135069,
+                -12.8046162
+            ],
+            "continent": "EU",
+            "sub-region name": "Northern Europe"
+        },
+        {
+            "name": "India",
+            "flag": "🇮🇳",
+            "code": "IN",
+            "bounding_box": [
+                6.5531169,
+                35.6745457,
+                67.9544415,
+                97.395561
+            ],
+            "continent": "AS",
+            "sub-region name": "Southern Asia"
+        },
+        {
+            "name": "Indonesia",
+            "flag": "🇮🇩",
+            "code": "ID",
+            "bounding_box": [
+                -11.2085669,
+                6.2744496,
+                94.7717124,
+                141.0194444
+            ],
+            "continent": "AS",
+            "sub-region name": "South-eastern Asia"
+        },
+        {
+            "name": "Iran",
+            "flag": "🇮🇷",
+            "code": "IR",
+            "bounding_box": [
+                24.8353084,
+                39.7824624,
+                44.0318908,
+                63.3332704
+            ],
+            "continent": "AS",
+            "sub-region name": "Southern Asia"
+        },
+        {
+            "name": "Iraq",
+            "flag": "🇮🇶",
+            "code": "IQ",
+            "bounding_box": [
+                29.0585661,
+                37.3806687,
+                38.7936719,
+                49.1067706
+            ],
+            "continent": "AS",
+            "sub-region name": "Western Asia"
+        },
+        {
+            "name": "Ireland",
+            "flag": "🇮🇪",
+            "code": "IE",
+            "bounding_box": [
+                51.222,
+                55.636,
+                -11.0133788,
+                -5.6582363
+            ],
+            "continent": "EU",
+            "sub-region name": "Northern Europe"
+        },
+        {
+            "name": "Isle of Man",
+            "flag": "🇮🇲",
+            "code": "IM",
+            "bounding_box": [
+                53.845,
+                54.5534288,
+                -5.1707285,
+                -3.9654061
+            ],
+            "continent": "EU",
+            "sub-region name": "Northern Europe"
+        },
+        {
+            "name": "Israel",
+            "flag": "🇮🇱",
+            "code": "IL",
+            "bounding_box": [
+                29.4533796,
+                33.3356317,
+                34.2674994,
+                35.8950234
+            ],
+            "continent": "AS",
+            "sub-region name": "Western Asia"
+        },
+        {
+            "name": "Italy",
+            "flag": "🇮🇹",
+            "code": "IT",
+            "bounding_box": [
+                35.2889616,
+                47.0921462,
+                6.6272658,
+                18.7844746
+            ],
+            "continent": "EU",
+            "sub-region name": "Southern Europe"
+        },
+        {
+            "name": "Jamaica",
+            "flag": "🇯🇲",
+            "code": "JM",
+            "bounding_box": [
+                16.5899443,
+                18.7256394,
+                -78.5782366,
+                -75.7541143
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Japan",
+            "flag": "🇯🇵",
+            "code": "JP",
+            "bounding_box": [
+                20.2145811,
+                45.7112046,
+                122.7141754,
+                154.205541
+            ],
+            "continent": "AS",
+            "sub-region name": "Eastern Asia"
+        },
+        {
+            "name": "Jersey",
+            "flag": "🇯🇪",
+            "code": "JE",
+            "bounding_box": [
+                48.871203,
+                49.4596091,
+                -2.5605483,
+                -1.8347
+            ],
+            "continent": "EU",
+            "sub-region name": "Northern Europe"
+        },
+        {
+            "name": "Jordan",
+            "flag": "🇯🇴",
+            "code": "JO",
+            "bounding_box": [
+                29.183401,
+                33.3750617,
+                34.8844372,
+                39.3012981
+            ],
+            "continent": "AS",
+            "sub-region name": "Western Asia"
+        },
+        {
+            "name": "Kazakhstan",
+            "flag": "🇰🇿",
+            "code": "KZ",
+            "bounding_box": [
+                40.5686476,
+                55.4421701,
+                46.4932179,
+                87.3156336
+            ],
+            "continent": "AS",
+            "sub-region name": "Central Asia"
+        },
+        {
+            "name": "Kenya",
+            "flag": "🇰🇪",
+            "code": "KE",
+            "bounding_box": [
+                -4.8995204,
+                4.62,
+                33.9096888,
+                41.9067502
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Kiribati",
+            "flag": "🇰🇮",
+            "code": "KI",
+            "bounding_box": [
+                -11.646,
+                4.9,
+                -174.743355,
+                177.0491167
+            ],
+            "continent": "OC",
+            "sub-region name": "Micronesia"
+        },
+        {
+            "name": "Kuwait",
+            "flag": "🇰🇼",
+            "code": "KW",
+            "bounding_box": [
+                28.5243622,
+                30.1038082,
+                46.5526837,
+                49.0046809
+            ],
+            "continent": "AS",
+            "sub-region name": "Western Asia"
+        },
+        {
+            "name": "Kyrgyzstan",
+            "flag": "🇰🇬",
+            "code": "KG",
+            "bounding_box": [
+                39.1727382,
+                43.2669041,
+                69.2649523,
+                80.2295793
+            ],
+            "continent": "AS",
+            "sub-region name": "Central Asia"
+        },
+        {
+            "name": "Laos",
+            "flag": "🇱🇦",
+            "code": "LA",
+            "bounding_box": [
+                13.9096752,
+                22.5086717,
+                100.0843247,
+                107.6349989
+            ],
+            "continent": "AS",
+            "sub-region name": "South-eastern Asia"
+        },
+        {
+            "name": "Latvia",
+            "flag": "🇱🇻",
+            "code": "LV",
+            "bounding_box": [
+                55.6746505,
+                58.0855688,
+                20.6009852,
+                28.2414904
+            ],
+            "continent": "EU",
+            "sub-region name": "Northern Europe"
+        },
+        {
+            "name": "Lebanon",
+            "flag": "🇱🇧",
+            "code": "LB",
+            "bounding_box": [
+                33.0550325,
+                34.6921448,
+                34.8825667,
+                36.625
+            ],
+            "continent": "AS",
+            "sub-region name": "Western Asia"
+        },
+        {
+            "name": "Lesotho",
+            "flag": "🇱🇸",
+            "code": "LS",
+            "bounding_box": [
+                -30.6772773,
+                -28.5705652,
+                27.0113763,
+                29.4557099
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Liberia",
+            "flag": "🇱🇷",
+            "code": "LR",
+            "bounding_box": [
+                4.1555907,
+                8.5519251,
+                -11.6080764,
+                -7.367323
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Libya",
+            "flag": "🇱🇾",
+            "code": "LY",
+            "bounding_box": [
+                19.4999907,
+                33.3545898,
+                9.391081,
+                25.3770629
+            ],
+            "continent": "AF",
+            "sub-region name": "Northern Africa"
+        },
+        {
+            "name": "Liechtenstein",
+            "flag": "🇱🇮",
+            "code": "LI",
+            "bounding_box": [
+                47.0484291,
+                47.270581,
+                9.4716736,
+                9.6357143
+            ],
+            "continent": "EU",
+            "sub-region name": "Western Europe"
+        },
+        {
+            "name": "Lithuania",
+            "flag": "🇱🇹",
+            "code": "LT",
+            "bounding_box": [
+                53.8967893,
+                56.4504213,
+                20.6557167,
+                26.8355198
+            ],
+            "continent": "EU",
+            "sub-region name": "Northern Europe"
+        },
+        {
+            "name": "Luxembourg",
+            "flag": "🇱🇺",
+            "code": "LU",
+            "bounding_box": [
+                49.4478587,
+                50.1827726,
+                5.7357006,
+                6.5312481
+            ],
+            "continent": "EU",
+            "sub-region name": "Western Europe"
+        },
+        {
+            "name": "Madagascar",
+            "flag": "🇲🇬",
+            "code": "MG",
+            "bounding_box": [
+                -25.784021,
+                -11.732889,
+                42.9680076,
+                50.6727307
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Malawi",
+            "flag": "🇲🇼",
+            "code": "MW",
+            "bounding_box": [
+                -17.1296031,
+                -9.368301,
+                32.6718589,
+                35.9185731
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Malaysia",
+            "flag": "🇲🇾",
+            "code": "MY",
+            "bounding_box": [
+                0.8538205,
+                8.3801468,
+                98.7365109,
+                119.4699634
+            ],
+            "continent": "AS",
+            "sub-region name": "South-eastern Asia"
+        },
+        {
+            "name": "Maldives",
+            "flag": "🇲🇻",
+            "code": "MV",
+            "bounding_box": [
+                -0.9074935,
+                7.3106246,
+                72.3554187,
+                73.9700962
+            ],
+            "continent": "AS",
+            "sub-region name": "Southern Asia"
+        },
+        {
+            "name": "Mali",
+            "flag": "🇲🇱",
+            "code": "ML",
+            "bounding_box": [
+                10.147811,
+                25.001084,
+                -12.2402835,
+                4.2673828
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Malta",
+            "flag": "🇲🇹",
+            "code": "MT",
+            "bounding_box": [
+                35.5853691,
+                36.2825455,
+                13.9360446,
+                14.822786
+            ],
+            "continent": "EU",
+            "sub-region name": "Southern Europe"
+        },
+        {
+            "name": "Marshall Islands",
+            "flag": "🇲🇭",
+            "code": "MH",
+            "bounding_box": [
+                4.369699,
+                14.924073,
+                160.591134,
+                172.374008
+            ],
+            "continent": "OC",
+            "sub-region name": "Micronesia"
+        },
+        {
+            "name": "Martinique",
+            "flag": "🇲🇶",
+            "code": "MQ",
+            "bounding_box": [
+                14.3886707,
+                14.8787327,
+                -61.2290255,
+                -60.8097044
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Mauritania",
+            "flag": "🇲🇷",
+            "code": "MR",
+            "bounding_box": [
+                14.7209909,
+                27.314942,
+                -17.2380959,
+                -4.8333344
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Mauritius",
+            "flag": "🇲🇺",
+            "code": "MU",
+            "bounding_box": [
+                -20.725,
+                -10.138,
+                56.3825151,
+                63.7151319
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Mayotte",
+            "flag": "🇾🇹",
+            "code": "YT",
+            "bounding_box": [
+                -13.0210439,
+                -12.6365002,
+                45.0182323,
+                45.3000242
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Mexico",
+            "flag": "🇲🇽",
+            "code": "MX",
+            "bounding_box": [
+                14.3886243,
+                32.7186679,
+                -118.599188,
+                -86.493266
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Micronesia",
+            "flag": "🇫🇲",
+            "code": "FM",
+            "bounding_box": [
+                0.8232833,
+                10.2933306,
+                137.1344444,
+                163.2374639
+            ],
+            "continent": "OC",
+            "sub-region name": "Micronesia"
+        },
+        {
+            "name": "Monaco",
+            "flag": "🇲🇨",
+            "code": "MC",
+            "bounding_box": [
+                48.0616244,
+                48.2481162,
+                11.360777,
+                11.7229099
+            ],
+            "continent": "EU",
+            "sub-region name": "Western Europe"
+        },
+        {
+            "name": "Mongolia",
+            "flag": "🇲🇳",
+            "code": "MN",
+            "bounding_box": [
+                41.5800276,
+                52.1496,
+                87.7345852,
+                119.9322079
+            ],
+            "continent": "AS",
+            "sub-region name": "Eastern Asia"
+        },
+        {
+            "name": "Montenegro",
+            "flag": "🇲🇪",
+            "code": "ME",
+            "bounding_box": [
+                41.6849866,
+                43.5585061,
+                18.4195781,
+                20.3529276
+            ],
+            "continent": "EU",
+            "sub-region name": "Southern Europe"
+        },
+        {
+            "name": "Montserrat",
+            "flag": "🇲🇸",
+            "code": "MS",
+            "bounding_box": [
+                16.4737398,
+                16.8885156,
+                -62.4502432,
+                -61.9359751
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Morocco",
+            "flag": "🇲🇦",
+            "code": "MA",
+            "bounding_box": [
+                21.333462,
+                36.0021392,
+                -17.2448353,
+                -0.998429
+            ],
+            "continent": "AF",
+            "sub-region name": "Northern Africa"
+        },
+        {
+            "name": "Mozambique",
+            "flag": "🇲🇿",
+            "code": "MZ",
+            "bounding_box": [
+                -26.9209427,
+                -10.3252149,
+                30.2121663,
+                41.0545908
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Myanmar",
+            "flag": "🇲🇲",
+            "code": "MM",
+            "bounding_box": [
+                9.526084,
+                28.547835,
+                92.1729181,
+                101.1700796
+            ],
+            "continent": "AS",
+            "sub-region name": "South-eastern Asia"
+        },
+        {
+            "name": "Namibia",
+            "flag": "🇳🇦",
+            "code": "NA",
+            "bounding_box": [
+                -28.96945,
+                -16.9635105,
+                11.5280384,
+                25.2617292
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Nauru",
+            "flag": "🇳🇷",
+            "code": "NR",
+            "bounding_box": [
+                -0.753,
+                -0.303,
+                166.7099864,
+                167.1597301
+            ],
+            "continent": "OC",
+            "sub-region name": "Micronesia"
+        },
+        {
+            "name": "Nepal",
+            "flag": "🇳🇵",
+            "code": "NP",
+            "bounding_box": [
+                26.3477581,
+                30.471487,
+                80.0570812,
+                88.2015257
+            ],
+            "continent": "AS",
+            "sub-region name": "Southern Asia"
+        },
+        {
+            "name": "Netherlands",
+            "flag": "🇳🇱",
+            "code": "NL",
+            "bounding_box": [
+                50.673835,
+                53.625095,
+                3.043213,
+                7.602539
+            ],
+            "continent": "EU",
+            "sub-region name": "Western Europe"
+        },
+        {
+            "name": "New Caledonia",
+            "flag": "🇳🇨",
+            "code": "NC",
+            "bounding_box": [
+                -23.2217509,
+                -17.6868616,
+                157.9847541,
+                172.3057152
+            ],
+            "continent": "OC",
+            "sub-region name": "Melanesia"
+        },
+        {
+            "name": "New Zealand",
+            "flag": "🇳🇿",
+            "code": "NZ",
+            "bounding_box": [
+                -52.8213687,
+                -29.0303303,
+                166.025391,
+                179.3643594
+            ],
+            "continent": "OC",
+            "sub-region name": "Australia and New Zealand"
+        },
+        {
+            "name": "Nicaragua",
+            "flag": "🇳🇮",
+            "code": "NI",
+            "bounding_box": [
+                10.7073945,
+                15.0902778,
+                -87.8958171,
+                -82.4767247
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Niger",
+            "flag": "🇳🇪",
+            "code": "NE",
+            "bounding_box": [
+                11.6936071,
+                23.517178,
+                0.1689653,
+                15.996667
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Nigeria",
+            "flag": "🇳🇬",
+            "code": "NG",
+            "bounding_box": [
+                4.0690959,
+                13.885645,
+                2.676932,
+                14.678014
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Niue",
+            "flag": "🇳🇺",
+            "code": "NU",
+            "bounding_box": [
+                -19.3548665,
+                -18.7534559,
+                -170.1595029,
+                -169.5647229
+            ],
+            "continent": "OC",
+            "sub-region name": "Polynesia"
+        },
+        {
+            "name": "Norfolk Island",
+            "flag": "🇳🇫",
+            "code": "NF",
+            "bounding_box": [
+                -29.3370694,
+                -28.7936626,
+                167.6856728,
+                168.2261259
+            ],
+            "continent": "OC",
+            "sub-region name": "Australia and New Zealand"
+        },
+        {
+            "name": "Northern Mariana Islands",
+            "flag": "🇲🇵",
+            "code": "MP",
+            "bounding_box": [
+                14.036565,
+                20.616556,
+                144.813338,
+                146.154418
+            ],
+            "continent": "OC",
+            "sub-region name": "Micronesia"
+        },
+        {
+            "name": "Norway",
+            "flag": "🇳🇴",
+            "code": "NO",
+            "bounding_box": [
+                57.844751,
+                71.300793,
+                3.515625,
+                29.443359
+            ],
+            "continent": "EU",
+            "sub-region name": "Northern Europe"
+        },
+        {
+            "name": "Oman",
+            "flag": "🇴🇲",
+            "code": "OM",
+            "bounding_box": [
+                16.4649608,
+                26.7026737,
+                52.0000004,
+                60.054577
+            ],
+            "continent": "AS",
+            "sub-region name": "Western Asia"
+        },
+        {
+            "name": "Pakistan",
+            "flag": "🇵🇰",
+            "code": "PK",
+            "bounding_box": [
+                23.4341977,
+                37.084107,
+                60.872855,
+                77.1203914
+            ],
+            "continent": "AS",
+            "sub-region name": "Southern Asia"
+        },
+        {
+            "name": "Palau",
+            "flag": "🇵🇼",
+            "code": "PW",
+            "bounding_box": [
+                2.595824,
+                8.405805,
+                130.9193911,
+                134.9295484
+            ],
+            "continent": "OC",
+            "sub-region name": "Micronesia"
+        },
+        {
+            "name": "Panama",
+            "flag": "🇵🇦",
+            "code": "PA",
+            "bounding_box": [
+                7.0027171,
+                9.8469028,
+                -83.0517245,
+                -77.1585751
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Papua New Guinea",
+            "flag": "🇵🇬",
+            "code": "PG",
+            "bounding_box": [
+                -11.8555739,
+                -0.5573576,
+                140.8416553,
+                159.6934961
+            ],
+            "continent": "OC",
+            "sub-region name": "Melanesia"
+        },
+        {
+            "name": "Paraguay",
+            "flag": "🇵🇾",
+            "code": "PY",
+            "bounding_box": [
+                -27.6063935,
+                -19.2876472,
+                -62.6406685,
+                -54.258
+            ],
+            "continent": "SA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Peru",
+            "flag": "🇵🇪",
+            "code": "PE",
+            "bounding_box": [
+                -20.1984472,
+                -0.0392818,
+                -84.6356535,
+                -68.6519906
+            ],
+            "continent": "SA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Philippines",
+            "flag": "🇵🇭",
+            "code": "PH",
+            "bounding_box": [
+                4.3833333,
+                21.321928,
+                114.1036921,
+                126.803083
+            ],
+            "continent": "AS",
+            "sub-region name": "South-eastern Asia"
+        },
+        {
+            "name": "Pitcairn Islands",
+            "flag": "🇵🇳",
+            "code": "PN",
+            "bounding_box": [
+                -25.2802053,
+                -23.7069813,
+                -130.9746722,
+                -124.5518294
+            ],
+            "continent": "OC",
+            "sub-region name": "Polynesia"
+        },
+        {
+            "name": "Poland",
+            "flag": "🇵🇱",
+            "code": "PL",
+            "bounding_box": [
+                49.0020468,
+                55.03605,
+                14.0696389,
+                24.145783
+            ],
+            "continent": "EU",
+            "sub-region name": "Eastern Europe"
+        },
+        {
+            "name": "Portugal",
+            "flag": "🇵🇹",
+            "code": "PT",
+            "bounding_box": [
+                29.828247,
+                42.1543112,
+                -31.5575303,
+                -6.1891593
+            ],
+            "continent": "EU",
+            "sub-region name": "Southern Europe"
+        },
+        {
+            "name": "Puerto Rico",
+            "flag": "🇵🇷",
+            "code": "PR",
+            "bounding_box": [
+                17.7306659,
+                18.6663822,
+                -68.1109184,
+                -65.1100908
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Qatar",
+            "flag": "🇶🇦",
+            "code": "QA",
+            "bounding_box": [
+                24.4707534,
+                26.434565,
+                50.5675,
+                52.638011
+            ],
+            "continent": "AS",
+            "sub-region name": "Western Asia"
+        },
+        {
+            "name": "South Korea",
+            "flag": "🇰🇷",
+            "code": "KR",
+            "bounding_box": [
+                32.9104556,
+                38.61772,
+                124.3727348,
+                132.1467806
+            ],
+            "continent": "AS",
+            "sub-region name": "Eastern Asia"
+        },
+        {
+            "name": "Moldova",
+            "flag": "🇲🇩",
+            "code": "MD",
+            "bounding_box": [
+                45.4672099,
+                48.4920527,
+                26.6164054,
+                30.1637143
+            ],
+            "continent": "EU",
+            "sub-region name": "Eastern Europe"
+        },
+        {
+            "name": "Romania",
+            "flag": "🇷🇴",
+            "code": "RO",
+            "bounding_box": [
+                43.618682,
+                48.2654738,
+                20.2619955,
+                30.0454257
+            ],
+            "continent": "EU",
+            "sub-region name": "Eastern Europe"
+        },
+        {
+            "name": "Russia",
+            "flag": "🇷🇺",
+            "code": "RU",
+            "bounding_box": [
+                45.336702,
+                75.973553,
+                24.609375,
+                189.316406
+            ],
+            "continent": "EU",
+            "sub-region name": "Eastern Europe"
+        },
+        {
+            "name": "Rwanda",
+            "flag": "🇷🇼",
+            "code": "RW",
+            "bounding_box": [
+                -2.8397581,
+                -1.0474083,
+                28.861696,
+                30.8990738
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Réunion",
+            "flag": "🇷🇪",
+            "code": "RE",
+            "bounding_box": [
+                -21.3897308,
+                -20.8717411,
+                55.2164268,
+                55.8366924
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "St. Barthélemy",
+            "flag": "🇧🇱",
+            "code": "BL",
+            "bounding_box": [
+                17.670931,
+                18.1375569,
+                -63.06639,
+                -62.5844019
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "St. Helena",
+            "flag": "🇸🇭",
+            "code": "SH",
+            "bounding_box": [
+                -16.23,
+                -15.704,
+                -5.9973424,
+                -5.4234153
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "St. Kitts & Nevis",
+            "flag": "🇰🇳",
+            "code": "KN",
+            "bounding_box": [
+                16.8926227,
+                17.6170552,
+                -63.0491098,
+                -62.3741863
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "St. Lucia",
+            "flag": "🇱🇨",
+            "code": "LC",
+            "bounding_box": [
+                13.5060753,
+                14.2725,
+                -61.2855618,
+                -60.6640451
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "St. Martin",
+            "flag": "🇲🇫",
+            "code": "MF",
+            "bounding_box": [
+                17.8963535,
+                18.1902778,
+                -63.3605643,
+                -62.7644063
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "St. Pierre & Miquelon",
+            "flag": "🇵🇲",
+            "code": "PM",
+            "bounding_box": [
+                46.5488309,
+                47.3415794,
+                -56.6974627,
+                -55.9066442
+            ],
+            "continent": "NA",
+            "sub-region name": "Northern America"
+        },
+        {
+            "name": "St. Vincent & Grenadines",
+            "flag": "🇻🇨",
+            "code": "VC",
+            "bounding_box": [
+                12.3983584,
+                13.5843008,
+                -61.6645712,
+                -60.9087552
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Samoa",
+            "flag": "🇼🇸",
+            "code": "WS",
+            "bounding_box": [
+                -14.2770916,
+                -13.2381892,
+                -173.0091864,
+                -171.1929229
+            ],
+            "continent": "OC",
+            "sub-region name": "Polynesia"
+        },
+        {
+            "name": "San Marino",
+            "flag": "🇸🇲",
+            "code": "SM",
+            "bounding_box": [
+                43.893632,
+                43.992093,
+                12.4033246,
+                12.516202
+            ],
+            "continent": "EU",
+            "sub-region name": "Southern Europe"
+        },
+        {
+            "name": "São Tomé & Príncipe",
+            "flag": "🇸🇹",
+            "code": "ST",
+            "bounding_box": [
+                -0.2135137,
+                1.9257601,
+                6.260642,
+                7.6704783
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Saudi Arabia",
+            "flag": "🇸🇦",
+            "code": "SA",
+            "bounding_box": [
+                16.29,
+                32.1543377,
+                34.4571718,
+                55.6666851
+            ],
+            "continent": "AS",
+            "sub-region name": "Western Asia"
+        },
+        {
+            "name": "Senegal",
+            "flag": "🇸🇳",
+            "code": "SN",
+            "bounding_box": [
+                12.2402664,
+                16.6919712,
+                -17.7498686,
+                -11.3459503
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Serbia",
+            "flag": "🇷🇸",
+            "code": "RS",
+            "bounding_box": [
+                42.2314466,
+                46.1902839,
+                18.8149945,
+                23.006309
+            ],
+            "continent": "EU",
+            "sub-region name": "Southern Europe"
+        },
+        {
+            "name": "Seychelles",
+            "flag": "🇸🇨",
+            "code": "SC",
+            "bounding_box": [
+                -10.4649258,
+                -3.512,
+                45.9988759,
+                56.4979396
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Sierra Leone",
+            "flag": "🇸🇱",
+            "code": "SL",
+            "bounding_box": [
+                6.755,
+                9.999973,
+                -13.5003389,
+                -10.271683
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Singapore",
+            "flag": "🇸🇬",
+            "code": "SG",
+            "bounding_box": [
+                1.1285402,
+                1.5143183,
+                103.5666667,
+                104.5716696
+            ],
+            "continent": "AS",
+            "sub-region name": "South-eastern Asia"
+        },
+        {
+            "name": "Sint Maarten",
+            "flag": "🏳️",
+            "code": "SX",
+            "bounding_box": [
+                17.806209,
+                18.0639862,
+                -63.2688117,
+                -62.949445
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Slovakia",
+            "flag": "🇸🇰",
+            "code": "SK",
+            "bounding_box": [
+                47.7311798,
+                49.6138162,
+                16.8331891,
+                22.56571
+            ],
+            "continent": "EU",
+            "sub-region name": "Eastern Europe"
+        },
+        {
+            "name": "Slovenia",
+            "flag": "🇸🇮",
+            "code": "SI",
+            "bounding_box": [
+                45.4214242,
+                46.8766816,
+                13.3754696,
+                16.5968135
+            ],
+            "continent": "EU",
+            "sub-region name": "Southern Europe"
+        },
+        {
+            "name": "Solomon Islands",
+            "flag": "🇸🇧",
+            "code": "SB",
+            "bounding_box": [
+                -13.2424298,
+                -4.8127915,
+                155.3190556,
+                170.3964667
+            ],
+            "continent": "OC",
+            "sub-region name": "Melanesia"
+        },
+        {
+            "name": "Somalia",
+            "flag": "🇸🇴",
+            "code": "SO",
+            "bounding_box": [
+                -1.8031969,
+                12.1889121,
+                40.98918,
+                51.6177696
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "South Africa",
+            "flag": "🇿🇦",
+            "code": "ZA",
+            "bounding_box": [
+                -47.1788335,
+                -22.1250301,
+                16.3335213,
+                38.2898954
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "South Georgia & South Sandwich Islands",
+            "flag": "🇬🇸",
+            "code": "GS",
+            "bounding_box": [
+                -59.6729648,
+                -53.3471325,
+                -42.3571037,
+                -25.8873267
+            ],
+            "continent": "AN",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "South Sudan",
+            "flag": "🇸🇸",
+            "code": "SS",
+            "bounding_box": [
+                3.48898,
+                12.236389,
+                23.447778,
+                35.948997
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Spain",
+            "flag": "🇪🇸",
+            "code": "ES",
+            "bounding_box": [
+                27.4335426,
+                43.9933088,
+                -18.3936845,
+                4.5918885
+            ],
+            "continent": "EU",
+            "sub-region name": "Southern Europe"
+        },
+        {
+            "name": "Sri Lanka",
+            "flag": "🇱🇰",
+            "code": "LK",
+            "bounding_box": [
+                5.719,
+                10.035,
+                79.3959205,
+                82.0810141
+            ],
+            "continent": "AS",
+            "sub-region name": "Southern Asia"
+        },
+        {
+            "name": "Palestine",
+            "flag": "🇵🇸",
+            "code": "PS",
+            "bounding_box": [
+                31.2201289,
+                32.5489422,
+                34.0546906,
+                35.5403583
+            ],
+            "continent": "AS",
+            "sub-region name": "Western Asia"
+        },
+        {
+            "name": "Sudan",
+            "flag": "🇸🇩",
+            "code": "SD",
+            "bounding_box": [
+                8.685278,
+                22.224918,
+                21.8143904,
+                39.0576252
+            ],
+            "continent": "AF",
+            "sub-region name": "Northern Africa"
+        },
+        {
+            "name": "Suriname",
+            "flag": "🇸🇷",
+            "code": "SR",
+            "bounding_box": [
+                1.8312802,
+                6.2160842,
+                -58.0711851,
+                -53.8601382
+            ],
+            "continent": "SA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Svalbard & Jan Mayen",
+            "flag": "🇸🇯",
+            "code": "SJ",
+            "bounding_box": [
+                74.1354451,
+                81.0280176,
+                9.4208924,
+                34.6889114
+            ],
+            "continent": "EU",
+            "sub-region name": "Northern Europe"
+        },
+        {
+            "name": "Sweden",
+            "flag": "🇸🇪",
+            "code": "SE",
+            "bounding_box": [
+                55.1370957,
+                69.0599735,
+                10.5935025,
+                24.1776819
+            ],
+            "continent": "EU",
+            "sub-region name": "Northern Europe"
+        },
+        {
+            "name": "Switzerland",
+            "flag": "🇨🇭",
+            "code": "CH",
+            "bounding_box": [
+                45.8179716,
+                47.8084597,
+                5.9559113,
+                10.4922941
+            ],
+            "continent": "EU",
+            "sub-region name": "Western Europe"
+        },
+        {
+            "name": "Syria",
+            "flag": "🇸🇾",
+            "code": "SY",
+            "bounding_box": [
+                32.311354,
+                37.3186563,
+                35.4714427,
+                42.3745894
+            ],
+            "continent": "AS",
+            "sub-region name": "Western Asia"
+        },
+        {
+            "name": "Tajikistan",
+            "flag": "🇹🇯",
+            "code": "TJ",
+            "bounding_box": [
+                36.6711153,
+                41.0450935,
+                67.3332775,
+                75.1539563
+            ],
+            "continent": "AS",
+            "sub-region name": "Central Asia"
+        },
+        {
+            "name": "Thailand",
+            "flag": "🇹🇭",
+            "code": "TH",
+            "bounding_box": [
+                5.612851,
+                20.4648337,
+                97.3438072,
+                105.636812
+            ],
+            "continent": "AS",
+            "sub-region name": "South-eastern Asia"
+        },
+        {
+            "name": "North Macedonia",
+            "flag": "🇲🇰",
+            "code": "MK",
+            "bounding_box": [
+                40.8536596,
+                42.3739044,
+                20.4529023,
+                23.034051
+            ],
+            "continent": "EU",
+            "sub-region name": "Southern Europe"
+        },
+        {
+            "name": "Timor-Leste",
+            "flag": "🇹🇱",
+            "code": "TL",
+            "bounding_box": [
+                -9.6096854,
+                -8.1161123,
+                124.0339863,
+                127.5433663
+            ],
+            "continent": "OC",
+            "sub-region name": "South-eastern Asia"
+        },
+        {
+            "name": "Togo",
+            "flag": "🇹🇬",
+            "code": "TG",
+            "bounding_box": [
+                5.926547,
+                11.1395102,
+                -0.1439746,
+                1.8087257
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Tokelau",
+            "flag": "🇹🇰",
+            "code": "TK",
+            "bounding_box": [
+                -9.6461035,
+                -8.3304874,
+                -172.7237684,
+                -170.977681
+            ],
+            "continent": "OC",
+            "sub-region name": "Polynesia"
+        },
+        {
+            "name": "Tonga",
+            "flag": "🇹🇴",
+            "code": "TO",
+            "bounding_box": [
+                -24.1635435,
+                -15.3655722,
+                -179.3950218,
+                -173.5295458
+            ],
+            "continent": "OC",
+            "sub-region name": "Polynesia"
+        },
+        {
+            "name": "Trinidad & Tobago",
+            "flag": "🇹🇹",
+            "code": "TT",
+            "bounding_box": [
+                9.8732106,
+                11.5628372,
+                -62.083056,
+                -60.2895848
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Tunisia",
+            "flag": "🇹🇳",
+            "code": "TN",
+            "bounding_box": [
+                30.229061,
+                37.7612052,
+                7.5219807,
+                11.8801133
+            ],
+            "continent": "AF",
+            "sub-region name": "Northern Africa"
+        },
+        {
+            "name": "Turkey",
+            "flag": "🇹🇷",
+            "code": "TR",
+            "bounding_box": [
+                35.8059015,
+                42.297,
+                25.5656305,
+                44.8176638
+            ],
+            "continent": "AS",
+            "sub-region name": "Western Asia"
+        },
+        {
+            "name": "Turkmenistan",
+            "flag": "🇹🇲",
+            "code": "TM",
+            "bounding_box": [
+                35.129093,
+                42.7996686,
+                52.2643526,
+                66.6903725
+            ],
+            "continent": "AS",
+            "sub-region name": "Central Asia"
+        },
+        {
+            "name": "Turks & Caicos Islands",
+            "flag": "🇹🇨",
+            "code": "TC",
+            "bounding_box": [
+                20.9553418,
+                22.1630989,
+                -72.6799046,
+                -70.8643591
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Tuvalu",
+            "flag": "🇹🇻",
+            "code": "TV",
+            "bounding_box": [
+                -10.9939389,
+                -5.4369611,
+                -180.0,
+                180.0
+            ],
+            "continent": "OC",
+            "sub-region name": "Polynesia"
+        },
+        {
+            "name": "Uganda",
+            "flag": "🇺🇬",
+            "code": "UG",
+            "bounding_box": [
+                -1.4823179,
+                4.2340766,
+                29.573433,
+                35.000308
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Ukraine",
+            "flag": "🇺🇦",
+            "code": "UA",
+            "bounding_box": [
+                44.184598,
+                52.3797464,
+                22.137059,
+                40.2275801
+            ],
+            "continent": "EU",
+            "sub-region name": "Eastern Europe"
+        },
+        {
+            "name": "United Arab Emirates",
+            "flag": "🇦🇪",
+            "code": "AE",
+            "bounding_box": [
+                22.6316214,
+                26.1517219,
+                51.4160714,
+                56.6024458
+            ],
+            "continent": "AS",
+            "sub-region name": "Western Asia"
+        },
+        {
+            "name": "UK",
+            "flag": "🇬🇧",
+            "code": "GB",
+            "bounding_box": [
+                49.674,
+                61.061,
+                -14.015517,
+                2.0919117
+            ],
+            "continent": "EU",
+            "sub-region name": "Northern Europe"
+        },
+        {
+            "name": "Tanzania",
+            "flag": "🇹🇿",
+            "code": "TZ",
+            "bounding_box": [
+                -11.761254,
+                -0.9854812,
+                29.3269773,
+                40.6584071
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "U.S. Outlying Islands",
+            "flag": "🏳️",
+            "code": "UM",
+            "bounding_box": [],
+            "continent": "OC",
+            "sub-region name": "Micronesia"
+        },
+        {
+            "name": "U.S. Virgin Islands",
+            "flag": "🇻🇮",
+            "code": "VI",
+            "bounding_box": [
+                17.623468,
+                18.464984,
+                -65.1541175,
+                -64.512674
+            ],
+            "continent": "NA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "US",
+            "flag": "🇺🇸",
+            "code": "US",
+            "bounding_box": [
+                23.885838,
+                49.382373,
+                -127.089844,
+                -64.687500
+            ],
+            "continent": "NA",
+            "sub-region name": "Northern America"
+        },
+        {
+            "name": "Uruguay",
+            "flag": "🇺🇾",
+            "code": "UY",
+            "bounding_box": [
+                -35.7824481,
+                -30.0853962,
+                -58.4947729,
+                -53.0755833
+            ],
+            "continent": "SA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Uzbekistan",
+            "flag": "🇺🇿",
+            "code": "UZ",
+            "bounding_box": [
+                37.1816004,
+                45.5906784,
+                55.9985531,
+                73.2147728
+            ],
+            "continent": "AS",
+            "sub-region name": "Central Asia"
+        },
+        {
+            "name": "Vanuatu",
+            "flag": "🇻🇺",
+            "code": "VU",
+            "bounding_box": [
+                -20.4627425,
+                -12.8713777,
+                166.3355255,
+                170.449982
+            ],
+            "continent": "OC",
+            "sub-region name": "Melanesia"
+        },
+        {
+            "name": "Venezuela",
+            "flag": "🇻🇪",
+            "code": "VE",
+            "bounding_box": [
+                0.6473964,
+                15.9158431,
+                -73.3529632,
+                -59.7707163
+            ],
+            "continent": "SA",
+            "sub-region name": "Latin America and the Caribbean"
+        },
+        {
+            "name": "Vietnam",
+            "flag": "🇻🇳",
+            "code": "VN",
+            "bounding_box": [
+                7.6920852,
+                23.3926918,
+                102.1438643,
+                114.8572578
+            ],
+            "continent": "AS",
+            "sub-region name": "South-eastern Asia"
+        },
+        {
+            "name": "Wallis & Futuna",
+            "flag": "🇼🇫",
+            "code": "WF",
+            "bounding_box": [
+                -14.5630748,
+                -12.9827961,
+                -178.3873749,
+                -175.9190391
+            ],
+            "continent": "OC",
+            "sub-region name": "Polynesia"
+        },
+        {
+            "name": "Western Sahara",
+            "flag": "🏳️",
+            "code": "EH",
+            "bounding_box": [
+                20.667252,
+                27.6706253,
+                -17.3190239,
+                -8.6662523
+            ],
+            "continent": "AF",
+            "sub-region name": "Northern Africa"
+        },
+        {
+            "name": "Yemen",
+            "flag": "🇾🇪",
+            "code": "YE",
+            "bounding_box": [
+                11.9084802,
+                19.0,
+                41.60825,
+                54.7389375
+            ],
+            "continent": "AS",
+            "sub-region name": "Western Asia"
+        },
+        {
+            "name": "Zambia",
+            "flag": "🇿🇲",
+            "code": "ZM",
+            "bounding_box": [
+                -18.0762145,
+                -8.2749338,
+                21.9993509,
+                33.7095027
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Zimbabwe",
+            "flag": "🇿🇼",
+            "code": "ZW",
+            "bounding_box": [
+                -22.4241096,
+                -15.6097033,
+                25.2373,
+                33.0683501
+            ],
+            "continent": "AF",
+            "sub-region name": "Sub-Saharan Africa"
+        },
+        {
+            "name": "Åland Islands",
+            "flag": "🇦🇽",
+            "code": "AX",
+            "bounding_box": [
+                59.4541578,
+                60.87665,
+                19.0832,
+                21.3456452
+            ],
+            "continent": "EU",
+            "sub-region name": "Northern Europe"
+        }
+    ]
+}
