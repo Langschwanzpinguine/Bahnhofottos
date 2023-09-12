@@ -1,10 +1,11 @@
 let map;
-let markersLayer;
+let markers;
 let selectedCountry;
 let select_tag;
 document.addEventListener("DOMContentLoaded", initPage);
 
 function countrySelected(){
+    markers ? markers.clearLayers() : null;
     selectedCountry = select_tag.value;
     const foundCountry = country_info['countries'].find((country) => country.code === selectedCountry);
     let bbox = foundCountry['bounding_box'];
@@ -12,20 +13,41 @@ function countrySelected(){
         [bbox[0], bbox[2]],
         [bbox[1], bbox[3]]
     ])
+    const url = "http://localhost:3000/api/countries/" + foundCountry['code'];
+    console.log(url)
+    const requestOptions = {
+        method: 'GET',
+    };
+    markers = L.markerClusterGroup();
+    fetch(url, requestOptions)
+        .then(res => {
+            if (!res.ok) {
+                console.error(`HTTP error! Status: ${res.status}`);
+                return;
+            }
+            return res.json();
+        }).then(data => {
+        let allStations = data.elements;
+        for (const station of allStations) {
+            let lat = station.lat;
+            let lon = station.lon;
+            let marker = L.marker([lat, lon]);
+            marker.bindPopup(station.tags.name ?? station.tags.description);
+            markers.addLayer(marker);
+            map.addLayer(markers);
+        }
+    }).catch(error => {
+        console.error('Fetch error:', error);
+    });
+
 }
 
 function initPage(){
     select_tag = document.getElementById('country_selection')
     selectedCountry = select_tag.value;
     select_tag.addEventListener('change', countrySelected)
-    const foundCountry = country_info['countries'].find((country) => country.code === selectedCountry);
-    let bbox = foundCountry['bounding_box'];
-
     initMap();
-    map.fitBounds([
-        [bbox[0], bbox[2]],
-        [bbox[1], bbox[3]]
-    ])
+    countrySelected();
     const element = document.querySelector('.country_dropdown');
     const choices = new Choices(element, {
         searchEnabled: true,
@@ -47,7 +69,6 @@ function initMap(){
     // L.tileLayer('http://localhost:3001/proxy/jawg?z={z}&x={x}&y={y}', {})
     //     .addTo(map);
     // map.attributionControl.addAttribution("OSM x <a href='https://github.com/Langschwanzpinguine' target='_blank'>Langschwanzpinguine e.V.</a>")
-    markersLayer = L.layerGroup().addTo(map);
 }
 
 
