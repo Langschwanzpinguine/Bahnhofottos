@@ -8,6 +8,10 @@ Rails.application.routes.draw do
   get "/proxy/map-tiles/thunderforest", to: "proxy#maptiles_thunderforest"
   get "/proxy/map-tiles/jawg", to: "proxy#maptiles_jawg"
 
+  scope module: 'api' do
+    get '/api/countries/:country_code', to: "country_data#fetch", as: "country_data"
+  end
+
   #Account system
   scope module: "account" do
     get '/users/sign_up', to: 'users#new', as: 'signup'

@@ -1890,10 +1890,10 @@
             "flag": "🇲🇨",
             "code": "MC",
             "bounding_box": [
-                48.0616244,
-                48.2481162,
-                11.360777,
-                11.7229099
+                43.724591,
+                43.751505,
+                7.408047,
+                7.442036
             ],
             "continent": "EU",
             "sub-region name": "Western Europe"
@@ -3030,14 +3030,14 @@
             "sub-region name": "Western Asia"
         },
         {
-            "name": "UK",
+            "name": "United Kingdom",
             "flag": "🇬🇧",
             "code": "GB",
             "bounding_box": [
-                49.674,
-                61.061,
-                -14.015517,
-                2.0919117
+                49.837982,
+                58.836490,
+                -8.525391,
+                2.197266
             ],
             "continent": "EU",
             "sub-region name": "Northern Europe"
