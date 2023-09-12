@@ -6,11 +6,13 @@ class Api::CountryDataController < ApplicationController
 
     if File.exist?(file_path)
       json_content = File.read(file_path)
+      expires_in 1.hour, public: true
       render json: json_content
     else
       res = fetch_from_data_service(country_code)
 
       if response.code == '200'
+        expires_in 1.hour, public: true
         render json: res.body
       else
         render json: { error: 'Failed to fetch JSON from the server' }, status: :unprocessable_entity
