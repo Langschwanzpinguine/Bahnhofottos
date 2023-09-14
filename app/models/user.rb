@@ -1,7 +1,8 @@
 class User < ApplicationRecord
   validates :email, uniqueness: true, presence: true, format: {with: /[\w\-\.]+@([\w\-]+\.)+[\w\-]{2,4}/}
   has_secure_password
-  
+
+  has_many :friends
   has_many :invitations
   has_many :pending_invitations, -> { where confirmed: false }, class_name: 'Invitation', foreign_key: "friend_id"
 

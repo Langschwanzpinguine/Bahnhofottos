@@ -11,7 +11,7 @@ class Invitation < ApplicationRecord
   end
 
   # Check specifically if record of confirmed friendship between two users exists
-  def self.confirmed_record(id_1, id_2)
+  def self.confirmed_record?(id_1, id_2)
     case1 = !Invitation.where(user_id: id_1, friend_id: id_2, confirmed: true).empty?
     case2 = !Invitation.where(user_id: id_2, friend_id: id_1, confirmed: true).empty?
     case1 || case2
