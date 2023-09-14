@@ -34,5 +34,8 @@ Rails.application.routes.draw do
 
     get '/friends', to: 'friends#index'
     post '/friends', to: 'friends#send_invitation'
+    patch '/friends/accept_invitation', to: 'friends#accept_invitation', as: 'accept_invitation'
+    delete '/friends/delete_invitation', to: 'friends#delete_invitation', as: 'delete_invitation'
+    delete '/friends/unfriend', to: 'friends#unfriend', as: 'unfriend'
   end
 end

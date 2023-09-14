@@ -1,9 +1,21 @@
 <h2>Friends</h2>
   <%= form_with url: friends_path, data: { turbo: false } do |f|%>
-
     <div class="form_field">
       <%= f.label "Add friend" %><br />
       <%= f.text_field :friend_id %>
     </div>
-    <div class="actions"><%f.submit "Send Request" %></div>
+    <div class="actions"><%=f.submit "Send Request" %></div>
   <%end %>
+<br/>
+<% @friends.each do |friend| %>
+  <p><%= friend.username %></p>
+  <%= button_to "Unfriend", unfriend_path, params: {friend_id: friend.id}, class: "button", method: :delete  %>
+<%end %>
+<br/>
+<% @pending_invitations.each do |invitation| %>
+  <div class="pending_invite">
+    <p><%= invitation.user.username %></p>
+    <%= button_to "Accept Invitation", accept_invitation_path, params:{id: invitation.id}, class: "button", method: :patch %>
+    <%= button_to "Delete Invitation", delete_invitation_path, params:{id: invitation.id}, class: "button", method: :delete%>
+  </div>
+<%end %>
