@@ -7,7 +7,7 @@ class User < ApplicationRecord
   has_many :pending_invitations, -> { where confirmed: false }, class_name: 'Invitation', foreign_key: "friend_id"
 
   # Attached Images
-  has_one_attached :profile_picture
+  has_one_attached :image
   
   before_create :init
 
