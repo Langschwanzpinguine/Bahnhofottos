@@ -16,7 +16,7 @@
 :root {
   --bg: #2a2c5f;
   --bg-secondary: #3f416a;
-  --color-text: #e3e3e3;
+  --color-off-white: #e3e3e3;
   --color-dark-text: #232323;
   --color-accent: #f33456;
 }
@@ -40,7 +40,7 @@ body {
 .outer_wrapper {
   flex: 1;
   padding: 0;
-  background-color: var(--color-text);
+  background-color: var(--color-off-white);
   overflow: hidden;
 }
 
@@ -51,7 +51,7 @@ body {
   padding: .5em 1em;
   border-radius: 10px;
   font-weight: bold;
-  color: var(--color-text);
+  color: var(--color-off-white);
 }
 .popup i{
   margin-right: 10px;
@@ -122,8 +122,9 @@ body {
 
 .sidebar a:hover {
   color: #f1f1f1;
+  transform: scale(1.1);
+  transition: all 200ms ease-in-out;
 }
-
 
 #sidebar_logo {
   padding: 0.3em 1em;
@@ -135,12 +136,18 @@ body {
   max-width: 100%;
 }
 
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .map_toolbar {
   position: fixed;
   top: 50%;
   right: 0;
   transform: translateY(-50%); /* Center vertically */
-  background-color: var(--color-text);
+  background-color: var(--color-off-white);
   padding: 10px;
   z-index: 9999;
   margin-right: 2em;
@@ -156,7 +163,7 @@ body {
 }
 
 .toolbar_button {
-  background-color: var(--color-text);
+  background-color: var(--color-off-white);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -176,13 +183,13 @@ body {
 }
 
 .toolbar_button:hover{
-  background: var(--color-text);
+  background: var(--color-off-white);
 }
 
 .user_forms_wrapper{
   flex: 1;
   padding: 0;
-  background-color: var(--color-text);
+  background-color: var(--color-off-white);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -216,7 +223,7 @@ input[type="user_username"] {
 
 input[type="submit"] {
   background-color: var(--bg);
-  color: var(--color-text);
+  color: var(--color-off-white);
   padding: 10px 20px;
   margin-bottom: 10px;
   border: none;
@@ -268,16 +275,23 @@ input[type="submit"] {
 
 .main_button{
   background: var(--bg);
-  color: var(--color-text);
+  color: var(--color-off-white);
 }
+
 .secondary_button{
   background: var(--color-accent);
-  color: var(--color-text);
+  color: var(--color-off-white);
+}
+
+.main_button_settings{
+  background: var(--color-off-white);
+  color: var(--color-dark-text);
 }
 
 .custom_modal{
   background: var(--bg);
-  color: var(--color-text);
+  color: var(--color-off-white);
+  backdrop-filter: blur(4px);
   padding: 1em 2em;
   border-radius: 10px;
 }
