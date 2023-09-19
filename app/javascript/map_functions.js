@@ -84,7 +84,9 @@ function initMap(){
      //Thunderforest
     L.Marker.prototype.options.icon = L.icon({
         iconUrl: "/assets/Point.png",
+        shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
         iconAnchor: [13, 41],
+        popupAnchor:  [0, -35]
     });
     L.tileLayer('http://localhost:3000/proxy/map-tiles/thunderforest?z={z}&x={x}&y={y}', {
         maxZoom: 19,
