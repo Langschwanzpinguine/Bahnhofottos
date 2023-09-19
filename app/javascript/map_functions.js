@@ -2,7 +2,13 @@ let map;
 let markers;
 let selectedCountry;
 let select_tag;
+
+const STATION_GREEN = "/assets/bahnhof_windowless_green";
+const STATION_YELLOW = "/assets/bahnhof_windowless_yellow";
+const STATION_RED = "/assets/bahnhof_windowless_red";
+
 document.addEventListener("DOMContentLoaded", initPage);
+
 
 function countrySelected(){
     markers ? markers.clearLayers() : null;
@@ -18,7 +24,23 @@ function countrySelected(){
     const requestOptions = {
         method: 'GET',
     };
-    markers = L.markerClusterGroup();
+    markers = L.markerClusterGroup({
+            iconCreateFunction: function(cluster) {
+                let childCount = cluster.getChildCount();
+                let image_source;
+
+                if (childCount < 10) {
+                    image_source = '<img class="station_marker" src="' + STATION_GREEN + '">';
+                } else if (childCount < 100) {
+                    image_source = '<img class="station_marker" src="' + STATION_YELLOW + '">';
+                } else {
+                    image_source = '<img class="station_marker" src="' + STATION_RED + '">';
+                }
+                return L.divIcon({ html: '<div class="childcount">' + childCount + '</div>' + image_source,
+                                iconSize: L.point(40, 15)});
+            }
+        }
+    );
     fetch(url, requestOptions)
         .then(res => {
             if (!res.ok) {
@@ -60,6 +82,10 @@ function initPage(){
 function initMap(){
     map = L.map('map')
      //Thunderforest
+    L.Marker.prototype.options.icon = L.icon({
+        iconUrl: "/assets/Point.png",
+        iconAnchor: [13, 41],
+    });
     L.tileLayer('http://localhost:3000/proxy/map-tiles/thunderforest?z={z}&x={x}&y={y}', {
         maxZoom: 19,
         attribution: '© OSM x Langschwanzpinguine e.V.'

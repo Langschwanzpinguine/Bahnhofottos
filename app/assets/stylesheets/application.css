@@ -328,3 +328,19 @@ input[type="submit"] {
 .choices__input{
   border: none !important;
 }
+
+.station_marker{
+  transform: translate(-46.5%,-53.5%) scale(0.07);
+  z-index: 0;
+}
+
+.childcount{
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.leaflet-div-icon{
+  background: transparent;
+  border: transparent;
+}
