@@ -90,7 +90,7 @@ function initMap(){
     });
     L.tileLayer('http://localhost:3000/proxy/map-tiles/thunderforest?z={z}&x={x}&y={y}', {
         maxZoom: 19,
-        attribution: '© OSM x Langschwanzpinguine e.V.'
+        attribution: '© OSM x IG Langschwanzpinguine'
     }).addTo(map);
 
     //JAWG
