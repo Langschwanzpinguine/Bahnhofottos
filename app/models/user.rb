@@ -23,10 +23,6 @@ class User < ApplicationRecord
     User.where(id: friends)
   end
 
-  def avatar_location
-    ActiveStorage::Blob.service.path_for(avatar.key)
-  end
-
   def friend_with?(user)
     Invitation.confirmed_record?(id, user.id)
   end
