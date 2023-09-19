@@ -26,7 +26,7 @@ class Account::UsersController < ApplicationController
   end
 
   def settings
-    @photo = Current.user.image
+    @photo = Current.user.avatar
   end
 
   def change_username
@@ -37,10 +37,12 @@ class Account::UsersController < ApplicationController
     end
   end
 
-  def upload_profile_picture
-    pic = profile_picture_params
-    Current.user.image = pic
-    redirect_to settings_path, notice: "Profile picture uploaded"
+  def upload_avatar
+    if  Current.user.avatar.attach(avatar_params[:avatar])
+      redirect_to settings_path, notice: "Profile picture uploaded"
+    else
+      render :settings
+    end
   end
 
   private def user_params
@@ -51,7 +53,7 @@ class Account::UsersController < ApplicationController
     params.require(:user).permit(:username)
   end
 
-  private def profile_picture_params
-    params.require(:image )
+  private def avatar_params
+    params.require(:user).permit(:avatar)
   end
 end

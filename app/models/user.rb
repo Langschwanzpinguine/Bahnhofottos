@@ -7,7 +7,7 @@ class User < ApplicationRecord
   has_many :pending_invitations, -> { where confirmed: false }, class_name: 'Invitation', foreign_key: "friend_id"
 
   # Attached Images
-  has_one_attached :image
+  has_one_attached :avatar
   
   before_create :init
 
@@ -21,6 +21,10 @@ class User < ApplicationRecord
     friends_received_invitation = Invitation.where(friend_id: id, confirmed: true).pluck(:user_id)
     friends = friends_sent_invitation + friends_received_invitation
     User.where(id: friends)
+  end
+
+  def avatar_location
+    ActiveStorage::Blob.service.path_for(avatar.key)
   end
 
   def friend_with?(user)

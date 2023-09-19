@@ -6,18 +6,18 @@
 <button id="changeUsernameBtn" class="button main_button">Change Username</button>
 
 <div>
-  <%= form_with url: upload_profile_picture_path, data: { turbo: false} do |f| %>
+  <%= form_with model: Current.user, url: upload_avatar_path, data: { turbo: false} do |f| %>
     <p>
-      <%= f.label :image%>
-      <%= f.file_field :image, accept: 'image/png, image/jpeg' %>
+      <%= f.label :avatar%>
+      <%= f.file_field :avatar, accept: 'image/png, image/jpeg' %>
     </p>
     <div class="actions">
       <%= f.submit "Upload picture" %>
     </div>
   <%end %>
-
-  <%= image_tag @photo %>
-  <%= @photo %>
+  <% if Current.user.avatar.attached? %>
+    <%= image_tag Current.user.avatar , class: "user_avatar"%>
+  <%end %>
 </div>
 
 <div id="changeUsernameForm" class="hidden popup_form">
