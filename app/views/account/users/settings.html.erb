@@ -16,7 +16,7 @@
     </div>
   <%end %>
   <% if Current.user.avatar.attached? %>
-    <%= image_tag Current.user.avatar , class: "user_avatar"%>
+    <%= image_tag Current.user.avatar.variant(resize_to_fit: [100,100]) , class: "user_avatar"%>
   <%end %>
 </div>
 
