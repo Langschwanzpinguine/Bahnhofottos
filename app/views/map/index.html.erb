@@ -9,7 +9,9 @@
 
   <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
   <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
   <%= javascript_include_tag "map_functions"%>
+
 <% end %>
 
 <script>
@@ -20,14 +22,23 @@
   <div id="map"></div>
 </div>
 
-<div class="dropdown">
-  <select class="country_dropdown" id="country_selection" name="selected_country" data-type="select-one" autocomplete="off" style="display: none">
-    <% @country_data.each do |region, countries| %>
-      <optgroup label="<%=region %>">
-        <% countries.each do |country| %>
-          <option value="<%= country['country_code'] %>" <%= 'selected=selected' if country['country_code'] == 'DE'%>><%= country['flag'] %> <%= country['name'] %></option>
-        <% end %>
-      </optgroup>
-    <% end %>
-  </select>
+<div class="dropdowns">
+  <div class="station_search">
+    <input type="text" name="search_query" id="station_search" placeholder="Search stations..." onfocusout="disableResults()" onchange="perform_search()">
+
+    <ul class="matches" id="matches">
+    </ul>
+  </div>
+
+  <div class="dropdown">
+    <select class="country_dropdown" id="country_selection" name="selected_country" data-type="select-one" autocomplete="off" style="display: none">
+      <% @country_data.each do |region, countries| %>
+        <optgroup label="<%=region %>">
+          <% countries.each do |country| %>
+            <option value="<%= country['country_code'] %>" <%= 'selected=selected' if country['country_code'] == 'DE'%>><%= country['flag'] %> <%= country['name'] %></option>
+          <% end %>
+        </optgroup>
+      <% end %>
+    </select>
+  </div>
 </div>

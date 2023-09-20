@@ -289,11 +289,59 @@ input[type="submit"] {
   margin: 0 .5em;
 }
 
-.dropdown{
+.dropdowns{
   position: fixed;
   top: 2em;
   right:2em;
   z-index: 9999;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.station_search{
+  max-width: 100%;
+}
+
+.station_search input{
+  border: none;
+  border-radius: 100px;
+  width: 200px;
+  height: 1.75em;
+  margin: 0 2em 0 0;
+}
+
+.matches{
+  background: #ffffff;
+  border-radius: 20px;
+  margin-right: 2em;
+  padding: 0;
+  max-width: 200px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.matches li {
+  list-style: none;
+  padding: 1em 0 .5em 1em;
+  width: 100%;
+}
+
+.matches li > * {
+  text-overflow: ellipsis;
+  width: 175px;
+}
+
+.matches li:hover{
+  background: var(--color-text);
+  transition: all ease-in-out 200ms;
+  cursor: pointer;
+}
+
+.station_search input:focus{
+  outline: none;
+  border: none;
 }
 
 /*.dropdown select{*/
@@ -305,6 +353,7 @@ input[type="submit"] {
 /*}*/
 
 .choices__inner{
+  height: 1.75em;
   width: 200px;
   min-height: 0;
   border-radius: 100px;
@@ -343,4 +392,33 @@ input[type="submit"] {
 .leaflet-div-icon{
   background: transparent;
   border: transparent;
+}
+
+.leaflet-popup-content-wrapper {
+  background-color: var(--bg);
+  color: var(--color-text);
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  width: 220px;
+}
+
+.leaflet-popup-content {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.leaflet-popup-content h5 {
+  font-size: 21px;
+  margin: 0;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--color-accent);
+}
+
+.leaflet-popup-content p {
+  margin: 5px 0;
+}
+
+.leaflet-popup-tip{
+  background: var(--bg);
 }
