@@ -1,7 +1,7 @@
 
 <h1>Your User Profile</h1>
 <sub>Please someone else make this pretty</sub>
-
+<br><br>
 <% if Current.user.avatar.attached? %>
   <%= image_tag Current.user.avatar.variant(resize_to_fit: [100,100]) ,class: "user_avatar"%>
 <%end %>
