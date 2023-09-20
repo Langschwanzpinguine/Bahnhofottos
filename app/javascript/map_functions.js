@@ -110,10 +110,10 @@ function initPage(){
         shouldSort: false
     });
 
+    document.getElementById('station_search').addEventListener('input', perform_search);
     document.addEventListener('click', (ev) => {
         disableResults(ev);
     });
-    document.getElementById('station_search').addEventListener('input', perform_search);
 }
 
 function initMap(){
@@ -144,7 +144,8 @@ function perform_search(){
 
     for (const res of results) {
         const li = document.createElement('li');
-        li.setAttribute('data-id', res.item.id);
+        li.setAttribute('data-lat', res.item.lat);
+        li.setAttribute('data-lon', res.item.lon);
         li.textContent = res.item.tags.name;
 
         li.addEventListener('click', (ev) => {
@@ -168,7 +169,19 @@ function disableResults(event){
 }
 
 function viewSearchedStation(event){
-    console.log(`Clicked on ${event.target.getAttribute('data-id')}`)
+    let lat = '';
+    let lon = '';
+
+    if(event.target.tagName === 'BRTSCKFT'){
+        lat = event.target.parentElement.getAttribute('data-lat');
+        lon = event.target.parentElement.getAttribute('data-lon');
+    }else {
+        lat = event.target.getAttribute('data-lat');
+        lon = event.target.getAttribute('data-lon');
+    }
+
+    map.setView(new L.LatLng(lat, lon), 14, {animate: true, duration: 1.5});
+
 }
 
 
