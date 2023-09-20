@@ -24,14 +24,14 @@
 
 <div class="dropdowns">
   <div class="station_search">
-    <input type="text" name="search_query" id="station_search" placeholder="Search stations...">
+    <input type="text" name="search_query" id="station_search" placeholder="Search stations..." class="map_box_shadow">
 
-    <ul class="matches" id="matches">
+    <ul class="matches map_box_shadow" id="matches">
     </ul>
   </div>
 
   <div class="dropdown">
-    <select class="country_dropdown" id="country_selection" name="selected_country" data-type="select-one" autocomplete="off" style="display: none">
+    <select class="country_dropdown map_box_shadow" id="country_selection" name="selected_country" data-type="select-one" autocomplete="off" style="display: none">
       <% @country_data.each do |region, countries| %>
         <optgroup label="<%=region %>">
           <% countries.each do |country| %>

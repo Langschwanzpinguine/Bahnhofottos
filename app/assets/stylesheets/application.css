@@ -422,3 +422,10 @@ input[type="submit"] {
 .leaflet-popup-tip{
   background: var(--bg);
 }
+
+.map_box_shadow, .choices, .choices__list--dropdown{
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);;
+}
+.choices{
+  border-radius: 100px;
+}
