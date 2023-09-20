@@ -180,7 +180,7 @@ function viewSearchedStation(event){
         lon = event.target.getAttribute('data-lon');
     }
 
-    map.setView(new L.LatLng(lat, lon), 14, {animate: true, duration: 1.5});
+    map.setView(new L.LatLng(lat, lon), 18, {animate: true, duration: 1.5});
 
 }
 
