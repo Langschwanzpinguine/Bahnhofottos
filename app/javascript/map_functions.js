@@ -141,8 +141,8 @@ function createPopUp(station){
         for(const operator of op_arr){
             returnString += `<p><i class="fa-solid fa-building"></i> ${operator}</p>`
         }
-
     }
+    returnString += `<button class="popup_button" onclick="uploadButtonHandler(${station.id})"><i class="fa-solid fa-camera"></i> Upload photo</button>`;
     return returnString;
 }
 
@@ -189,6 +189,10 @@ function viewSearchedStation(event){
     map.openPopup(markerFound.popup)
 
     map.setView(new L.LatLng(lat, lon), 18, {animate: false});
+}
+
+function uploadButtonHandler(stationId){
+    console.log(stationId);
 }
 
 

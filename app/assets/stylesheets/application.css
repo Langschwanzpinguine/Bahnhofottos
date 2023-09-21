@@ -429,3 +429,14 @@ input[type="submit"] {
 .choices{
   border-radius: 100px;
 }
+
+.popup_button{
+  width: 100%;
+  padding: .5em 1em;
+  border: none;
+  border-radius: 100px;
+  background: var(--color-accent);
+  color: var(--color-text);
+  font-weight: bold;
+  margin-top: 1em;
+}
