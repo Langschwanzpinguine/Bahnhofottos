@@ -6,18 +6,28 @@
   <h1>Settings</h1>
   <h2>Your Account</h2>
 
-  <div id="changeUsernameForm" class="popup_form">
-    <%= form_with model: Current.user, url: users_change_name_path, data: { turbo: false } do |f|%>
-      <div class="form_field">
-        <%= f.label :username %><br />
-        <%= f.text_field :username %>
-      </div>
-      <div class="actions"><%= f.submit "Change Username" %></div>
-    <%end %>
-  </div>
-  <%= javascript_include_tag "/javascripts/user_settings" %> <br>
-
-  <%= button_to "Edit Password", edit_password_path, class: "button main_button", method: :get%>
-  <%= button_to "Delete user", destroy_user_path, class: "button main_button", method: :delete, form: { data: { turbo_confirm: "Are you sure?" } }%>
-  <%= button_to "Log out", logout_path, class: "button main_button", method: :delete%>
+<div>
+  <%= form_with model: Current.user, url: upload_avatar_path, data: { turbo: false} do |f| %>
+    <p>
+      <%= f.label :avatar%>
+      <%= f.file_field :avatar, accept: 'image/png, image/jpeg' %>
+    </p>
+    <div class="actions">
+      <%= f.submit "Upload picture" %>
+    </div>
+  <%end %>
+  <% if Current.user.avatar.attached? %>
+    <%= image_tag Current.user.avatar.variant(resize_to_fit: [100,100]) , class: "user_avatar"%>
+  <%end %>
 </div>
+
+<div id="changeUsernameForm" class="hidden popup_form">
+  <%= form_with model: Current.user, url: users_change_name_path, data: { turbo: false } do |f|%>
+    <div class="form_field">
+      <%= f.label :username %><br />
+      <%= f.text_field :username %>
+    </div>
+    <div class="actions"><%= f.submit "Change Username" %></div>
+  <%end %>
+</div>
+<%= javascript_include_tag "/javascripts/user_settings" %>

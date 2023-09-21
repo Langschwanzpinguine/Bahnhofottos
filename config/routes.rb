@@ -8,6 +8,10 @@ Rails.application.routes.draw do
   get "/proxy/map-tiles/thunderforest", to: "proxy#maptiles_thunderforest"
   get "/proxy/map-tiles/jawg", to: "proxy#maptiles_jawg"
 
+  scope module: 'api' do
+    get '/api/countries/:country_code', to: "country_data#fetch", as: "country_data"
+  end
+
   #Account system
   scope module: "account" do
     get '/users/sign_up', to: 'users#new', as: 'signup'
@@ -20,6 +24,7 @@ Rails.application.routes.draw do
     get '/users/profile', to: 'users#profile', as: 'profile'
     delete '/users/profile', to: 'users#destroy', as: 'destroy_user'
     get '/users/settings', to: 'users#settings', as: 'settings'
+    patch '/users/settings/avatar', to: 'users#upload_avatar', as: 'upload_avatar'
 
     get '/auth/password', to: 'auth#edit_password', as: 'edit_password'
     patch '/auth/password', to: 'auth#update_password'
@@ -31,5 +36,11 @@ Rails.application.routes.draw do
     patch '/auth/reset/edit', to: 'password_resets#update'
 
     patch '/users/change_name', to: 'users#change_username'
+
+    get '/friends', to: 'friends#index'
+    post '/friends', to: 'friends#send_invitation'
+    patch '/friends/accept_invitation', to: 'friends#accept_invitation', as: 'accept_invitation'
+    delete '/friends/delete_invitation', to: 'friends#delete_invitation', as: 'delete_invitation'
+    delete '/friends/unfriend', to: 'friends#unfriend', as: 'unfriend'
   end
 end
