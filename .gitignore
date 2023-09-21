@@ -39,3 +39,5 @@
 
 .env
 /config/credentials/development.key
+
+/public/data/osm_data/*
