@@ -10,24 +10,70 @@ const STATION_YELLOW = "/assets/bahnhof_windowless_yellow";
 const STATION_RED = "/assets/bahnhof_windowless_red";
 
 document.addEventListener("DOMContentLoaded", initPage);
+
 let fuse = new Fuse([], {
     keys: [
         "tags.name"
     ]}
 );
 
+let markerIDs = [];
+
+
+
+
+function initPage(){
+    searchInput = document.getElementById('station_search');
+    select_tag = document.getElementById('country_selection');
+    listOfResults = document.getElementById('matches');
+
+    select_tag.addEventListener('change', countrySelected);
+    selectedCountry = select_tag.value;
+
+    initMap();
+    countrySelected();
+
+    const element = document.querySelector('.country_dropdown');
+    const choices = new Choices(element, {
+        searchEnabled: true,
+        itemSelectText: '',
+        searchPlaceholderValue: "Search...",
+        shouldSort: false
+    });
+
+    document.getElementById('station_search').addEventListener('input', perform_search);
+    document.addEventListener('click', (ev) => {
+        disableResults(ev);
+    });
+}
+
+function initMap(){
+    map = L.map('map');
+    L.Marker.prototype.options.icon = L.icon({
+        iconUrl: "/assets/Point.png",
+        shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+        iconAnchor: [13, 41],
+        popupAnchor:  [0, -35]
+    });
+    L.tileLayer('http://localhost:3000/proxy/map-tiles/thunderforest?z={z}&x={x}&y={y}', {
+        maxZoom: 19,
+        attribution: '© OSM x IG Langschwanzpinguine'
+    }).addTo(map);
+}
 
 function countrySelected(){
     markers ? markers.clearLayers() : null;
+
     selectedCountry = select_tag.value;
     const foundCountry = country_info['countries'].find((country) => country.code === selectedCountry);
+
     let bbox = foundCountry['bounding_box'];
     map.fitBounds([
         [bbox[0], bbox[2]],
         [bbox[1], bbox[3]]
-    ])
+    ]);
     const url = "http://localhost:3000/api/countries/" + foundCountry['code'];
-    console.log(url)
+
     const requestOptions = {
         method: 'GET',
     };
@@ -44,10 +90,11 @@ function countrySelected(){
                     image_source = '<img class="station_marker" src="' + STATION_RED + '">';
                 }
                 return L.divIcon({ html: '<div class="childcount">' + childCount + '</div>' + image_source,
-                                iconSize: L.point(40, 15)});
+                    iconSize: L.point(40, 15)});
             }
         }
     );
+
     fetch(url, requestOptions)
         .then(res => {
             if (!res.ok) {
@@ -70,7 +117,12 @@ function countrySelected(){
             let lon = station.lon;
             let marker = L.marker([lat, lon]);
 
-            marker.bindPopup(createPopUp(station));
+            let popup = L.popup()
+                .setLatLng(L.latLng(lat, lon))
+                .setContent(createPopUp(station))
+
+            marker.bindPopup(popup);
+            markerIDs.push({id: station.id, popup: popup });
             markers.addLayer(marker);
             map.addLayer(markers);
         }
@@ -94,48 +146,6 @@ function createPopUp(station){
     return returnString;
 }
 
-function initPage(){
-    searchInput = document.getElementById('station_search');
-    select_tag = document.getElementById('country_selection');
-    selectedCountry = select_tag.value;
-    select_tag.addEventListener('change', countrySelected);
-    listOfResults = document.getElementById('matches');
-    initMap();
-    countrySelected();
-    const element = document.querySelector('.country_dropdown');
-    const choices = new Choices(element, {
-        searchEnabled: true,
-        itemSelectText: '',
-        searchPlaceholderValue: "Search...",
-        shouldSort: false
-    });
-
-    document.getElementById('station_search').addEventListener('input', perform_search);
-    document.addEventListener('click', (ev) => {
-        disableResults(ev);
-    });
-}
-
-function initMap(){
-    map = L.map('map')
-     //Thunderforest
-    L.Marker.prototype.options.icon = L.icon({
-        iconUrl: "/assets/Point.png",
-        shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
-        iconAnchor: [13, 41],
-        popupAnchor:  [0, -35]
-    });
-    L.tileLayer('http://localhost:3000/proxy/map-tiles/thunderforest?z={z}&x={x}&y={y}', {
-        maxZoom: 19,
-        attribution: '© OSM x IG Langschwanzpinguine'
-    }).addTo(map);
-
-    //JAWG
-    // L.tileLayer('http://localhost:3001/proxy/jawg?z={z}&x={x}&y={y}', {})
-    //     .addTo(map);
-    // map.attributionControl.addAttribution("OSM x <a href='https://github.com/Langschwanzpinguine' target='_blank'>Langschwanzpinguine e.V.</a>")
-}
-
 function perform_search(){
     let pattern = document.getElementById('station_search').value;
     let results = fuse.search(pattern).slice(0, 5);
@@ -146,6 +156,7 @@ function perform_search(){
         const li = document.createElement('li');
         li.setAttribute('data-lat', res.item.lat);
         li.setAttribute('data-lon', res.item.lon);
+        li.setAttribute('data-id', res.item.id);
         li.textContent = res.item.tags.name;
 
         li.addEventListener('click', (ev) => {
@@ -160,7 +171,6 @@ function disableResults(event){
     if (event.target !== searchInput && event.target !== listOfResults && !listOfResults.contains(event.target)) {
         const liElements = document.querySelectorAll('.matches li');
         liElements.forEach((li) => {
-            console.log("Mounted listener")
             li.removeEventListener('click', viewSearchedStation);
         });
         document.getElementById('station_search').value = "";
@@ -169,19 +179,16 @@ function disableResults(event){
 }
 
 function viewSearchedStation(event){
-    let lat = '';
-    let lon = '';
+    const selectedElement = event.target.tagName === 'BRTSCKFT' ? event.target.parentElement : event.target;
 
-    if(event.target.tagName === 'BRTSCKFT'){
-        lat = event.target.parentElement.getAttribute('data-lat');
-        lon = event.target.parentElement.getAttribute('data-lon');
-    }else {
-        lat = event.target.getAttribute('data-lat');
-        lon = event.target.getAttribute('data-lon');
-    }
+    let lat = selectedElement.getAttribute('data-lat');
+    let lon = selectedElement.getAttribute('data-lon');
+    let id = selectedElement.getAttribute('data-id');
 
-    map.setView(new L.LatLng(lat, lon), 18, {animate: true, duration: 1.5});
+    const markerFound = markerIDs.find(marker => marker.id == id);
+    map.openPopup(markerFound.popup)
 
+    map.setView(new L.LatLng(lat, lon), 18, {animate: false});
 }
 
 
