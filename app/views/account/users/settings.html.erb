@@ -5,6 +5,21 @@
 <%= button_to "Destroy user", destroy_user_path, class: "button main_button", method: :delete, form: { data: { turbo_confirm: "Are you sure?" } }%>
 <button id="changeUsernameBtn" class="button main_button">Change Username</button>
 
+<div>
+  <%= form_with model: Current.user, url: upload_avatar_path, data: { turbo: false} do |f| %>
+    <p>
+      <%= f.label :avatar%>
+      <%= f.file_field :avatar, accept: 'image/png, image/jpeg' %>
+    </p>
+    <div class="actions">
+      <%= f.submit "Upload picture" %>
+    </div>
+  <%end %>
+  <% if Current.user.avatar.attached? %>
+    <%= image_tag Current.user.avatar.variant(resize_to_fit: [100,100]) , class: "user_avatar"%>
+  <%end %>
+</div>
+
 <div id="changeUsernameForm" class="hidden popup_form">
   <%= form_with model: Current.user, url: users_change_name_path, data: { turbo: false } do |f|%>
     <div class="form_field">

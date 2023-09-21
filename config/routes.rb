@@ -24,6 +24,7 @@ Rails.application.routes.draw do
     get '/users/profile', to: 'users#profile', as: 'profile'
     delete '/users/profile', to: 'users#destroy', as: 'destroy_user'
     get '/users/settings', to: 'users#settings', as: 'settings'
+    patch '/users/settings/avatar', to: 'users#upload_avatar', as: 'upload_avatar'
 
     get '/auth/password', to: 'auth#edit_password', as: 'edit_password'
     patch '/auth/password', to: 'auth#update_password'

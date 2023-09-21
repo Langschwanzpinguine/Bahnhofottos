@@ -1,10 +1,13 @@
 class User < ApplicationRecord
   validates :email, uniqueness: true, presence: true, format: {with: /[\w\-\.]+@([\w\-]+\.)+[\w\-]{2,4}/}
   has_secure_password
-
-  has_many :friends
+  
+  # Frienships, rainbows 'n such
   has_many :invitations
   has_many :pending_invitations, -> { where confirmed: false }, class_name: 'Invitation', foreign_key: "friend_id"
+
+  has_one_attached :avatar
+  has_many :train_stations
 
   before_create :init
 
