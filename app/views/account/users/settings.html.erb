@@ -1,9 +1,10 @@
-<h1>Settings</h1>
+<div class="column_nav">
+  <%= button_to "General", settings_path, class: "button main_button_settings", method: :get%>
+</div>
 
-<%= button_to "Log out", logout_path, class: "button main_button", method: :delete%>
-<%= button_to "Edit Password", edit_password_path, class: "button main_button", method: :get%>
-<%= button_to "Destroy user", destroy_user_path, class: "button main_button", method: :delete, form: { data: { turbo_confirm: "Are you sure?" } }%>
-<button id="changeUsernameBtn" class="button main_button">Change Username</button>
+<div class="column_content">
+  <h1>Settings</h1>
+  <h2>Your Account</h2>
 
 <div>
   <%= form_with model: Current.user, url: upload_avatar_path, data: { turbo: false} do |f| %>
