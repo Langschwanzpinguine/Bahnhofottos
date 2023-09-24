@@ -21,13 +21,14 @@
   <%end %>
 </div>
 
-<div id="changeUsernameForm" class="hidden popup_form">
-  <%= form_with model: Current.user, url: users_change_name_path, data: { turbo: false } do |f|%>
-    <div class="form_field">
-      <%= f.label :username %><br />
-      <%= f.text_field :username %>
+    <div id="changeUsernameForm" class="hidden popup_form">
+      <%= form_with model: Current.user, url: users_change_name_path, data: { turbo: false } do |f|%>
+        <div class="form_field">
+          <%= f.label :username %><br />
+          <%= f.text_field :username %>
+        </div>
+        <div class="actions"><%= f.submit "Change Username" %></div>
+      <%end %>
     </div>
-    <div class="actions"><%= f.submit "Change Username" %></div>
-  <%end %>
-</div>
 <%= javascript_include_tag "/javascripts/user_settings" %>
+</div>
