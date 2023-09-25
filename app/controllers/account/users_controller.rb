@@ -38,9 +38,10 @@ class Account::UsersController < ApplicationController
   end
 
   def upload_avatar
-    if  Current.user.avatar.attach(avatar_params[:avatar])
+    if avatar_params[:avatar].present? && Current.user.avatar.attach(avatar_params[:avatar])
       redirect_to settings_path, notice: "Profile picture uploaded"
     else
+      flash.now[:alert] = "No image selected!"
       render :settings
     end
   end
@@ -54,6 +55,10 @@ class Account::UsersController < ApplicationController
   end
 
   private def avatar_params
-    params.require(:user).permit(:avatar)
+    if params[:user].present?
+      params.require(:user).permit(:avatar)
+    else
+      {}
+    end
   end
 end
