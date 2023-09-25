@@ -39,6 +39,13 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_20_073639) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
+  create_table "friendships", id: false, force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "friend_user_id"
+    t.index ["friend_user_id", "user_id"], name: "index_friendships_on_friend_user_id_and_user_id", unique: true
+    t.index ["user_id", "friend_user_id"], name: "index_friendships_on_user_id_and_friend_user_id", unique: true
+  end
+
   create_table "invitations", force: :cascade do |t|
     t.integer "user_id", null: false
     t.integer "friend_id"
