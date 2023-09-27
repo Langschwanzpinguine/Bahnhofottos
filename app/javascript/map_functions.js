@@ -76,7 +76,6 @@ function countrySelected(){
 
     selectedCountry = select_tag.value;
     const foundCountry = country_info['countries'].find((country) => country.code === selectedCountry);
-    console.log(foundCountry)
     document.getElementById('country_spinner_info').innerText = `Loading ${foundCountry['name']} ${foundCountry['flag']}  `;
 
     let bbox = foundCountry['bounding_box'];

@@ -9,16 +9,18 @@ class MapController < ApplicationController
     @country_info = JSON.parse(File.read(info_file))
 
     train_stations_json = []
-    @train_stations = Current.user.train_stations
-    @train_stations.each do |train_station|
-      image_url = url_for(train_station.image)
+    if Current.user
+      @train_stations = Current.user.train_stations
+      @train_stations.each do |train_station|
+        image_url = url_for(train_station.image)
 
-      train_station_json = {
-        osm_id: train_station.osm_id,
-        image_url: image_url
-      }
+        train_station_json = {
+          osm_id: train_station.osm_id,
+          image_url: image_url
+        }
 
-      train_stations_json << train_station_json
+        train_stations_json << train_station_json
+      end
     end
     @photographed_stations = train_stations_json.to_json.html_safe
   end
