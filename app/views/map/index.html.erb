@@ -16,6 +16,7 @@
 
 <script>
     let country_info = <%= @country_info.to_json.html_safe %>;
+    let photographed_stations = {"stations" : <%= @photographed_stations %>};
 </script>
 
 <div class="map_container">
@@ -41,4 +42,18 @@
       <% end %>
     </select>
   </div>
+</div>
+
+<div id="hidden_form_wrapper">
+  <%= form_with model: Current.user, id: "hidden_form", url: station_image_path, data: { turbo: false} do |f| %>
+    <p>
+      <%= f.file_field :image, accept: 'image/png, image/jpeg' , id: 'user_station_image'%>
+    </p>
+    <p>
+      <%= f.text_field :osm_id, id: 'user_station_id'%>
+    </p>
+    <div class="actions">
+      <%= f.submit "Upload picture" , id: "image_upload_submit"%>
+    </div>
+  <%end %>
 </div>

@@ -462,5 +462,23 @@ input[type="submit"] {
   background: var(--color-accent);
   color: white;
   font-weight: bold;
+  margin-top: .3em;
+}
+
+.popup_image{
+  width: 100%;
+}
+
+#hidden_form_wrapper, #hidden_form_wrapper > * {
+  display: none;
+}
+
+#station_file_selected{
+  font-style: italic;
+  opacity: 50%;
+  text-align: center;
+}
+
+.upload_wrapper{
   margin-top: 1em;
 }

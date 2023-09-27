@@ -4,6 +4,9 @@ let selectedCountry;
 let select_tag;
 let listOfResults;
 let searchInput;
+let hidden_image_input;
+let hidden_id_input;
+let hidden_form;
 
 const STATION_GREEN = "/assets/bahnhof_windowless_green";
 const STATION_YELLOW = "/assets/bahnhof_windowless_yellow";
@@ -26,7 +29,11 @@ function initPage(){
     searchInput = document.getElementById('station_search');
     select_tag = document.getElementById('country_selection');
     listOfResults = document.getElementById('matches');
+    hidden_image_input = document.getElementById('user_station_image');
+    hidden_id_input = document.getElementById('user_station_id');
+    hidden_form = document.getElementById('hidden_form');
 
+    hidden_image_input.addEventListener('change', update_file_selection_in_popup);
     select_tag.addEventListener('change', countrySelected);
     selectedCountry = select_tag.value;
 
@@ -122,6 +129,8 @@ function countrySelected(){
                 .setContent(createPopUp(station))
 
             marker.bindPopup(popup);
+            marker.osm_id = station.id;
+            marker.on('click', handleMarkerClick);
             markerIDs.push({id: station.id, popup: popup });
             markers.addLayer(marker);
             map.addLayer(markers);
@@ -133,17 +142,38 @@ function countrySelected(){
 }
 
 function createPopUp(station){
+    const station_photo = photographed_stations['stations'].find((s) => parseInt(s.osm_id) === parseInt(station.id));
+    let returnString = '';
+
+    if(station_photo){
+        returnString += `<img class="popup_image" src="${station_photo['image_url']}" alt="Image of train station ${station_photo['osm_id']}">`
+    }
+
     let operator_string = station.tags.operator
-    let returnString = `<h5>${station.tags.name ?? station.tags.description}</h5>
-    <p><i class="fa-solid fa-train"></i> ${station.tags.railway.charAt(0).toUpperCase() + station.tags.railway.slice(1)}</p>`
+    const stationName = station.tags.name || station.tags.description;
+    const railwayType = station.tags.railway.charAt(0).toUpperCase() + station.tags.railway.slice(1);
+    returnString += `
+        <h5>${stationName}</h5>
+        <p><i class="fa-solid fa-train"></i> ${railwayType}</p>`
     if(operator_string){
         let op_arr = operator_string.split(';')
         for(const operator of op_arr){
             returnString += `<p><i class="fa-solid fa-building"></i> ${operator}</p>`
         }
     }
-    returnString += `<button class="popup_button" onclick="uploadButtonHandler(${station.id})"><i class="fa-solid fa-camera"></i> Upload photo</button>`;
+    returnString += `
+        <div class="upload_wrapper">
+            <p id="station_file_selected"></p>
+            <button class="popup_button" id="photo_select_button" onclick="uploadButtonHandler(${station.id})">
+                <i class="fa-solid fa-camera"></i> Select photo</button>
+            <button style="display: none" class="popup_button" id="photo_submit_button" onclick="submitButtonHandler(${station.id})">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i> Upload photo</button></div>`;
+
     return returnString;
+}
+
+function handleMarkerClick(e){
+    // Planning on implementing a dynamic loading of images
 }
 
 function perform_search(){
@@ -192,8 +222,26 @@ function viewSearchedStation(event){
 }
 
 function uploadButtonHandler(stationId){
-    console.log(stationId);
+    hidden_id_input.value = stationId;
+    hidden_image_input.click();
 }
+
+function submitButtonHandler(stationId){
+    hidden_form.submit();
+}
+
+function update_file_selection_in_popup(){
+    let open_popup_display = document.getElementById('station_file_selected');
+    let submit_button = document.getElementById('photo_submit_button');
+    let select_button = document.getElementById('photo_select_button');
+    if(open_popup_display){
+        open_popup_display.innerText = hidden_image_input.value.replace(/.*[\/\\]/, '');
+        submit_button.style.display = 'block';
+        select_button.style.display = 'none';
+    }
+}
+
+
 
 
 
