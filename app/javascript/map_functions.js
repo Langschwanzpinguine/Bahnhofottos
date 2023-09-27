@@ -7,6 +7,7 @@ let searchInput;
 let hidden_image_input;
 let hidden_id_input;
 let hidden_form;
+let spinny_boi;
 
 const STATION_GREEN = "/assets/bahnhof_windowless_green";
 const STATION_YELLOW = "/assets/bahnhof_windowless_yellow";
@@ -32,6 +33,7 @@ function initPage(){
     hidden_image_input = document.getElementById('user_station_image');
     hidden_id_input = document.getElementById('user_station_id');
     hidden_form = document.getElementById('hidden_form');
+    spinny_boi = document.getElementById('spinner');
 
     hidden_image_input.addEventListener('change', update_file_selection_in_popup);
     select_tag.addEventListener('change', countrySelected);
@@ -69,10 +71,13 @@ function initMap(){
 }
 
 function countrySelected(){
+    spinny_boi.style.display = 'flex';
     markers ? markers.clearLayers() : null;
 
     selectedCountry = select_tag.value;
     const foundCountry = country_info['countries'].find((country) => country.code === selectedCountry);
+    console.log(foundCountry)
+    document.getElementById('country_spinner_info').innerText = `Loading ${foundCountry['name']} ${foundCountry['flag']}  `;
 
     let bbox = foundCountry['bounding_box'];
     map.fitBounds([
@@ -135,6 +140,8 @@ function countrySelected(){
             markers.addLayer(marker);
             map.addLayer(markers);
         }
+
+        spinny_boi.style.display = 'none';
     }).catch(error => {
         console.error('Fetch error:', error);
     });
