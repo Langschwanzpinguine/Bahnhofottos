@@ -25,7 +25,9 @@
 
         <p><i class="fa-fw fa-solid fa-train"></i> <b>Type</b>: <%= station.station_type.capitalize %></p>
 
-        <p><i class="fa-fw fa-solid fa-building"></i> <b>Operator</b>: <%= station.operator %></p>
+        <% unless station.operator.empty? %>
+        <p><i class="fa-fw fa-solid fa-building"></i> <b>Operator</b>: <%=  station.operator  %></p>
+        <% end %>
         <p class="score"><i class="fa-fw fa-solid fa-star"></i> Score: 12 pts</p>
 
       </div>
