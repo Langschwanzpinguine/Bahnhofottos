@@ -1,4 +1,5 @@
 let map;
+let LeafletIcon;
 let markers;
 let selectedCountry;
 let select_tag;
@@ -37,10 +38,16 @@ function initPage(){
 
     hidden_image_input.addEventListener('change', update_file_selection_in_popup);
     select_tag.addEventListener('change', countrySelected);
-    selectedCountry = select_tag.value;
+
+    LeafletIcon = L.Icon.extend({
+        options: {
+            shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+            iconAnchor: [13, 41],
+            popupAnchor:  [0, -35]
+        }
+    })
 
     initMap();
-    countrySelected();
 
     const element = document.querySelector('.country_dropdown');
     const choices = new Choices(element, {
@@ -50,6 +57,8 @@ function initPage(){
         shouldSort: false
     });
 
+    loadInitialCountry(choices);
+
     document.getElementById('station_search').addEventListener('input', perform_search);
     document.addEventListener('click', (ev) => {
         disableResults(ev);
@@ -58,24 +67,38 @@ function initPage(){
 
 function initMap(){
     map = L.map('map');
-    L.Marker.prototype.options.icon = L.icon({
-        iconUrl: "/assets/Point.png",
-        shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
-        iconAnchor: [13, 41],
-        popupAnchor:  [0, -35]
-    });
+    // L.Marker.prototype.options.icon = L.icon({
+    //     iconUrl: "/assets/Point.png",
+    //     shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+    //     iconAnchor: [13, 41],
+    //     popupAnchor:  [0, -35]
+    // });
     L.tileLayer('http://localhost:3000/proxy/map-tiles/thunderforest?z={z}&x={x}&y={y}', {
         maxZoom: 19,
         attribution: '© OSM x IG Langschwanzpinguine'
     }).addTo(map);
 }
 
+function loadInitialCountry(choices){
+    let countryToLoad = session_info['show_country'] ?? 'DE';
+    choices.setChoiceByValue(countryToLoad);
+    countrySelected();
+}
+
 function countrySelected(){
     spinny_boi.style.display = 'flex';
     markers ? markers.clearLayers() : null;
 
+    let greenMarker = new LeafletIcon({iconUrl: '/assets/greenPoint.png'});
+    let redMarker = new LeafletIcon({iconUrl: '/assets/Point.png'});
     selectedCountry = select_tag.value;
-    const foundCountry = country_info['countries'].find((country) => country.code === selectedCountry);
+
+    let foundCountry = country_info['countries'].find((country) => country.code === selectedCountry);
+
+    if(!foundCountry){
+        foundCountry = country_info['countries'].find((country) => country.code === 'DE');
+    }
+
     document.getElementById('country_spinner_info').innerText = `Loading ${foundCountry['name']} ${foundCountry['flag']}  `;
 
     let bbox = foundCountry['bounding_box'];
@@ -124,13 +147,14 @@ function countrySelected(){
         fuse = new Fuse(allStations, fuseOptions);
 
         for (const station of allStations) {
+            const station_photo = photographed_stations['stations'].find((s) => parseInt(s.osm_id) === parseInt(station.id));
+            let selectedIcon = station_photo ? greenMarker : redMarker;
             let lat = station.lat;
             let lon = station.lon;
-            let marker = L.marker([lat, lon]);
-
+            let marker = L.marker([lat, lon], {icon: selectedIcon});
             let popup = L.popup()
                 .setLatLng(L.latLng(lat, lon))
-                .setContent(createPopUp(station))
+                .setContent(createPopUp(station, station_photo))
 
             marker.bindPopup(popup);
             marker.osm_id = station.id;
@@ -147,8 +171,8 @@ function countrySelected(){
 
 }
 
-function createPopUp(station){
-    const station_photo = photographed_stations['stations'].find((s) => parseInt(s.osm_id) === parseInt(station.id));
+function createPopUp(station, station_photo){
+
     let returnString = '';
 
     if(station_photo){
@@ -228,8 +252,13 @@ function viewSearchedStation(event){
 }
 
 function uploadButtonHandler(stationId){
-    hidden_id_input.value = stationId;
-    hidden_image_input.click();
+    if(session_info['logged_in']){
+        hidden_id_input.value = stationId;
+        hidden_image_input.click();
+    }else{
+        window.location = '/users/login'
+    }
+
 }
 
 function submitButtonHandler(stationId){

@@ -17,6 +17,7 @@
 <script>
     let country_info = <%= @country_info.to_json.html_safe %>;
     let photographed_stations = {"stations" : <%= @photographed_stations %>};
+    let session_info = <%= @session_info %>
 </script>
 
 <div class="map_container">

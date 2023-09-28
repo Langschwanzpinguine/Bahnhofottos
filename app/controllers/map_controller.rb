@@ -9,7 +9,9 @@ class MapController < ApplicationController
     @country_info = JSON.parse(File.read(info_file))
 
     train_stations_json = []
+    user_state = false
     if Current.user
+      user_state = true
       @train_stations = Current.user.train_stations
       @train_stations.each do |train_station|
         image_url = url_for(train_station.image)
@@ -23,6 +25,15 @@ class MapController < ApplicationController
       end
     end
     @photographed_stations = train_stations_json.to_json.html_safe
+
+    show_station_id = params[:station]
+    selected_country = params[:country]
+
+    @session_info = {
+      logged_in: user_state,
+      show_station: show_station_id,
+      show_country: selected_country
+    }.to_json.html_safe
   end
 
   def upload_station_image
