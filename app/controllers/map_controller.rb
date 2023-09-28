@@ -39,7 +39,7 @@ class MapController < ApplicationController
   def upload_station_image
     @train_station = Current.user.train_stations.new(train_station_params)
     if @train_station.save
-      redirect_to map_path, notice: "Uploaded image"
+      redirect_to action: :index, country: view_params[:country], station: view_params[:osm_id]
     else
       redirect_to root_path, alert: "Error uploading"
     end
@@ -58,5 +58,9 @@ class MapController < ApplicationController
   private
   def train_station_params
     params.require(:user).permit(:osm_id, :image)
+  end
+
+  def view_params
+    params.require(:user).permit(:osm_id, :country)
   end
 end

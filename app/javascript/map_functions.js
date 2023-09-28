@@ -7,6 +7,7 @@ let listOfResults;
 let searchInput;
 let hidden_image_input;
 let hidden_id_input;
+let hidden_country_input;
 let hidden_form;
 let spinny_boi;
 
@@ -33,6 +34,7 @@ function initPage(){
     listOfResults = document.getElementById('matches');
     hidden_image_input = document.getElementById('user_station_image');
     hidden_id_input = document.getElementById('user_station_id');
+    hidden_country_input = document.getElementById('user_station_country');
     hidden_form = document.getElementById('hidden_form');
     spinny_boi = document.getElementById('spinner');
 
@@ -47,8 +49,6 @@ function initPage(){
         }
     })
 
-    initMap();
-
     const element = document.querySelector('.country_dropdown');
     const choices = new Choices(element, {
         searchEnabled: true,
@@ -57,6 +57,7 @@ function initPage(){
         shouldSort: false
     });
 
+    initMap();
     loadInitialCountry(choices);
 
     document.getElementById('station_search').addEventListener('input', perform_search);
@@ -165,6 +166,9 @@ function countrySelected(){
         }
 
         spinny_boi.style.display = 'none';
+        if(session_info['show_station']){
+            setViewOnStation(session_info['show_station'])
+        }
     }).catch(error => {
         console.error('Fetch error:', error);
     });
@@ -254,6 +258,7 @@ function viewSearchedStation(event){
 function uploadButtonHandler(stationId){
     if(session_info['logged_in']){
         hidden_id_input.value = stationId;
+        hidden_country_input.value = select_tag.value;
         hidden_image_input.click();
     }else{
         window.location = '/users/login'
@@ -274,6 +279,17 @@ function update_file_selection_in_popup(){
         submit_button.style.display = 'block';
         select_button.style.display = 'none';
     }
+}
+
+function setViewOnStation(ID){
+    const markerFound = markerIDs.find(marker => marker.id == ID);
+    if(!markerFound) return;
+
+    const lat = markerFound.popup._latlng.lat;
+    const lon = markerFound.popup._latlng.lng;
+    map.openPopup(markerFound.popup)
+
+    map.setView(new L.LatLng(lat, lon), 18, {animate: false});
 }
 
 
