@@ -22,9 +22,6 @@ class Account::UsersController < ApplicationController
     redirect_to root_url, notice: "Logged out and destroyed user!"
   end
 
-  def profile
-  end
-
   def settings
     @photo = Current.user.avatar
   end
