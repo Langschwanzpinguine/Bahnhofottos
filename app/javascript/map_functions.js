@@ -8,8 +8,12 @@ let searchInput;
 let hidden_image_input;
 let hidden_id_input;
 let hidden_country_input;
+let hidden_operator_input;
+let hidden_name_input;
 let hidden_form;
+let hidden_type_input;
 let spinny_boi;
+let loadUrl;
 
 const STATION_GREEN = "/assets/bahnhof_windowless_green";
 const STATION_YELLOW = "/assets/bahnhof_windowless_yellow";
@@ -29,12 +33,16 @@ let markerIDs = [];
 
 
 function initPage(){
+    loadUrl = true;
     searchInput = document.getElementById('station_search');
     select_tag = document.getElementById('country_selection');
     listOfResults = document.getElementById('matches');
     hidden_image_input = document.getElementById('user_station_image');
     hidden_id_input = document.getElementById('user_station_id');
     hidden_country_input = document.getElementById('user_station_country');
+    hidden_operator_input = document.getElementById('user_station_operator');
+    hidden_name_input = document.getElementById('user_station_name');
+    hidden_type_input = document.getElementById('user_station_type');
     hidden_form = document.getElementById('hidden_form');
     spinny_boi = document.getElementById('spinner');
 
@@ -166,7 +174,8 @@ function countrySelected(){
         }
 
         spinny_boi.style.display = 'none';
-        if(session_info['show_station']){
+        if(session_info['show_station'] && loadUrl){
+            loadUrl = false
             setViewOnStation(session_info['show_station'])
         }
     }).catch(error => {
@@ -184,6 +193,7 @@ function createPopUp(station, station_photo){
     }
 
     let operator_string = station.tags.operator
+    let firstOp = '';
     const stationName = station.tags.name || station.tags.description;
     const railwayType = station.tags.railway.charAt(0).toUpperCase() + station.tags.railway.slice(1);
     returnString += `
@@ -191,6 +201,7 @@ function createPopUp(station, station_photo){
         <p><i class="fa-solid fa-train"></i> ${railwayType}</p>`
     if(operator_string){
         let op_arr = operator_string.split(';')
+        firstOp = op_arr[0];
         for(const operator of op_arr){
             returnString += `<p><i class="fa-solid fa-building"></i> ${operator}</p>`
         }
@@ -198,9 +209,9 @@ function createPopUp(station, station_photo){
     returnString += `
         <div class="upload_wrapper">
             <p id="station_file_selected"></p>
-            <button class="popup_button" id="photo_select_button" onclick="uploadButtonHandler(${station.id})">
+            <button class="popup_button" id="photo_select_button" onclick="uploadButtonHandler(${station.id}, '${stationName}', '${firstOp}', '${station.tags.railway}')">
                 <i class="fa-solid fa-camera"></i> Select photo</button>
-            <button style="display: none" class="popup_button" id="photo_submit_button" onclick="submitButtonHandler(${station.id})">
+            <button style="display: none" class="popup_button" id="photo_submit_button" onclick="submitButtonHandler(${station.id}, '${stationName}', '${firstOp}', '${station.tags.railway}')">
                 <i class="fa-solid fa-arrow-up-from-bracket"></i> Upload photo</button></div>`;
 
     return returnString;
@@ -255,9 +266,12 @@ function viewSearchedStation(event){
     map.setView(new L.LatLng(lat, lon), 18, {animate: false});
 }
 
-function uploadButtonHandler(stationId){
+function uploadButtonHandler(stationId, name, op, type){
     if(session_info['logged_in']){
         hidden_id_input.value = stationId;
+        hidden_name_input.value = name;
+        hidden_operator_input.value = op;
+        hidden_type_input.value = type;
         hidden_country_input.value = select_tag.value;
         hidden_image_input.click();
     }else{
@@ -266,7 +280,7 @@ function uploadButtonHandler(stationId){
 
 }
 
-function submitButtonHandler(stationId){
+function submitButtonHandler(stationId, name, op, type){
     hidden_form.submit();
 }
 

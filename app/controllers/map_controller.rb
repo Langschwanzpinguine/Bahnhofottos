@@ -57,7 +57,7 @@ class MapController < ApplicationController
 
   private
   def train_station_params
-    params.require(:user).permit(:osm_id, :image)
+    params.require(:user).permit(:osm_id, :image, :country, :name, :operator, :station_type)
   end
 
   def view_params

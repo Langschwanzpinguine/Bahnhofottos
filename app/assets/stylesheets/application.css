@@ -542,13 +542,6 @@ input[type="submit"] {
   border-bottom: 4px solid var(--color-accent);
 }
 
-.profile_content {
-  display: none;
-  padding: 20px;
-  flex: 1;
-  transition: transform 0.3s ease;
-}
-
 .profile_head{
   display: flex;
   flex-direction: row;
@@ -556,8 +549,65 @@ input[type="submit"] {
   margin-bottom: 3em;
 }
 
+.profile_content {
+  display: none;
+  padding: 20px;
+  flex: 1;
+  transition: transform 0.3s ease;
+}
+
 .profile_username{
   font-size: 1.5em;
   font-weight: bold;
 }
 
+.user_photos{
+  max-height: 60vh;
+  overflow: scroll;
+}
+
+.profile_station_entry{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.profile_station_entry {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.profile_station_photo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+
+.score {
+  font-weight: bold;
+}
+
+.station {
+  display: inline-block;
+}
+
+.country-flag {
+  vertical-align: middle;
+  margin-left: 10px;
+}
