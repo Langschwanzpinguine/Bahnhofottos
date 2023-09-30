@@ -8,7 +8,7 @@ class Account::UsersController < ApplicationController
   def create
     @user = User.new(user_params)
 
-    profile_pic_num = rand(9)
+    profile_pic_num = rand(8) + 1
     @user.avatar.attach(io: File.open("app/assets/images/Profilbild_0#{profile_pic_num}.png"), filename: 'propic.png')
 
     if @user.save

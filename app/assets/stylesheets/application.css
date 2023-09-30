@@ -648,3 +648,15 @@ h3 {
   color: var(--color-off-white);
   margin-left: 0.5em;
 }
+
+.no_entries{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-style: italic;
+  color: var(--color-dark-text);
+}
+.no_entries i{
+  font-size: 5em;
+  opacity: .2;
+}

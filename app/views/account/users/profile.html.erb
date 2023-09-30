@@ -15,27 +15,34 @@
   <div class="tab" onclick="showContent(2)"><i class="fa-solid fa-chart-simple"></i>  Your Stats</div>
 </div>
 <div class="profile_content user_photos" id="profile-1">
-  <%Current.user.train_stations.each do |station| %>
-    <div class="profile_station_entry">
-      <div class="entry_column_left">
-        <h3 class="station">
-          <%= station.name %>
-          <img class="country-flag" src="https://flagsapi.com/<%= station.country %>/flat/32.png">
-        </h3>
+  <% if Current.user.train_stations.length > 0%>
+    <%Current.user.train_stations.each do |station| %>
+      <div class="profile_station_entry">
+        <div class="entry_column_left">
+          <h3 class="station">
+            <%= station.name %>
+            <img class="country-flag" src="https://flagsapi.com/<%= station.country %>/flat/32.png">
+          </h3>
 
-        <p><i class="fa-fw fa-solid fa-train"></i> <b>Type</b>: <%= station.station_type.capitalize %></p>
+          <p><i class="fa-fw fa-solid fa-train"></i> <b>Type</b>: <%= station.station_type.capitalize %></p>
 
-        <% unless station.operator.empty? %>
-        <p><i class="fa-fw fa-solid fa-building"></i> <b>Operator</b>: <%=  station.operator  %></p>
-        <% end %>
-        <p class="score"><i class="fa-fw fa-solid fa-star"></i> Score: 12 pts</p>
+          <% unless station.operator.empty? %>
+            <p><i class="fa-fw fa-solid fa-building"></i> <b>Operator</b>: <%=  station.operator  %></p>
+          <% end %>
+          <p class="score"><i class="fa-fw fa-solid fa-star"></i> Score: 12 pts</p>
 
+        </div>
+        <div class="entry_column_right">
+          <%= image_tag station.image.variant(resize_to_fit: [200,200]) ,class: "profile_station_photo"%>
+        </div>
       </div>
-      <div class="entry_column_right">
-        <%= image_tag station.image.variant(resize_to_fit: [200,200]) ,class: "profile_station_photo"%>
-      </div>
+    <%end %>
+  <%else%>
+    <div class="no_entries">
+      <p>You dont have any photos, yet...</p>
+      <i class="fa-solid fa-image"></i>
     </div>
-  <%end %>
+  <% end %>
 </div>
 <div class="profile_content user_achievements" id="profile-2">
   <h2>Achievements</h2>
