@@ -37,6 +37,18 @@ class MapController < ApplicationController
   end
 
   def upload_station_image
+
+    existing_station = Current.user.train_stations.find_by(osm_id: train_station_params[:osm_id])
+    if existing_station
+      existing_station.image = train_station_params[:image]
+      if existing_station.save
+        redirect_to action: :index, country: view_params[:country], station: view_params[:osm_id]
+      else
+        redirect_to root_path, alert: "Error uploading"
+      end
+      return
+    end
+
     @train_station = Current.user.train_stations.new(train_station_params)
     if @train_station.save
       redirect_to action: :index, country: view_params[:country], station: view_params[:osm_id]
