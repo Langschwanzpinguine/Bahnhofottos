@@ -1,0 +1,60 @@
+<h1><%= @user.username %>’s Profile</h1>
+
+<div class="profile_head">
+  <% if @user.avatar.attached? %>
+    <%= image_tag @user.avatar.variant(resize_to_fill: [100,100]) ,class: "user_avatar"%>
+  <%end %>
+
+  <p class="profile_username"><%= @user.username %></p>
+</div>
+
+<div class="tab-container">
+  <div class="tab active_tab" onclick="showContent(0)"><i class="fa-solid fa-images"></i>   Photos</div>
+  <div class="tab" onclick="showContent(1)"><i class="fa-solid fa-trophy"></i>   Achievements</div>
+  <div class="tab" onclick="showContent(2)"><i class="fa-solid fa-chart-simple"></i>   Stats</div>
+</div>
+<div class="profile_content user_photos" id="profile-1">
+  <%@user.train_stations.each do |station| %>
+    <div class="profile_station_entry">
+      <div class="entry_column_left">
+        <h3 class="station">
+          <%= station.name %>
+          <img class="country-flag" src="https://flagsapi.com/<%= station.country %>/flat/32.png">
+        </h3>
+
+        <p><i class="fa-fw fa-solid fa-train"></i> <b>Type</b>: <%= station.station_type.capitalize %></p>
+
+        <% unless station.operator.empty? %>
+        <p><i class="fa-fw fa-solid fa-building"></i> <b>Operator</b>: <%=  station.operator  %></p>
+        <% end %>
+        <p class="score"><i class="fa-fw fa-solid fa-star"></i> Score: 12 pts</p>
+
+      </div>
+      <div class="entry_column_right">
+        <%= image_tag station.image.variant(resize_to_fit: [200,200]) ,class: "profile_station_photo"%>
+      </div>
+    </div>
+  <%end %>
+</div>
+<div class="profile_content user_achievements" id="profile-2">
+  <h2>Achievements</h2>
+  <p>Fuck achievements</p>
+</div>
+<div class="profile_content user_achievements" id="profile-3">
+  <h2>Statistics</h2>
+  <p>Maybe some nice stats here</p>
+</div>
+
+<script>
+    let currentTab = 0;
+
+    function showContent(tabIndex) {
+        document.getElementById(`profile-${currentTab + 1}`).style.display = 'none';
+        document.getElementById(`profile-${tabIndex + 1}`).style.display = 'block';
+        document.getElementsByClassName('tab')[currentTab].classList.remove('active_tab');
+        document.getElementsByClassName('tab')[tabIndex].classList.add('active_tab');
+        currentTab = tabIndex;
+
+    }
+    showContent(0);
+</script>

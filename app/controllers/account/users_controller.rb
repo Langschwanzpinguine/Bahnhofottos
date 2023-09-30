@@ -43,6 +43,16 @@ class Account::UsersController < ApplicationController
     end
   end
 
+  def view_profile
+    user = User.find_by(id: params[:user_id])
+    if Current.user.friend_with?(user)
+      @user = user
+      render :visit_profile
+    else
+      redirect_to root_path
+    end
+  end
+
   private def user_params
     params.require(:user).permit(:email, :password, :password_confirmation)
   end
