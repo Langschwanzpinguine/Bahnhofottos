@@ -20,8 +20,8 @@
       <div class="profile_station_entry">
         <div class="entry_column_left">
           <h3 class="station">
-            <%= station.name %>
-            <img class="country-flag" src="https://flagsapi.com/<%= station.country %>/flat/32.png">
+            <%= link_to "#{station.name}", "/map?country=#{station.country}&station=#{station.osm_id}"%>
+            <img class="country-flag" src="https://flagsapi.com/<%= station.country %>/flat/32.png" alt='<%= "Flag of #{station.country}" %>'>
           </h3>
 
           <p><i class="fa-fw fa-solid fa-train"></i> <b>Type</b>: <%= station.station_type.capitalize %></p>

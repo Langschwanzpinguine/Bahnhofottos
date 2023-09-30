@@ -585,10 +585,13 @@ input[type="submit"] {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h3 {
+.station {
   margin: 0;
   font-size: 1.2rem;
-  color: #333;
+}
+.station a{
+  text-decoration: none;
+  color: var(--color-dark-text);
 }
 
 .profile_station_photo {

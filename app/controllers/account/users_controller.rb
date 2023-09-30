@@ -52,7 +52,7 @@ class Account::UsersController < ApplicationController
       @user = user
       render :visit_profile
     else
-      redirect_to root_path
+      redirect_to root_path, alert: "You are not friends with this user"
     end
   end
 
