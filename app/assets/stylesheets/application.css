@@ -611,3 +611,40 @@ h3 {
   vertical-align: middle;
   margin-left: 10px;
 }
+
+.own_id{
+  font-size: 10px;
+  color: var(--color-dark-text);
+  font-style: italic;
+  margin-top: 0;
+}
+
+.friend_requests h3, .friend_container h3{
+  margin-bottom: 1.5em;
+}
+
+.pending_invite, .friend{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.invite_left, .invite_right, .friend_right, .friend_left{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.invite_left p, .friend_left p{
+  font-weight: bold;
+}
+
+.invite_left img, .friend_left img{
+  margin-right: 1em;
+}
+.invite_right button, .friend_right button, .friend_right a{
+  margin-bottom: 0;
+  background: var(--bg);
+  color: var(--color-off-white);
+  margin-left: 0.5em;
+}
