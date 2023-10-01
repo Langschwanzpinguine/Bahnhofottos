@@ -33,7 +33,7 @@
 
         </div>
         <div class="entry_column_right">
-          <%= image_tag station.image.variant(resize_to_fit: [200,200]) ,class: "profile_station_photo"%>
+          <%= image_tag station.image.variant(resize_to_fit: [200,200]) ,class: "profile_station_photo", onclick: "openModal('#{url_for(station.image)}')"%>
         </div>
       </div>
     <%end %>
@@ -53,6 +53,11 @@
   <p>Maybe some nice stats here</p>
 </div>
 
+<div id="photoViewWrapper" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+
 <script>
     let currentTab = 0;
 
@@ -65,5 +70,26 @@
 
     }
     showContent(0);
+
+    function openModal(url) {
+        var modal = document.getElementById("photoViewWrapper");
+        var modalImage = document.getElementById("modalImage");
+        modal.style.display = "flex";
+        modalImage.src = url;
+    }
+
+    // Function to close the modal
+    function closeModal() {
+        var modal = document.getElementById("photoViewWrapper");
+        modal.style.display = "none";
+    }
+
+    // Close the modal when clicking outside of the modal content
+    window.onclick = function(event) {
+        var modal = document.getElementById("photoViewWrapper");
+        if (event.target == modal) {
+            closeModal();
+        }
+    }
 </script>
 
