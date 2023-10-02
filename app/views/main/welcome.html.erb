@@ -1,10 +1,13 @@
-<div class = "main_header">
-  <p>
-  <h1>Welcome to Bahnhofottos</h1>
-  </p>
+<div class = "main_background">
+  <div class = "main_header">
+    <p>
+    <h1>Welcome to Bahnhofottos</h1>
+    </p>
+  </div>
+  <div class = "main_logo">
+    <%= link_to "https://github.com/Langschwanzpinguine/Bahnhofottos", target: "_blank" do %>
+      <%= image_tag "Bahnhofottos_logo.png", alt: "Bahnhofottos Logo", id: "main_logo" %>
+    <% end %>
+  </div>
 </div>
-<div class = "main_logo">
-  <%= link_to "https://github.com/Langschwanzpinguine/Bahnhofottos", target: "_blank" do %>
-    <%= image_tag "Bahnhofottos_logo.png", alt: "Bahnhofottos Logo", id: "main_logo" %>
-  <% end %>
-</div>
+

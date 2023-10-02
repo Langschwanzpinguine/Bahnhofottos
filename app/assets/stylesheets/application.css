@@ -260,6 +260,17 @@ input[type="submit"] {
   margin: 0 auto;
 }
 
+.main_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("background.png");
+  background-color: var(--color-off-white);
+  background-size: 100vw;
+}
+
 .button{
   border: none;
   padding: 0.5em 1em;
