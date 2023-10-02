@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   root to: "main#index"
 
   get "/map", to: "map#index", as: :map
+  patch "/map/station_image", to: "map#upload_station_image", as: "station_image"
+  get "/map/station_image", to: "map#fetch_image"
 
   post "/api/overpass/stations", to: "overpass#stations"
 
@@ -25,6 +27,7 @@ Rails.application.routes.draw do
     delete '/users/profile', to: 'users#destroy', as: 'destroy_user'
     get '/users/settings', to: 'users#settings', as: 'settings'
     patch '/users/settings/avatar', to: 'users#upload_avatar', as: 'upload_avatar'
+    get '/users/:user_id', to: 'users#view_profile', as: 'view_profile'
 
     get '/auth/password', to: 'auth#edit_password', as: 'edit_password'
     patch '/auth/password', to: 'auth#update_password'

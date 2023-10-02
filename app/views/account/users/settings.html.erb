@@ -17,17 +17,23 @@
     </div>
   <%end %>
   <% if Current.user.avatar.attached? %>
-    <%= image_tag Current.user.avatar.variant(resize_to_fit: [100,100]) , class: "user_avatar"%>
+    <%= image_tag Current.user.avatar.variant(resize_to_fill: [100,100]) , class: "user_avatar"%>
   <%end %>
 </div>
 
-<div id="changeUsernameForm" class="hidden popup_form">
-  <%= form_with model: Current.user, url: users_change_name_path, data: { turbo: false } do |f|%>
-    <div class="form_field">
-      <%= f.label :username %><br />
-      <%= f.text_field :username %>
-    </div>
-    <div class="actions"><%= f.submit "Change Username" %></div>
-  <%end %>
-</div>
+  <div id="changeUsernameForm" class="hidden popup_form">
+    <%= form_with model: Current.user, url: users_change_name_path, data: { turbo: false } do |f|%>
+      <div class="form_field">
+        <%= f.label :username %><br />
+        <%= f.text_field :username %>
+      </div>
+      <div class="actions"><%= f.submit "Change Username" %></div>
+    <%end %>
+  </div>
+  <button id="changeUsernameBtn" class="button main_button">Change Username</button>
+
+  <%= button_to "Log out", logout_path, class: "button main_button", method: :delete%>
+  <%= button_to "Edit Password", edit_password_path, class: "button main_button", method: :get%>
+  <%= button_to "Destroy user", destroy_user_path, class: "button main_button", method: :delete, form: { data: { turbo_confirm: "Are you sure?" } }%>
 <%= javascript_include_tag "/javascripts/user_settings" %>
+</div>

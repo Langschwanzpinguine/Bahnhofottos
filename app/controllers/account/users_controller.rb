@@ -8,6 +8,9 @@ class Account::UsersController < ApplicationController
   def create
     @user = User.new(user_params)
 
+    profile_pic_num = rand(8) + 1
+    @user.avatar.attach(io: File.open("app/assets/images/Profilbild_0#{profile_pic_num}.png"), filename: 'propic.png')
+
     if @user.save
       session[:user_id] = @user.id
       redirect_to root_path, notice: "Successfully created Otto"
@@ -20,9 +23,6 @@ class Account::UsersController < ApplicationController
     Current.user.destroy
     session[:user_id] = nil
     redirect_to root_url, notice: "Logged out and destroyed user!"
-  end
-
-  def profile
   end
 
   def settings
@@ -38,15 +38,26 @@ class Account::UsersController < ApplicationController
   end
 
   def upload_avatar
-    if  Current.user.avatar.attach(avatar_params[:avatar])
+    if avatar_params[:avatar].present? && Current.user.avatar.attach(avatar_params[:avatar])
       redirect_to settings_path, notice: "Profile picture uploaded"
     else
+      flash.now[:alert] = "No image selected!"
       render :settings
     end
   end
 
+  def view_profile
+    user = User.find_by(id: params[:user_id])
+    if Current.user.friend_with?(user)
+      @user = user
+      render :visit_profile
+    else
+      redirect_to root_path, alert: "You are not friends with this user"
+    end
+  end
+
   private def user_params
-    params.require(:user).permit(:email, :password, :password_confirmation)
+    params.require(:user).permit(:email, :password, :password_confirmation, :username)
   end
 
   private def username_params
@@ -54,6 +65,10 @@ class Account::UsersController < ApplicationController
   end
 
   private def avatar_params
-    params.require(:user).permit(:avatar)
+    if params[:user].present?
+      params.require(:user).permit(:avatar)
+    else
+      {}
+    end
   end
 end

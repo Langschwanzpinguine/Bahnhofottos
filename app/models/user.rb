@@ -9,11 +9,16 @@ class User < ApplicationRecord
   has_one_attached :avatar
   has_many :train_stations
 
-  before_create :init
+  before_create :randomize_id
 
-  def init
-    random_number = rand(10_000_000..99_999_999)
-    self.username  ||= "new_user_#{random_number}"
+  def randomize_id
+    begin
+      self.id = SecureRandom.random_number(1_000_000_000)
+    end while User.where(id: self.id).exists?
+
+    usernames = %w[StationExplorer RailJourneyer PlatformPioneer TrainTrackTrekker StationSnapster RailwayAdventurer TravelByRails TrackTales TrainSpotterPro StationStoryteller]
+    random_username = usernames.sample
+    self.username  ||= random_username
   end
 
   def friends

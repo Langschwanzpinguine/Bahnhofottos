@@ -1,9 +1,19 @@
 let map;
+let LeafletIcon;
 let markers;
 let selectedCountry;
 let select_tag;
 let listOfResults;
 let searchInput;
+let hidden_image_input;
+let hidden_id_input;
+let hidden_country_input;
+let hidden_operator_input;
+let hidden_name_input;
+let hidden_form;
+let hidden_type_input;
+let spinny_boi;
+let loadUrl;
 
 const STATION_GREEN = "/assets/bahnhof_windowless_green";
 const STATION_YELLOW = "/assets/bahnhof_windowless_yellow";
@@ -23,15 +33,29 @@ let markerIDs = [];
 
 
 function initPage(){
+    loadUrl = true;
     searchInput = document.getElementById('station_search');
     select_tag = document.getElementById('country_selection');
     listOfResults = document.getElementById('matches');
+    hidden_image_input = document.getElementById('user_station_image');
+    hidden_id_input = document.getElementById('user_station_id');
+    hidden_country_input = document.getElementById('user_station_country');
+    hidden_operator_input = document.getElementById('user_station_operator');
+    hidden_name_input = document.getElementById('user_station_name');
+    hidden_type_input = document.getElementById('user_station_type');
+    hidden_form = document.getElementById('hidden_form');
+    spinny_boi = document.getElementById('spinner');
 
+    hidden_image_input.addEventListener('change', update_file_selection_in_popup);
     select_tag.addEventListener('change', countrySelected);
-    selectedCountry = select_tag.value;
 
-    initMap();
-    countrySelected();
+    LeafletIcon = L.Icon.extend({
+        options: {
+            shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+            iconAnchor: [13, 41],
+            popupAnchor:  [0, -35]
+        }
+    })
 
     const element = document.querySelector('.country_dropdown');
     const choices = new Choices(element, {
@@ -41,6 +65,9 @@ function initPage(){
         shouldSort: false
     });
 
+    initMap();
+    loadInitialCountry(choices);
+
     document.getElementById('station_search').addEventListener('input', perform_search);
     document.addEventListener('click', (ev) => {
         disableResults(ev);
@@ -49,23 +76,39 @@ function initPage(){
 
 function initMap(){
     map = L.map('map');
-    L.Marker.prototype.options.icon = L.icon({
-        iconUrl: "/assets/Point.png",
-        shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
-        iconAnchor: [13, 41],
-        popupAnchor:  [0, -35]
-    });
+    // L.Marker.prototype.options.icon = L.icon({
+    //     iconUrl: "/assets/Point.png",
+    //     shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+    //     iconAnchor: [13, 41],
+    //     popupAnchor:  [0, -35]
+    // });
     L.tileLayer('http://localhost:3000/proxy/map-tiles/thunderforest?z={z}&x={x}&y={y}', {
         maxZoom: 19,
         attribution: '© OSM x IG Langschwanzpinguine'
     }).addTo(map);
 }
 
+function loadInitialCountry(choices){
+    let countryToLoad = session_info['show_country'] ?? 'DE';
+    choices.setChoiceByValue(countryToLoad);
+    countrySelected();
+}
+
 function countrySelected(){
+    spinny_boi.style.display = 'flex';
     markers ? markers.clearLayers() : null;
 
+    let greenMarker = new LeafletIcon({iconUrl: '/assets/greenPoint.png'});
+    let redMarker = new LeafletIcon({iconUrl: '/assets/Point.png'});
     selectedCountry = select_tag.value;
-    const foundCountry = country_info['countries'].find((country) => country.code === selectedCountry);
+
+    let foundCountry = country_info['countries'].find((country) => country.code === selectedCountry);
+
+    if(!foundCountry){
+        foundCountry = country_info['countries'].find((country) => country.code === 'DE');
+    }
+
+    document.getElementById('country_spinner_info').innerText = `Loading ${foundCountry['name']} ${foundCountry['flag']}  `;
 
     let bbox = foundCountry['bounding_box'];
     map.fitBounds([
@@ -113,18 +156,27 @@ function countrySelected(){
         fuse = new Fuse(allStations, fuseOptions);
 
         for (const station of allStations) {
+            const station_photo = photographed_stations['stations'].find((s) => parseInt(s.osm_id) === parseInt(station.id));
+            let selectedIcon = station_photo ? greenMarker : redMarker;
             let lat = station.lat;
             let lon = station.lon;
-            let marker = L.marker([lat, lon]);
-
+            let marker = L.marker([lat, lon], {icon: selectedIcon});
             let popup = L.popup()
                 .setLatLng(L.latLng(lat, lon))
-                .setContent(createPopUp(station))
+                .setContent(createPopUp(station, station_photo))
 
             marker.bindPopup(popup);
+            marker.osm_id = station.id;
+            marker.on('click', handleMarkerClick);
             markerIDs.push({id: station.id, popup: popup });
             markers.addLayer(marker);
             map.addLayer(markers);
+        }
+
+        spinny_boi.style.display = 'none';
+        if(session_info['show_station'] && loadUrl){
+            loadUrl = false
+            setViewOnStation(session_info['show_station'])
         }
     }).catch(error => {
         console.error('Fetch error:', error);
@@ -132,18 +184,41 @@ function countrySelected(){
 
 }
 
-function createPopUp(station){
+function createPopUp(station, station_photo){
+
+    let returnString = '';
+
+    if(station_photo){
+        returnString += `<img class="popup_image" src="${station_photo['image_url']}" alt="Image of train station ${station_photo['osm_id']}">`
+    }
+
     let operator_string = station.tags.operator
-    let returnString = `<h5>${station.tags.name ?? station.tags.description}</h5>
-    <p><i class="fa-solid fa-train"></i> ${station.tags.railway.charAt(0).toUpperCase() + station.tags.railway.slice(1)}</p>`
+    let firstOp = '';
+    const stationName = station.tags.name || station.tags.description;
+    const railwayType = station.tags.railway.charAt(0).toUpperCase() + station.tags.railway.slice(1);
+    returnString += `
+        <h5>${stationName}</h5>
+        <p><i class="fa-solid fa-train"></i> ${railwayType}</p>`
     if(operator_string){
         let op_arr = operator_string.split(';')
+        firstOp = op_arr[0];
         for(const operator of op_arr){
             returnString += `<p><i class="fa-solid fa-building"></i> ${operator}</p>`
         }
     }
-    returnString += `<button class="popup_button" onclick="uploadButtonHandler(${station.id})"><i class="fa-solid fa-camera"></i> Upload photo</button>`;
+    returnString += `
+        <div class="upload_wrapper">
+            <p id="station_file_selected"></p>
+            <button class="popup_button" id="photo_select_button" onclick="uploadButtonHandler(${station.id}, '${stationName}', '${firstOp}', '${station.tags.railway}')">
+                <i class="fa-solid fa-camera"></i> Select photo</button>
+            <button style="display: none" class="popup_button" id="photo_submit_button" onclick="submitButtonHandler(${station.id}, '${stationName}', '${firstOp}', '${station.tags.railway}')">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i> Upload photo</button></div>`;
+
     return returnString;
+}
+
+function handleMarkerClick(e){
+    // Planning on implementing a dynamic loading of images
 }
 
 function perform_search(){
@@ -191,9 +266,47 @@ function viewSearchedStation(event){
     map.setView(new L.LatLng(lat, lon), 18, {animate: false});
 }
 
-function uploadButtonHandler(stationId){
-    console.log(stationId);
+function uploadButtonHandler(stationId, name, op, type){
+    if(session_info['logged_in']){
+        hidden_id_input.value = stationId;
+        hidden_name_input.value = name;
+        hidden_operator_input.value = op;
+        hidden_type_input.value = type;
+        hidden_country_input.value = select_tag.value;
+        hidden_image_input.click();
+    }else{
+        window.location = '/users/login'
+    }
+
 }
+
+function submitButtonHandler(stationId, name, op, type){
+    hidden_form.submit();
+}
+
+function update_file_selection_in_popup(){
+    let open_popup_display = document.getElementById('station_file_selected');
+    let submit_button = document.getElementById('photo_submit_button');
+    let select_button = document.getElementById('photo_select_button');
+    if(open_popup_display){
+        open_popup_display.innerText = hidden_image_input.value.replace(/.*[\/\\]/, '');
+        submit_button.style.display = 'block';
+        select_button.style.display = 'none';
+    }
+}
+
+function setViewOnStation(ID){
+    const markerFound = markerIDs.find(marker => marker.id == ID);
+    if(!markerFound) return;
+
+    const lat = markerFound.popup._latlng.lat;
+    const lon = markerFound.popup._latlng.lng;
+    map.openPopup(markerFound.popup)
+
+    map.setView(new L.LatLng(lat, lon), 18, {animate: false});
+}
+
+
 
 
 

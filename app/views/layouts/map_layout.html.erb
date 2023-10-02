@@ -25,6 +25,10 @@
 <body>
 <%= render partial: "shared/sidebar" %>
 <div class="outer_wrapper">
+  <div class="spinner-container" id="spinner">
+    <div class="spinner"></div>
+    <p id="country_spinner_info"></p>
+  </div>
 
   <%= render partial: "shared/popup" %>
   <%= yield %>

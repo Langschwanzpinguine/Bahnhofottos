@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_09_20_073639) do
+ActiveRecord::Schema[7.0].define(version: 2023_09_28_131838) do
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -39,13 +39,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_20_073639) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
-  create_table "friendships", id: false, force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "friend_user_id"
-    t.index ["friend_user_id", "user_id"], name: "index_friendships_on_friend_user_id_and_user_id", unique: true
-    t.index ["user_id", "friend_user_id"], name: "index_friendships_on_user_id_and_friend_user_id", unique: true
-  end
-
   create_table "invitations", force: :cascade do |t|
     t.integer "user_id", null: false
     t.integer "friend_id"
@@ -60,6 +53,10 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_20_073639) do
     t.integer "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
+    t.string "country"
+    t.string "operator"
+    t.string "station_type"
     t.index ["osm_id", "user_id"], name: "index_train_stations_on_osm_id_and_user_id", unique: true
     t.index ["user_id"], name: "index_train_stations_on_user_id"
   end
