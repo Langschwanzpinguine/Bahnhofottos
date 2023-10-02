@@ -82,7 +82,7 @@ function initMap(){
     //     iconAnchor: [13, 41],
     //     popupAnchor:  [0, -35]
     // });
-    L.tileLayer('http://localhost:3000/proxy/map-tiles/thunderforest?z={z}&x={x}&y={y}', {
+    L.tileLayer('/proxy/map-tiles/thunderforest?z={z}&x={x}&y={y}', {
         maxZoom: 19,
         attribution: '© OSM x IG Langschwanzpinguine'
     }).addTo(map);
@@ -115,7 +115,7 @@ function countrySelected(){
         [bbox[0], bbox[2]],
         [bbox[1], bbox[3]]
     ]);
-    const url = "http://localhost:3000/api/countries/" + foundCountry['code'];
+    const url = "/api/countries/" + foundCountry['code'];
 
     const requestOptions = {
         method: 'GET',
