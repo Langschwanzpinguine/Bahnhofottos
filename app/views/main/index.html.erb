@@ -1,29 +1,21 @@
 <div class = "main_header">
     <p>
-        <h1>FEED</h1>
+        <h1 class="sign_header">Activity</h1>
     </p>
 </div>
 
-<div class="feed user_photos" id="profile-1">
+<div class="feed">
   <% if @stations.length > 0%>
     <%@stations.each do |station| %>
-      <div class="profile_station_entry">
-        <div class="entry_column_left">
-          <h3 class="station">
-            <%= station.user.username %> took a photo of <%= link_to "#{station.name}", "/map?country=#{station.country}&station=#{station.osm_id}"%>
-            <img class="country-flag" src="https://flagsapi.com/<%= station.country %>/flat/32.png" alt='<%= "Flag of #{station.country}" %>'>
-          </h3>
-
-          <p><i class="fa-fw fa-solid fa-train"></i> <b>Type</b>: <%= station.station_type.capitalize %></p>
-
-          <% unless station.operator.empty? %>
-            <p><i class="fa-fw fa-solid fa-building"></i> <b>Operator</b>: <%=  station.operator  %></p>
-          <% end %>
-
-
-        </div>
-        <div class="entry_column_right">
-          <%= image_tag station.image.variant(resize_to_fit: [200,200]) ,class: "profile_station_photo", onclick: "openModal('#{url_for(station.image)}')"%>
+      <div class="feed_entry">
+        <div class="message-container <%= station.user.id == Current.user.id ? 'user-message' : 'friend-message'%>">
+          <div class="feed_message">
+            <h3 class="feed_message_head"><b><%= station.user.username %></b> took a photo of a train station</h3>
+            <img src="<%= url_for(station.image.variant(resize_to_fit: [300, 300])) %>" alt="Image of <%= station.name %>" class="feed_image" onclick="openModal('<%= url_for(station.image) %>')">
+            <p class="feed_info">
+              <i class="fa-solid fa-train fa-fw"></i> <%= station.name %> <br><i class="fa-solid fa-calendar-days fa-fw"></i> <%= station.created_at.strftime('%d %B %H:%M')%></p>
+          </div>
+          <img src="<%=url_for(station.user.avatar.variant(resize_to_fill: [400,400])) %>" alt="User Profile" class="profile-picture_feed" onclick="window.location = '<%= "/users/#{station.user.id}" %>'">
         </div>
       </div>
     <%end %>
