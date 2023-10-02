@@ -699,3 +699,9 @@ input[type="submit"] {
 .close:hover {
   color: red;
 }
+
+.feed{
+  padding: 20px;
+  flex: 1;
+  transition: transform 0.3s ease;
+}
