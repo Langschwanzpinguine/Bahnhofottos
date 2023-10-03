@@ -1,13 +1,27 @@
 <div class = "main_background">
-  <div class = "main_header">
-    <p>
-    <h1>Welcome to Bahnhofottos</h1>
-    </p>
-  </div>
-  <div class = "main_logo">
-    <%= link_to "https://github.com/Langschwanzpinguine/Bahnhofottos", target: "_blank" do %>
+    <div class= "main_content">
+     <div class = "main_logo">
+      <%= link_to "https://github.com/Langschwanzpinguine/Bahnhofottos", target: "_blank" do %>
       <%= image_tag "Bahnhofottos_logo.png", alt: "Bahnhofottos Logo", id: "main_logo" %>
     <% end %>
+    </div>
+    <div class="welcome_login_wrapper">
+      <h2>Log In</h2>
+      <%= form_tag login_path, data: { turbo: false } do %>
+        <div class="field">
+          <%= label_tag :email %><br />
+          <%= text_field_tag :email, params[:email] %>
+        </div>
+        <div class="field">
+          <%= label_tag :password %><br />
+          <%= password_field_tag :password %>
+        </div>
+        <div class="actions"><%= submit_tag "Log In" %></div>
+        <%= link_to "Forgot password", auth_reset_path %> <br>
+      <% end %>
+      <h2>Or Sign Up</h2>
+      <%= button_to "Create account", signup_path, class: "button main_button" %>
+    </div>
   </div>
-</div>
+ </div>
 
