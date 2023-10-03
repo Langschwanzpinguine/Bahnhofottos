@@ -75,12 +75,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 20px;
 }
 
 #main_logo {
-  max-width: 35vh;
-  max-height: 35vh;
+  max-width: 30vh;
+  max-height: 30vh;
   transition: all 0.5s ease-in-out;
+  filter: drop-shadow(10px 10px black);
 }
 
 #main_logo:hover {
@@ -195,6 +197,31 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
+
+.main_content{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.welcome_login_wrapper{
+  width: 40%;
+  flex: 1;
+  padding: 0;
+  background-color: var(--color-off-white);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  border-radius: 20px;
+  padding: 20px;
+
+  filter: drop-shadow(10px 10px);
 }
 
 .field {
