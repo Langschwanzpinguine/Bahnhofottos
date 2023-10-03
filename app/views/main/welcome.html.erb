@@ -1,11 +1,11 @@
 <div class = "main_background">
-    <div class= "main_content">
-     <div class = "main_logo">
-      <%= link_to "https://github.com/Langschwanzpinguine/Bahnhofottos", target: "_blank" do %>
-      <%= image_tag "Bahnhofottos_logo.png", alt: "Bahnhofottos Logo", id: "main_logo" %>
-    <% end %>
-    </div>
+  <div class= "main_content">
     <div class="welcome_login_wrapper">
+      <div class = "main_logo">
+        <%= link_to "https://github.com/Langschwanzpinguine/Bahnhofottos", target: "_blank" do %>
+          <%= image_tag "Bahnhofottos_logo.png", alt: "Bahnhofottos Logo", id: "main_logo" %>
+        <% end %>
+      </div>
       <h2>Log In</h2>
       <%= form_tag login_path, data: { turbo: false } do %>
         <div class="field">

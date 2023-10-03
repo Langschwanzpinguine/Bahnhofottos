@@ -14,6 +14,8 @@ Rails.application.routes.draw do
     get '/api/countries/:country_code', to: "country_data#fetch", as: "country_data"
   end
 
+  get '/info', to: 'info#index', as: 'info'
+
   #Account system
   scope module: "account" do
     get '/users/sign_up', to: 'users#new', as: 'signup'
