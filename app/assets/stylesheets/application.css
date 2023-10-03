@@ -211,7 +211,8 @@ body {
   width: 40%;
   flex: 1;
   padding: 0;
-  background-color: var(--color-off-white);
+  background-color: rgba(227, 227, 227, 0.4);
+  backdrop-filter: blur(5px);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -221,7 +222,7 @@ body {
   border-radius: 20px;
   padding: 20px;
 
-  filter: drop-shadow(10px 10px);
+  filter: drop-shadow(10px 10px 19px black);
 }
 
 .field {
