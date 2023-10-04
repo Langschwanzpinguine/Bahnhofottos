@@ -13,6 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+ html{
+  box-sizing: border-box;
+ }
+
 :root {
   --bg: #2a2c5f;
   --bg-secondary: #3f416a;
@@ -226,6 +231,13 @@ body {
   filter: drop-shadow(10px 10px 19px black);
 }
 
+.login {
+  display: flex;
+  flex: content;
+  flex-direction: column;
+  align-items: center;
+}
+
 .field {
   margin-bottom: 10px;
 }
@@ -247,6 +259,7 @@ input[type="user_username"] {
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
+  width: 15rem;
 }
 
 input[type="submit"] {
@@ -296,7 +309,19 @@ input[type="submit"] {
   height: 100vh;
   background-image: url("background.png");
   background-color: var(--color-off-white);
-  background-size: 100vw;
+  background-size: cover;
+}
+
+.background_image {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("background2.png");
+  background-color: var(--color-off-white);
+  background-size: cover;
 }
 
 .button{
@@ -748,8 +773,10 @@ input[type="submit"] {
 
 .feed{
   padding: 20px;
+  position: relative;
   flex: 1;
   transition: transform 0.3s ease;
+  z-index: 5;
 }
 
 .message-container {
@@ -840,6 +867,6 @@ input[type="submit"] {
 }
 
 #imprint{
-  max-width: 10vw;
+  max-height: 5rem;
 }
 

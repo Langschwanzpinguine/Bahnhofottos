@@ -7,6 +7,7 @@
         <% end %>
       </div>
       <h2>Log In</h2>
+      <div class = "login">
       <%= form_tag login_path, data: { turbo: false } do %>
         <div class="field">
           <%= label_tag :email %><br />
@@ -19,9 +20,10 @@
         <div class="actions"><%= submit_tag "Log In" %></div>
         <%= link_to "Forgot password", auth_reset_path %> <br>
       <% end %>
+      </div>
       <h2>Or Sign Up</h2>
       <%= button_to "Create account", signup_path, class: "button main_button" %>
     </div>
   </div>
- </div>
+</div>
 
