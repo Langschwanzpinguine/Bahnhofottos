@@ -16,8 +16,9 @@ class User < ApplicationRecord
       self.id = SecureRandom.random_number(1_000_000_000)
     end while User.where(id: self.id).exists?
 
-    usernames = %w[StationExplorer RailJourneyer PlatformPioneer TrainTrackTrekker StationSnapster RailwayAdventurer TravelByRails TrackTales TrainSpotterPro StationStoryteller]
-    random_username = usernames.sample
+    usernames1 = %w[Halt Highspeed Locomotive Platform Rail Railway Subway Station Track Train Traintrack]
+    usernames2 = %w[Adventurer Explorer Journeyer Pioneer Snapster Spotter Storyteller Tailes Trekker]
+    random_username = usernames1.sample + usernames2.sample
     self.username  ||= random_username
   end
 
