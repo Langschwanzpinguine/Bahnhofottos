@@ -35,8 +35,8 @@ let markerIDs = [];
 function initPage(){
     loadUrl = true;
     searchInput = document.getElementById('station_search');
-    select_tag = document.getElementById('country_selection');
-    listOfResults = document.getElementById('matches');
+    select_tag = document.getElementById('country_selection'); //DEL
+    listOfResults = document.getElementById('matches'); // DEL
     hidden_image_input = document.getElementById('user_station_image');
     hidden_id_input = document.getElementById('user_station_id');
     hidden_country_input = document.getElementById('user_station_country');
