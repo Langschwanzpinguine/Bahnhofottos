@@ -1,9 +1,13 @@
+<h1>Location Settings</h1>
+
 <%content_for :head do %>
   <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
 
   <%= javascript_include_tag "country_dropdown"%>
 <% end %>
+
+<p>Select your country:</p>
 
 <div class="country_dropdown_wrapper">
   <%= render partial: "shared/country_popup" %>

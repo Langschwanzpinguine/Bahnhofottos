@@ -1,5 +1,4 @@
-<h1>Settings</h1>
-<h2>Your Account</h2>
+<h1>Account Settings</h1>
 
 <% if Current.user.avatar.attached? %>
   <%= image_tag Current.user.avatar.variant(resize_to_fill: [100,100]) , class: "user_avatar"%>
@@ -16,8 +15,9 @@
       <%= f.submit "Upload picture" %>
     </div>
   <%end %>
-
 </div>
+
+<br>
 
 <div id="changeUsernameForm" class="hidden popup_form">
   <%= form_with model: Current.user, url: users_change_name_path, data: { turbo: false } do |f|%>
