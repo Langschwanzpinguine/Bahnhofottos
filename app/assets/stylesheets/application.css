@@ -877,3 +877,15 @@ input[type="submit"] {
   display: flex;
   flex-direction: row;
 }
+
+.settings_column{
+  width: 100%;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+}
+
+#headline{
+  text-align: center;
+  margin-bottom: 3rem;
+}

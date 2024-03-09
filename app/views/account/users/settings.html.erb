@@ -1,4 +1,56 @@
-<h1>Settings</h1>
+<h1 id="headline">Settings</h1>
 
-<%= button_to "Account Settings", account_settings_path, class: "button main_button", method: :get%>
-<%= button_to "Location Settings", location_settings_path, class: "button main_button", method: :get%>
+<div class="settings_column">
+  <div class="settings_single_column">
+    <% if Current.user.avatar.attached? %>
+      <%= image_tag Current.user.avatar.variant(resize_to_fill: [100,100]) , class: "user_avatar"%>
+    <%end %>
+
+    <div>
+      <%= form_with model: Current.user, url: upload_avatar_path, data: { turbo: false} do |f| %>
+        <p>
+          <%= f.label :avatar%>
+          <%= f.file_field :avatar, accept: 'image/png, image/jpeg' %>
+        </p>
+        <div class="actions">
+          <%= f.submit "Upload picture" %>
+        </div>
+      <%end %>
+    </div>
+
+    <br>
+
+    <div id="changeUsernameForm">
+      <%= form_with model: Current.user, url: users_change_name_path, data: { turbo: false } do |f|%>
+        <div class="form_field">
+          <%= f.label :username %><br />
+          <%= f.text_field :username %>
+        </div>
+        <div class="actions"><%= f.submit "Change Username" %></div>
+      <%end %>
+    </div>
+
+    <br>
+
+    <%= button_to "Edit Password", edit_password_path, class: "button main_button", method: :get%>
+    <%= button_to "Destroy user", destroy_user_path, class: "button main_button", method: :delete, form: { data: { turbo_confirm: "Are you sure?" } }%>
+    <br>
+    <%= button_to "Log out", logout_path, class: "button main_button", method: :delete%>
+    <%= javascript_include_tag "/javascripts/user_settings" %>
+  </div>
+
+  <div class="settings_single_column">
+    <%content_for :head do %>
+      <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+
+      <%= javascript_include_tag "country_dropdown"%>
+    <% end %>
+
+    <p>Select your country:</p>
+
+    <div class="country_dropdown_wrapper">
+      <%= render partial: "shared/country_popup" %>
+    </div>
+  </div>
+</div>

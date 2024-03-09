@@ -26,13 +26,7 @@ class Account::UsersController < ApplicationController
   end
 
   def settings
-  end
-
-  def account_settings
     @photo = Current.user.avatar
-  end
-
-  def location_settings
     json_file = Rails.root.join('public', 'data/grouped_countries.json')
     info_file = Rails.root.join('public', 'data/compiled_country_info.json')
     @country_data = JSON.parse(File.read(json_file))
