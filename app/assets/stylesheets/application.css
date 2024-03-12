@@ -21,6 +21,7 @@
 :root {
   --bg: #2a2c5f;
   --bg-secondary: #3f416a;
+  --background-rails: #ced0f4;
   --color-off-white: #e3e3e3;
   --color-dark-text: #232323;
   --color-accent: #f33456;
@@ -47,7 +48,7 @@ body {
   padding: 0;
   background-image: url("background3.png");
   background-size: cover;
-  background-color: var(--color-off-white);
+  background-color: var(--background-rails);
   overflow: hidden;
 }
 
@@ -560,7 +561,9 @@ input[type="submit"] {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: var(--color-off-white);
+  background-image: url("background3.png");
+  background-size: cover;
+  /*background: var(--background-rails);*/
   transition: all 250ms ease-in-out;
 }
 
@@ -568,7 +571,7 @@ input[type="submit"] {
   width: 50px;
   height: 50px;
   border: 5px solid var(--bg);
-  border-top: 5px solid var(--color-off-white);
+  border-top: 5px solid var(--background-rails);
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
@@ -615,7 +618,7 @@ input[type="submit"] {
   flex-direction: row;
   align-items: center;
   margin-top: 5rem;
-  margin-bottom: 2em;
+  margin-bottom: 3rem;
 }
 
 .profile_head_text{
@@ -905,7 +908,7 @@ input[type="submit"] {
   flex-direction: row;
   align-items: center;
   margin-top: 5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .head_text{
