@@ -1,12 +1,17 @@
-<h1>Your User Profile</h1>
+<!-- <h1>Your User Profile</h1> -->
 
-<div class="profile_head">
+<header class="head">
   <% if Current.user.avatar.attached? %>
-    <%= image_tag Current.user.avatar.variant(resize_to_fill: [100,100]) ,class: "user_avatar"%>
+    <%= image_tag Current.user.avatar.variant(resize_to_fill: [115,115]) ,class: "user_avatar"%>
   <%end %>
-
-  <p class="profile_username"><%= Current.user.username %></p>
-</div>
+  <div class="head_text">
+    <div id="text">
+      <p class="profile_username_no_margin"><%= Current.user.username %></p>
+      <p id="no_margin"> Your user account</p>
+      <%= button_to "Log out", logout_path, class: "button main_button", method: :delete%>
+    </div>
+  </div>
+</header>
 
 <div class="tab-container">
   <div class="tab active_tab" onclick="showContent(0)"><i class="fa-solid fa-images"></i>  Your Photos</div>

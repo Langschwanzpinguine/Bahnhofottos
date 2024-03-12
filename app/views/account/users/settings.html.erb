@@ -1,13 +1,13 @@
-<header class="settings_head">
+<header class="head">
   <% if Current.user.avatar.attached? %>
-    <%= image_tag Current.user.avatar.variant(resize_to_fill: [110,110]) ,class: "user_avatar"%>
+    <%= image_tag Current.user.avatar.variant(resize_to_fill: [115,115]) ,class: "user_avatar"%>
   <%end %>
-  <div class="settings_head_text">
-    <p>
-      <strong><%= Current.user.username %></strong><br>
-      Your account settings
-    </p>
-    <%= button_to "Log out", logout_path, class: "button main_button", method: :delete%>
+  <div class="head_text">
+    <div id="text">
+      <p class="profile_username_no_margin"><%= Current.user.username %></p>
+      <p id="no_margin"> Your account settings</p>
+      <%= button_to "Log out", logout_path, class: "button main_button", method: :delete%>
+    </div>
   </div>
 </header>
 

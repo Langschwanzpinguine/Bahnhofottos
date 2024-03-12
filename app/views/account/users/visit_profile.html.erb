@@ -1,8 +1,8 @@
-<h1><%= @user.username %>’s Profile</h1>
+<!-- <h1><%= @user.username %>’s Profile</h1> -->
 
 <div class="profile_head">
   <% if @user.avatar.attached? %>
-    <%= image_tag @user.avatar.variant(resize_to_fill: [100,100]) ,class: "user_avatar"%>
+    <%= image_tag @user.avatar.variant(resize_to_fill: [115,115]) ,class: "user_avatar"%>
   <%end %>
 
   <p class="profile_username"><%= @user.username %></p>

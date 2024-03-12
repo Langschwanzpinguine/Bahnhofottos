@@ -332,7 +332,8 @@ input[type="submit"] {
   padding: 0.5em 1em;
   font-size: 1em;
   border-radius: 25px;
-  margin-bottom: 1em;
+  margin-top: 1em;
+  /*margin-bottom: 1em;*/
   text-decoration: none;
 }
 
@@ -613,7 +614,12 @@ input[type="submit"] {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: 5rem;
   margin-bottom: 2em;
+}
+
+.profile_head_text{
+  align-content: center;
 }
 
 .profile_content {
@@ -626,6 +632,14 @@ input[type="submit"] {
 .profile_username{
   font-size: 1.5em;
   font-weight: bold;
+  margin-top: 0.2em;
+  margin-bottom: 0.4em;
+}
+.profile_username_no_margin{
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 0.2em;
+  margin-bottom: 0em;
 }
 
 .user_photos{
@@ -884,14 +898,23 @@ input[type="submit"] {
   justify-content: space-evenly;
   display: flex;
   flex-direction: row;
-  margin-top: 4rem;
 }
 
-.settings_head{
+.head{
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+
+.head_text{
+  align-items: center;
+}
+
+#text{
+  margin-top: 0px;
+  margin-bottom: 0.3em;
 }
 
 #headline{
@@ -901,4 +924,8 @@ input[type="submit"] {
 
 #no_margin_top{
   margin-top: 0px;
+}
+
+#no_margin{
+  margin: 0px;
 }
