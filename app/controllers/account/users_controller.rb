@@ -35,7 +35,7 @@ class Account::UsersController < ApplicationController
 
   def change_username
     if Current.user.update(username_params)
-      redirect_to profile_path, notice: "Username changed"
+      redirect_to settings_path, notice: "Username changed"
     else
       render :settings
     end
