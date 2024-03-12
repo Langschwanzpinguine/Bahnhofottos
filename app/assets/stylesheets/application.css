@@ -312,7 +312,7 @@ input[type="submit"] {
   width: 100vw;
   height: 100vh;
   background-image: url("background.png");
-  background-color: var(--color-off-white);
+  background-color: var(--background-rails);
   background-size: cover;
 }
 
@@ -324,7 +324,7 @@ input[type="submit"] {
   width: 100vw;
   height: 100vh;
   background-image: url("background2.png");
-  background-color: var(--color-off-white);
+  background-color: var(--background-rails);
   background-size: cover;
 }
 
@@ -333,7 +333,7 @@ input[type="submit"] {
   padding: 0.5em 1em;
   font-size: 1em;
   border-radius: 25px;
-  margin-top: 1em;
+  /*margin-top: 1em;*/
   /*margin-bottom: 1em;*/
   text-decoration: none;
 }
@@ -563,7 +563,6 @@ input[type="submit"] {
   flex-direction: column;
   background-image: url("background3.png");
   background-size: cover;
-  /*background: var(--background-rails);*/
   transition: all 250ms ease-in-out;
 }
 
@@ -726,6 +725,7 @@ input[type="submit"] {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-right: auto;
 }
 
 .invite_left p, .friend_left p{
@@ -929,6 +929,7 @@ input[type="submit"] {
   margin-top: 0px;
 }
 
-#no_margin{
-  margin: 0px;
+#only_bottom_margin{
+  margin-top: 0em;
+  margin-bottom: 1em;
 }
