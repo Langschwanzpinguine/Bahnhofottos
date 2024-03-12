@@ -45,6 +45,8 @@ body {
 .outer_wrapper {
   flex: 1;
   padding: 0;
+  background-image: url("background3.png");
+  background-size: cover;
   background-color: var(--color-off-white);
   overflow: hidden;
 }
@@ -54,7 +56,7 @@ body {
   right: 0;
   transform: translateX(-50%);
   padding: .5em 1em;
-  border-radius: 10px;
+  border-radius: 25px;
   font-weight: bold;
   color: var(--color-off-white);
 }
@@ -255,22 +257,23 @@ input[type="email"],
 input[type="password"],
 input[type="user_username"] {
   padding: 10px;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 25px;
   width: 15rem;
 }
 
 input[type="submit"] {
   background-color: var(--bg);
   color: var(--color-off-white);
-  padding: 10px 20px;
-  margin-bottom: 10px;
   border: none;
-  border-radius: 3px;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  border-radius: 25px;
+  margin-bottom: 1em;
   cursor: pointer;
-  border-bottom: 5px solid var(--color-accent);
+  /*border-bottom: 5px solid var(--color-accent);*/
 }
 
 .user_forms_wrapper h2{
@@ -328,7 +331,7 @@ input[type="submit"] {
   border: none;
   padding: 0.5em 1em;
   font-size: 1em;
-  border-radius: 10px;
+  border-radius: 25px;
   margin-bottom: 1em;
   text-decoration: none;
 }
@@ -467,7 +470,7 @@ input[type="submit"] {
 }
 
 .station_marker{
-  transform: translate(-46.5%,-53.5%) scale(0.07);
+  transform: translate(-46.5%,-53.8%) scale(0.07);
   z-index: 0;
 }
 
@@ -584,7 +587,6 @@ input[type="submit"] {
 .user_avatar{
   border-radius: 200px;
   margin-right: 2em;
-  margin-bottom: 10px;
 }
 
 .tab-container {
@@ -624,7 +626,6 @@ input[type="submit"] {
 .profile_username{
   font-size: 1.5em;
   font-weight: bold;
-
 }
 
 .user_photos{
@@ -883,9 +884,21 @@ input[type="submit"] {
   justify-content: space-evenly;
   display: flex;
   flex-direction: row;
+  margin-top: 4rem;
+}
+
+.settings_head{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2rem;
 }
 
 #headline{
   text-align: center;
   margin-bottom: 3rem;
+}
+
+#no_margin_top{
+  margin-top: 0px;
 }
