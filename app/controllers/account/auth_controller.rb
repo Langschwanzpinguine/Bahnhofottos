@@ -6,7 +6,7 @@ class Account::AuthController < ApplicationController
 
   def update_password
     if Current.user.update(password_params)
-      redirect_to root_path, notice: "Password changed"
+      redirect_to settings_path, notice: "Password changed"
     else
       render :edit_password
     end
