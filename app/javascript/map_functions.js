@@ -15,9 +15,9 @@ let hidden_type_input;
 let spinny_boi;
 let loadUrl;
 
-const STATION_GREEN = "/assets/bahnhof_windowless_green";
-const STATION_YELLOW = "/assets/bahnhof_windowless_yellow";
-const STATION_RED = "/assets/bahnhof_windowless_red";
+const STATION_LOW = "/assets/bahnhof_windowless_density3";
+const STATION_MID = "/assets/bahnhof_windowless_density2";
+const STATION_HIGH = "/assets/bahnhof_windowless_density1";
 
 document.addEventListener("DOMContentLoaded", initPage);
 
@@ -126,11 +126,11 @@ function countrySelected(){
                 let image_source;
 
                 if (childCount < 10) {
-                    image_source = '<img class="station_marker" src="' + STATION_GREEN + '">';
+                    image_source = '<img class="station_marker" src="' + STATION_LOW + '">';
                 } else if (childCount < 100) {
-                    image_source = '<img class="station_marker" src="' + STATION_YELLOW + '">';
+                    image_source = '<img class="station_marker" src="' + STATION_MID + '">';
                 } else {
-                    image_source = '<img class="station_marker" src="' + STATION_RED + '">';
+                    image_source = '<img class="station_marker" src="' + STATION_HIGH + '">';
                 }
                 return L.divIcon({ html: '<div class="childcount">' + childCount + '</div>' + image_source,
                     iconSize: L.point(40, 15)});
