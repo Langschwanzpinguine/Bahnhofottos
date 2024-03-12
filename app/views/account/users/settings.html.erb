@@ -1,25 +1,21 @@
-<h1 id="headline">Settings</h1>
+<header class="settings_head">
+  <% if Current.user.avatar.attached? %>
+    <%= image_tag Current.user.avatar.variant(resize_to_fill: [110,110]) ,class: "user_avatar"%>
+  <%end %>
+  <div class="settings_head_text">
+    <p>
+      <strong><%= Current.user.username %></strong><br>
+      Your account settings
+    </p>
+    <%= button_to "Log out", logout_path, class: "button main_button", method: :delete%>
+  </div>
+</header>
 
 <div class="settings_column">
+  <!-- left column -->
   <div class="settings_single_column">
-    <% if Current.user.avatar.attached? %>
-      <%= image_tag Current.user.avatar.variant(resize_to_fill: [100,100]) , class: "user_avatar"%>
-    <%end %>
 
-    <div>
-      <%= form_with model: Current.user, url: upload_avatar_path, data: { turbo: false} do |f| %>
-        <p>
-          <%= f.label :avatar%>
-          <%= f.file_field :avatar, accept: 'image/png, image/jpeg' %>
-        </p>
-        <div class="actions">
-          <%= f.submit "Upload picture" %>
-        </div>
-      <%end %>
-    </div>
-
-    <br>
-
+    <!-- change username section -->
     <div id="changeUsernameForm">
       <%= form_with model: Current.user, url: users_change_name_path, data: { turbo: false } do |f|%>
         <div class="form_field">
@@ -29,28 +25,81 @@
         <div class="actions"><%= f.submit "Change Username" %></div>
       <%end %>
     </div>
-
     <br>
 
-    <%= button_to "Edit Password", edit_password_path, class: "button main_button", method: :get%>
+    <!-- change password section -->
+    <%= form_with model: Current.user, url: edit_password_path, data: { turbo: false } do |f|%>
+      <%if f.object.errors.any? %>
+        <div class="form_errors">
+          <ul>
+            <% f.object.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+      <%end %>
+      <div class="form_field">
+        <%= f.label :old_password %><br />
+        <%= f.password_field :password %>
+      </div>
+      <div class="form_field">
+        <%= f.label :new_password %><br />
+        <%= f.password_field :password %>
+      </div>
+      <div class="form_field">
+        <%= f.label :new_password_confirmation %><br />
+        <%= f.password_field :password_confirmation %>
+      </div>
+      <div class="actions"><%= f.submit "Change Password" %></div>
+    <%end %>
+    <br>
+
+    <!-- destroy user -->
     <%= button_to "Destroy user", destroy_user_path, class: "button main_button", method: :delete, form: { data: { turbo_confirm: "Are you sure?" } }%>
-    <br>
-    <%= button_to "Log out", logout_path, class: "button main_button", method: :delete%>
     <%= javascript_include_tag "/javascripts/user_settings" %>
   </div>
 
+  <!-- right column -->
   <div class="settings_single_column">
+    <!-- change avatar section -->
+
+    <div>
+      <p id="no_margin_top"><strong>Avatar</strong></p>
+      <%= form_with model: Current.user, url: upload_avatar_path, data: { turbo: false} do |f| %>
+        <% if Current.user.avatar.attached? %>
+          <%= image_tag Current.user.avatar.variant(resize_to_fill: [65,65]) , class: "user_avatar"%>
+        <%end %>
+        <p>
+          <!-- <%= f.label :avatar%> -->
+          <%= f.file_field :avatar, accept: 'image/png, image/jpeg' %>
+        </p>
+        <div class="actions">
+          <%= f.submit "Upload picture" %>
+        </div>
+      <%end %>
+    </div><br>
+
+    <!-- country selection -->
     <%content_for :head do %>
-      <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
 
       <%= javascript_include_tag "country_dropdown"%>
     <% end %>
-
-    <p>Select your country:</p>
-
+    <p><strong>Select your country:</strong></p>
     <div class="country_dropdown_wrapper">
       <%= render partial: "shared/country_popup" %>
     </div>
+    <br>
+
+    <!-- homestation selection -->
+    <p><strong>Select your homestation:</strong></p>
+    <div class="station_search">
+      <input type="text" name="search_query" id="station_search" placeholder="Search stations..." class="map_box_shadow">
+
+      <ul class="matches map_box_shadow" id="matches">
+      </ul>
+    </div>
+
   </div>
 </div>
