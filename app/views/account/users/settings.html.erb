@@ -39,10 +39,6 @@
         </div>
       <%end %>
       <div class="form_field">
-        <%= f.label :old_password %><br />
-        <%= f.password_field :password %>
-      </div>
-      <div class="form_field">
         <%= f.label :new_password %><br />
         <%= f.password_field :password %>
       </div>
@@ -61,23 +57,6 @@
 
   <!-- right column -->
   <div class="settings_single_column">
-    <!-- change avatar section -->
-
-    <div>
-      <p id="no_margin_top"><strong>Avatar</strong></p>
-      <%= form_with model: Current.user, url: upload_avatar_path, data: { turbo: false} do |f| %>
-        <% if Current.user.avatar.attached? %>
-          <%= image_tag Current.user.avatar.variant(resize_to_fill: [65,65]) , class: "user_avatar"%>
-        <%end %>
-        <p>
-          <!-- <%= f.label :avatar%> -->
-          <%= f.file_field :avatar, accept: 'image/png, image/jpeg' %>
-        </p>
-        <div class="actions">
-          <%= f.submit "Upload picture" %>
-        </div>
-      <%end %>
-    </div><br>
 
     <!-- country selection -->
     <%content_for :head do %>
@@ -86,7 +65,7 @@
 
       <%= javascript_include_tag "country_dropdown"%>
     <% end %>
-    <p><strong>Select your country:</strong></p>
+    <p id="no_margin_top"><strong>Select your country:</strong></p>
     <div class="country_dropdown_wrapper">
       <%= render partial: "shared/country_popup" %>
     </div>
@@ -101,5 +80,21 @@
       </ul>
     </div>
 
+    <!-- change avatar section -->
+    <div>
+      <p><strong>Avatar</strong></p>
+      <%= form_with model: Current.user, url: upload_avatar_path, data: { turbo: false} do |f| %>
+        <% if Current.user.avatar.attached? %>
+          <%= image_tag Current.user.avatar.variant(resize_to_fill: [65,65]) , class: "user_avatar"%>
+        <%end %>
+        <p>
+          <!-- <%= f.label :avatar%> -->
+          <%= f.file_field :avatar, accept: 'image/png, image/jpeg' %>
+        </p>
+        <div class="actions">
+          <%= f.submit "Upload picture" %>
+        </div>
+      <%end %>
+    </div>
   </div>
 </div>
