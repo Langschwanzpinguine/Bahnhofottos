@@ -5,7 +5,7 @@
   <div class="head_text">
     <div id="text">
       <p class="profile_username_no_margin"><%= Current.user.username %></p>
-      <p id="only_bottom_margin"> Your account settings</p>
+      <p class="only_bottom_margin"> Your account settings</p>
       <%= button_to "Log out", logout_path, class: "button main_button", method: :delete%>
     </div>
   </div>
@@ -25,7 +25,6 @@
         <div class="actions"><%= f.submit "Change Username" %></div>
       <%end %>
     </div>
-    <br>
 
     <!-- change password section -->
     <%= form_with model: Current.user, url: edit_password_path, data: { turbo: false } do |f|%>
@@ -48,7 +47,6 @@
       </div>
       <div class="actions"><%= f.submit "Change Password" %></div>
     <%end %>
-    <br>
 
     <!-- destroy user -->
     <%= button_to "Destroy user", destroy_user_path, class: "button main_button", method: :delete, form: { data: { turbo_confirm: "Are you sure?" } }%>
@@ -69,7 +67,6 @@
     <div class="country_dropdown_wrapper">
       <%= render partial: "shared/country_popup" %>
     </div>
-    <br>
 
     <!-- homestation selection -->
     <p><strong>Select your homestation:</strong></p>
