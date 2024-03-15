@@ -198,7 +198,6 @@ body {
 .user_forms_wrapper{
   flex: 1;
   padding: 0;
-  background-color: var(--color-off-white);
   overflow: hidden;
   display: flex;
   flex-direction: column;
