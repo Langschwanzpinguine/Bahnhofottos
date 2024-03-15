@@ -334,7 +334,7 @@ input[type="submit"] {
   font-size: 1em;
   border-radius: 25px;
   /*margin-top: 1em;*/
-  /*margin-bottom: 1em;*/
+  margin-bottom: 1em;
   text-decoration: none;
 }
 
@@ -400,7 +400,7 @@ input[type="submit"] {
   border: none;
   border-radius: 100px;
   width: 200px;
-  height: 1.75em;
+  height: 1.5em;
   margin: 0 2em 0 0;
 }
 
@@ -595,7 +595,7 @@ input[type="submit"] {
 .tab-container {
   display: flex;
   overflow: hidden;
-  border-radius: 15px;
+  border-radius: 25px;
 }
 
 .tab {
@@ -641,7 +641,7 @@ input[type="submit"] {
   font-size: 1.5em;
   font-weight: bold;
   margin-top: 0.2em;
-  margin-bottom: 0em;
+  margin-bottom: 0;
 }
 
 .user_photos{
@@ -903,6 +903,12 @@ input[type="submit"] {
   flex-direction: row;
 }
 
+.settings_single_column{
+  display: flex;
+  flex-direction: column;
+  align-content: space-evenly;
+}
+
 .head{
   display: flex;
   flex-direction: row;
@@ -916,7 +922,7 @@ input[type="submit"] {
 }
 
 #text{
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 0.3em;
 }
 
@@ -926,10 +932,10 @@ input[type="submit"] {
 }
 
 #no_margin_top{
-  margin-top: 0px;
+  margin-top: 0;
 }
 
-#only_bottom_margin{
-  margin-top: 0em;
+.only_bottom_margin{
+  margin-top: 0;
   margin-bottom: 1em;
 }
