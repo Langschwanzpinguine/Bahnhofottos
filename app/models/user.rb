@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   validates :email, uniqueness: true, presence: true, format: {with: /[\w\-\.]+@([\w\-]+\.)+[\w\-]{2,4}/}
+  validates :username, :length => { :minimum => 3, :maximum => 20 }
   has_secure_password
   
   # Frienships, rainbows 'n such

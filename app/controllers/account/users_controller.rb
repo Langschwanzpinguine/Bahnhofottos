@@ -37,6 +37,7 @@ class Account::UsersController < ApplicationController
     if Current.user.update(username_params)
       redirect_to settings_path, notice: "Username changed"
     else
+      flash.now[:alert] = "Inappropriate length!"
       render :settings
     end
   end
