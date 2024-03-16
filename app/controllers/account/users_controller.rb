@@ -37,8 +37,7 @@ class Account::UsersController < ApplicationController
     if Current.user.update(username_params)
       redirect_to settings_path, notice: "Username changed"
     else
-      flash.now[:alert] = "Inappropriate length!"
-      render :settings
+      redirect_to settings_path, alert: "Invalid username!"
     end
   end
 
@@ -46,8 +45,7 @@ class Account::UsersController < ApplicationController
     if avatar_params[:avatar].present? && Current.user.avatar.attach(avatar_params[:avatar])
       redirect_to settings_path, notice: "Profile picture uploaded"
     else
-      flash.now[:alert] = "No image selected!"
-      render :settings
+      redirect_to settings_path, alert: "No image selected!"
     end
   end
 
