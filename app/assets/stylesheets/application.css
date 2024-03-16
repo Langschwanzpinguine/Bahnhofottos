@@ -54,6 +54,7 @@ body {
 
 .popup{
   position: fixed;
+  z-index: 999;
   right: 0;
   transform: translateX(-50%);
   padding: .5em 1em;
@@ -262,6 +263,7 @@ input[type="user_username"] {
   border: 1px solid #ccc;
   border-radius: 25px;
   width: 15rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 input[type="submit"] {
@@ -273,7 +275,6 @@ input[type="submit"] {
   border-radius: 25px;
   margin-bottom: 1em;
   cursor: pointer;
-  /*border-bottom: 5px solid var(--color-accent);*/
 }
 
 .user_forms_wrapper h2{
@@ -333,7 +334,7 @@ input[type="submit"] {
   font-size: 1em;
   border-radius: 25px;
   /*margin-top: 1em;*/
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   text-decoration: none;
 }
 
@@ -398,7 +399,7 @@ input[type="submit"] {
 .station_search input{
   border: none;
   border-radius: 100px;
-  width: 200px;
+  width: 195px;
   height: 1.5em;
   margin: 0 2em 0 0;
 }
@@ -761,7 +762,7 @@ input[type="submit"] {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1;
+  z-index: 10;
   text-align: center;
   transition: all 300ms ease-in-out;
 }
@@ -790,6 +791,7 @@ input[type="submit"] {
 
 .feed{
   padding: 20px;
+  width: 60%;
   position: relative;
   flex: 1;
   transition: transform 0.3s ease;
@@ -905,15 +907,14 @@ input[type="submit"] {
 .settings_single_column{
   display: flex;
   flex-direction: column;
-  align-content: space-evenly;
+  align-content: space-between;
 }
 
 .head{
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 5rem;
-  margin-bottom: 3rem;
+  align-items: flex-end;
+  height: 20vh;
+  margin-bottom: 2rem;
 }
 
 .head_text{
@@ -932,6 +933,10 @@ input[type="submit"] {
 
 #no_margin_top{
   margin-top: 0;
+}
+
+#special_margin_top{
+  margin-top: 0.5em;
 }
 
 .only_bottom_margin{
