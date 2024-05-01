@@ -8,7 +8,7 @@ class Account::AuthController < ApplicationController
     if Current.user.update(password_params)
       redirect_to settings_path, notice: "Password changed"
     else
-      render :edit_password
+      redirect_to settings_path, alert: "Invalid password!"
     end
   end
 
