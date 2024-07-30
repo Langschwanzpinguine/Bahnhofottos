@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   validates :email, uniqueness: true, presence: true, format: {with: /[\w\-\.]+@([\w\-]+\.)+[\w\-]{2,4}/}
-  validates :username, :length => { :minimum => 3, :maximum => 15 }
-  validates :password, :length => { :minimum => 3, :maximum => 32 }, if: :password_required?
+  validates :username, :length => { :minimum => 3 }, if: :username_required?
+  validates :password, :length => { :minimum => 3, :maximum => 128 }, if: :password_required?
   has_secure_password
   
   # Frienships, rainbows 'n such
@@ -26,6 +26,10 @@ class User < ApplicationRecord
 
   def password_required?
     new_record? || !password.blank?
+  end
+
+  def username_required?
+    !new_record?
   end
 
   def friends
