@@ -9,8 +9,9 @@ class Account::FriendsController < ApplicationController
   def send_invitation
     friend_id = friend_params
     friend = User.find_by(id: friend_id)
-
-    if friend == Current.user
+    if friend.nil?
+      redirect_to friends_path, alert: "User not found"
+    elsif friend == Current.user
       redirect_to friends_path, alert: "You can't be friends with yourself. Or can you?"
     elsif Invitation.exists?(Current.user.id, friend_id)
       redirect_to friends_path, alert: "There already is an open request with this user"
