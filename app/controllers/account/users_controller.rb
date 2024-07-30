@@ -54,6 +54,8 @@ class Account::UsersController < ApplicationController
     if Current.user.friend_with?(user)
       @user = user
       render :visit_profile
+    elsif user == current_user
+      redirect_to profile_path
     else
       redirect_to root_path, alert: "You are not friends with this user"
     end
