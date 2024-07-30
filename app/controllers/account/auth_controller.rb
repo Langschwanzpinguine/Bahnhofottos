@@ -6,7 +6,7 @@ class Account::AuthController < ApplicationController
 
   def update_password
     if password_params[:password].blank? || password_params[:password_confirmation].blank?
-      redirect_to settings_path, notice: "Password and password confirmation cannot be blank"
+      redirect_to settings_path, alert: "Password and password confirmation cannot be blank"
       return
     end
 
