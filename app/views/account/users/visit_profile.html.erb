@@ -1,12 +1,16 @@
 <!-- <h1><%= @user.username %>’s Profile</h1> -->
 
-<div class="profile_head">
+<header class="head">
   <% if @user.avatar.attached? %>
     <%= image_tag @user.avatar.variant(resize_to_fill: [115,115]) ,class: "user_avatar"%>
   <%end %>
 
-  <p class="profile_username"><%= @user.username %></p>
-</div>
+  <div class="head_text">
+    <div id="text_visit_profile">
+      <p class="profile_username_no_margin"><%= @user.username %></p>
+    </div>
+  </div>
+</header>
 
 <div class="tab-container">
   <div class="tab active_tab" onclick="showContent(0)"><i class="fa-solid fa-images"></i>   Photos</div>

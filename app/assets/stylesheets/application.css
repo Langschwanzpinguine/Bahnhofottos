@@ -931,6 +931,12 @@ input[type="submit"] {
   margin-bottom: 0.3em;
 }
 
+#text_visit_profile{
+  padding-bottom: 4.75em;
+  margin-top: 0;
+  margin-bottom: 0.3em;
+}
+
 #headline{
   text-align: center;
   margin-bottom: 3rem;
