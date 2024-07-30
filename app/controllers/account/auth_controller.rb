@@ -5,6 +5,11 @@ class Account::AuthController < ApplicationController
   end
 
   def update_password
+    if password_params[:password].blank? || password_params[:password_confirmation].blank?
+      redirect_to settings_path, notice: "Password and password confirmation cannot be blank"
+      return
+    end
+
     if Current.user.update(password_params)
       redirect_to settings_path, notice: "Password changed"
     else

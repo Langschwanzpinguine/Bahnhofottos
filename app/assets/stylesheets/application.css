@@ -54,10 +54,10 @@ body {
 
 .popup{
   position: fixed;
-  z-index: 999;
   right: 0;
-  transform: translateX(-50%);
+  z-index: 999;
   padding: .5em 1em;
+  margin: 2em 1em;
   border-radius: 25px;
   font-weight: bold;
   color: var(--color-off-white);
