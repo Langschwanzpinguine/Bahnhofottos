@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   validates :email, uniqueness: true, presence: true, format: {with: /[\w\-\.]+@([\w\-]+\.)+[\w\-]{2,4}/}
   validates :username, :length => { :minimum => 3, :maximum => 15 }
-  validates :password, :length => { :minimum => 3, :maximum => 32 }
+  validates :password, :length => { :minimum => 3, :maximum => 32 }, if: :password_required?
   has_secure_password
   
   # Frienships, rainbows 'n such
@@ -22,6 +22,10 @@ class User < ApplicationRecord
     usernames2 = %w[Adventurer Explorer Journeyer Pioneer Snapster Spotter Storyteller Tailes Trekker]
     random_username = usernames1.sample + usernames2.sample
     self.username  ||= random_username
+  end
+
+  def password_required?
+    new_record? || !password.blank?
   end
 
   def friends
