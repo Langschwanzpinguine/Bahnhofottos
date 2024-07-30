@@ -7,7 +7,12 @@ class Account::FriendsController < ApplicationController
   end
 
   def send_invitation
-    friend_id = friend_params
+    friend_id = friend_params[:friend_id]
+    if friend_id.blank?
+      redirect_to friends_path, alert: "Empty Friend ID not permitted"
+      return
+    end
+
     friend = User.find_by(id: friend_id)
     if friend.nil?
       redirect_to friends_path, alert: "User not found"
@@ -49,7 +54,7 @@ class Account::FriendsController < ApplicationController
 
   private
   def friend_params
-    params.require(:friend_id)
+    params.permit(:friend_id)
   end
   def invitation_params
     params.require(:id)
