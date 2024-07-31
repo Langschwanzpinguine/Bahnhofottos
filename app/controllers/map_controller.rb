@@ -29,6 +29,7 @@ class MapController < ApplicationController
     show_station_id = params[:station]
     selected_country = params[:country]
 
+    @user_country = selected_country
     @session_info = {
       logged_in: user_state,
       show_station: show_station_id,

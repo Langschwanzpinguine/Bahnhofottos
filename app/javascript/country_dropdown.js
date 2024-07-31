@@ -1,25 +1,36 @@
-let select_tag;
-let listOfResults;
+class CountrySelector {
+    constructor() {
+        this.selectTag = document.getElementById('country_selection');
+        this.hiddenCountryForm = document.getElementById('user_station_country');
+        this.hiddenForm = document.getElementById('hidden_form');
 
-document.addEventListener("DOMContentLoaded", initPage);
+        this.init();
+    }
 
-function initPage(){
-    select_tag = document.getElementById('country_selection');
+    init() {
+        this.selectTag.addEventListener('change', this.selectionChanged.bind(this));
 
-    //select_tag.addEventListener('change', countrySelected);
+        const element = document.querySelector('.country_dropdown');
+        this.choices = new Choices(element, {
+            searchEnabled: true,
+            itemSelectText: '',
+            searchPlaceholderValue: "Search...",
+            shouldSort: false
+        });
 
-    const element = document.querySelector('.country_dropdown');
-    const choices = new Choices(element, {
-        searchEnabled: true,
-        itemSelectText: '',
-        searchPlaceholderValue: "Search...",
-        shouldSort: false
-    });
+        this.setInitialCountry();
+    }
 
-    setInitialCountry(choices);
+    selectionChanged() {
+        this.hiddenCountryForm.value = this.selectTag.value;
+        this.hiddenForm.submit()
+    }
+
+    setInitialCountry() {
+        if(user_country){
+            this.choices.setChoiceByValue(user_country);
+        }
+    }
 }
 
-function setInitialCountry(choices){
-    let countryToLoad = session_info['show_country'] ?? 'DE';
-    choices.setChoiceByValue(countryToLoad);
-}
+document.addEventListener("DOMContentLoaded", () => new CountrySelector());

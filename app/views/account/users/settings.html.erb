@@ -66,6 +66,14 @@
     <p id="no_margin_top"><strong>Select your country:</strong></p>
     <div class="country_dropdown_wrapper">
       <%= render partial: "shared/country_popup" %>
+
+      <div id="hidden_form_wrapper">
+        <%= form_with model: Current.user, id: "hidden_form", url: users_set_country_path, data: { turbo: false} do |f| %>
+          <p>
+            <%= f.text_field :country, id: 'user_station_country'%>
+          </p>
+        <%end %>
+      </div>
     </div>
 
     <!-- homestation selection -->

@@ -42,6 +42,7 @@ Rails.application.routes.draw do
     patch '/auth/reset/edit', to: 'password_resets#update'
 
     patch '/users/change_name', to: 'users#change_username'
+    patch '/users/set_country', to: 'users#change_country'
 
     get '/friends', to: 'friends#index'
     post '/friends', to: 'friends#send_invitation'

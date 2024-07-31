@@ -1,9 +1,14 @@
+<script type="text/javascript" charset="utf-8">
+    let user_country = "<%= @user_country %>"
+</script>
+
 <div class="dropdown">
   <select class="country_dropdown map_box_shadow" id="country_selection" name="selected_country" data-type="select-one" autocomplete="off" style="display: none">
+    <option value="" <%= 'selected=selected' unless @user_country%>>Not selected</option>
     <% @country_data.each do |region, countries| %>
       <optgroup label="<%=region %>">
         <% countries.each do |country| %>
-          <option value="<%= country['country_code'] %>" <%= 'selected=selected' if country['country_code'] == 'DE'%>><%= country['flag'] %> <%= country['name'] %></option>
+          <option value="<%= country['country_code'] %>"><%= country['flag'] %> <%= country['name'] %></option>
         <% end %>
       </optgroup>
     <% end %>

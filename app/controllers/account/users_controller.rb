@@ -31,6 +31,11 @@ class Account::UsersController < ApplicationController
     info_file = Rails.root.join('public', 'data/compiled_country_info.json')
     @country_data = JSON.parse(File.read(json_file))
     @country_info = JSON.parse(File.read(info_file))
+    @user_country = Current.user.country
+  end
+
+  def change_country
+    Current.user.update(country_params)
   end
 
   def change_username
@@ -63,19 +68,24 @@ class Account::UsersController < ApplicationController
     end
   end
 
-  private def user_params
+  private
+  def user_params
     params.require(:user).permit(:email, :password, :password_confirmation, :username)
   end
 
-  private def username_params
+  def username_params
     params.require(:user).permit(:username)
   end
 
-  private def avatar_params
+  def avatar_params
     if params[:user].present?
       params.require(:user).permit(:avatar)
     else
       {}
     end
+  end
+
+  def country_params
+    params.require(:user).permit(:country)
   end
 end
