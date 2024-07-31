@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
   end
 
   def user_logged_in!
-    redirect_to login_path, alert: "Please sign in to access" if Current.user.nil?
+    redirect_to root_path, alert: "Please sign in to access" if Current.user.nil?
   end
 
   def user_logged_out!

@@ -51,7 +51,9 @@ class Account::UsersController < ApplicationController
 
   def view_profile
     user = User.find_by(id: params[:user_id])
-    if Current.user.friend_with?(user)
+    if user.nil?
+      redirect_to root_path, alert: "User does not exist!"
+    elsif Current.user.friend_with?(user)
       @user = user
       render :visit_profile
     elsif user == current_user
