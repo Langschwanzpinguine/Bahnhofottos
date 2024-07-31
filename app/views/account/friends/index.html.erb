@@ -1,0 +1,74 @@
+<!-- <h1>Friends</h1> -->
+
+<header class="head">
+  <% if Current.user.avatar.attached? %>
+    <%= image_tag Current.user.avatar.variant(resize_to_fill: [115,115]) ,class: "user_avatar"%>
+  <%end %>
+  <div class="head_text">
+    <div id="text">
+      <p class="profile_username_no_margin"><%= Current.user.username %></p>
+      <p class="only_bottom_margin"> Your friends list</p>
+      <%= button_to "Log out", logout_path, class: "button main_button", method: :delete%>
+    </div>
+  </div>
+</header>
+
+  <%= form_with url: friends_path, data: { turbo: false } do |f|%>
+    <div class='form_field'>
+      <%= f.label "Add friend" %><br />
+      <%= f.text_field :friend_id %>
+      <p class="own_id">Your ID is: <%= Current.user.id %></p>
+    </div>
+    <div class="actions"><%=f.submit "Send Request" %></div>
+  <%end %>
+
+<br/>
+<% if @friends.length > 0 %>
+  <div class="friend_container">
+    <h3>Your friends</h3>
+    <% @friends.each do |friend| %>
+      <div class="friend">
+        <div class="friend_left">
+          <%if friend.avatar.attached?%>
+            <%= image_tag friend.avatar.variant(resize_to_fill: [50,50]) ,class: "user_avatar"%>
+          <%end %>
+          <p><%= friend.username %></p>
+        </div>
+        <div class="friend_right">
+          <%= link_to "/users/#{friend.id}", class: "button"  do%>
+            <i class="fa-solid fa-eye fa-fw"></i>
+          <% end %>
+          <%= button_to unfriend_path, params: {friend_id: friend.id}, class: "button", method: :delete  do%>
+            <i class="fa-solid fa-user-minus fa-fw"></i>
+          <% end %>
+        </div>
+      </div>
+    <%end %>
+  </div>
+<% end %>
+<br/>
+<% if @pending_invitations.length > 0 %>
+  <div class="friend_requests">
+    <h3>Your current friend requests</h3>
+    <% @pending_invitations.each do |invitation| %>
+      <div class="pending_invite">
+        <div class="invite_left">
+          <%if invitation.user.avatar.attached?%>
+            <%= image_tag invitation.user.avatar.variant(resize_to_fill: [50,50]) ,class: "user_avatar"%>
+          <%end %>
+          <p><%= invitation.user.username %></p>
+        </div>
+        <div class="invite_right">
+          <%= button_to accept_invitation_path(id: invitation.id), method: :patch, class: "button invitation_button" do %>
+            <i class="fa-solid fa-check fa-fw"></i>
+          <% end %>
+          <%= button_to delete_invitation_path, params:{id: invitation.id}, class: "button invitation_button", method: :delete do %>
+            <i class='fa-solid fa-xmark fa-fw'></i>
+          <% end %>
+        </div>
+      </div>
+    <%end %>
+  </div>
+<% end %>
+
+

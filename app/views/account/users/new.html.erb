@@ -13,7 +13,7 @@
 
     <div class="form_field">
       <%= f.label :email %><br />
-      <%= f.text_field :email %>
+      <%= f.text_field :email%>
     </div>
     <div class="form_field">
       <%= f.label :password %><br />
@@ -24,6 +24,6 @@
       <%= f.password_field :password_confirmation %>
     </div>
     <div class="actions"><%= f.submit "Sign Up" %></div>
-    <%= link_to "Log In instead", login_path %>
+    <%= link_to "Log In instead", root_path %>
   <%end %>
 </div>

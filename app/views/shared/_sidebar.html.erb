@@ -1,7 +1,9 @@
 <nav class="sidebar">
   <div id="sidebar_logo">
     <%= link_to "/" do %>
-      <%= image_tag "Bahnhofottos_ohneBackgr.png", alt: "Bahnhofottos Logo"%>
+      <div>
+        <%= image_tag "Bahnhofottos_ohneBackgr.png", alt: "Bahnhofottos Logo"%>
+      </div>
     <% end %>
   </div>
 
@@ -11,7 +13,7 @@
   <%= link_to map_path do %>
     <i class="fa-solid fa-map"></i>
   <% end %>
-  <%= link_to "#" do %>
+  <%= link_to friends_path do %>
     <i class="fa-solid fa-user-group"></i>
   <% end %>
   <%= link_to profile_path do %>
@@ -21,5 +23,7 @@
   <%= link_to settings_path do %>
     <i class="fa-solid fa-gear"></i>
   <% end %>
-
+  <%= link_to info_path do %>
+    <i class="fa-solid fa-circle-info"></i>
+  <% end %>
 </nav>

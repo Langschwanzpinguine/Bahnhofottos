@@ -1,17 +1,97 @@
-<h1>Settings</h1>
-
-<%= button_to "Log out", logout_path, class: "button main_button", method: :delete%>
-<%= button_to "Edit Password", edit_password_path, class: "button main_button", method: :get%>
-<%= button_to "Destroy user", destroy_user_path, class: "button main_button", method: :delete, form: { data: { turbo_confirm: "Are you sure?" } }%>
-<button id="changeUsernameBtn" class="button main_button">Change Username</button>
-
-<div id="changeUsernameForm" class="hidden popup_form">
-  <%= form_with model: Current.user, url: users_change_name_path, data: { turbo: false } do |f|%>
-    <div class="form_field">
-      <%= f.label :username %><br />
-      <%= f.text_field :username %>
-    </div>
-    <div class="actions"><%= f.submit "Change Username" %></div>
+<header class="head">
+  <% if Current.user.avatar.attached? %>
+    <%= image_tag Current.user.avatar.variant(resize_to_fill: [115,115]) ,class: "user_avatar"%>
   <%end %>
+  <div class="head_text">
+    <div id="text">
+      <p class="profile_username_no_margin"><%= Current.user.username %></p>
+      <p class="only_bottom_margin"> Your account settings</p>
+      <%= button_to "Log out", logout_path, class: "button main_button", method: :delete%>
+    </div>
+  </div>
+</header>
+
+<div class="settings_column">
+  <!-- left column -->
+  <div class="settings_single_column">
+
+    <!-- change username section -->
+    <div id="changeUsernameForm">
+      <%= form_with model: Current.user, url: users_change_name_path, data: { turbo: false } do |f|%>
+        <div class="form_field">
+          <%= f.label :username %><br />
+          <%= f.text_field :username %>
+        </div>
+        <div class="actions"><%= f.submit "Change Username" %></div>
+      <%end %>
+    </div>
+
+    <!-- change password section -->
+    <%= form_with model: Current.user, url: edit_password_path, data: { turbo: false } do |f|%>
+      <%if f.object.errors.any? %>
+        <div class="form_errors">
+          <ul>
+            <% f.object.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+      <%end %>
+      <div class="form_field">
+        <%= f.label :new_password %><br />
+        <%= f.password_field :password %>
+      </div>
+      <div class="form_field">
+        <%= f.label :new_password_confirmation %><br />
+        <%= f.password_field :password_confirmation %>
+      </div>
+      <div class="actions"><%= f.submit "Change Password" %></div>
+    <%end %>
+
+    <!-- destroy user -->
+    <%= button_to "Destroy user", destroy_user_path, class: "button main_button", method: :delete, form: { data: { turbo_confirm: "Are you sure?" } }%>
+    <%= javascript_include_tag "/javascripts/user_settings" %>
+  </div>
+
+  <!-- right column -->
+  <div class="settings_single_column">
+
+    <!-- country selection -->
+    <%content_for :head do %>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+
+      <%= javascript_include_tag "country_dropdown"%>
+    <% end %>
+    <p id="no_margin_top"><strong>Select your country:</strong></p>
+    <div class="country_dropdown_wrapper">
+      <%= render partial: "shared/country_popup" %>
+    </div>
+
+    <!-- homestation selection -->
+    <p><strong>Select your homestation:</strong></p>
+    <div class="station_search">
+      <input type="text" name="search_query" id="station_search" placeholder="Search stations..." class="map_box_shadow">
+
+      <ul class="matches map_box_shadow" id="matches">
+      </ul>
+    </div>
+
+    <!-- change avatar section -->
+    <div>
+      <p id="special_margin_top"><strong>Avatar</strong></p>
+      <%= form_with model: Current.user, url: upload_avatar_path, data: { turbo: false} do |f| %>
+        <% if Current.user.avatar.attached? %>
+          <%= image_tag Current.user.avatar.variant(resize_to_fill: [65,65]) , class: "user_avatar"%>
+        <%end %>
+        <p>
+          <!-- <%= f.label :avatar%> -->
+          <%= f.file_field :avatar, accept: 'image/png, image/jpeg' %>
+        </p>
+        <div class="actions">
+          <%= f.submit "Upload picture" %>
+        </div>
+      <%end %>
+    </div>
+  </div>
 </div>
-<%= javascript_include_tag "/javascripts/user_settings" %>

@@ -30,6 +30,7 @@
 !/tmp/storage/.keep
 
 /public/assets
+/public/data/osm_data/*
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
@@ -39,3 +40,5 @@
 
 .env
 /config/credentials/development.key
+
+/public/data/osm_data/*

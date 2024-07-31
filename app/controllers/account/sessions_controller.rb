@@ -10,8 +10,7 @@ class Account::SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to root_url, notice: "Logged in!"
     else
-      flash.alert = "Email or password is invalid"
-      render "new"
+      redirect_to root_url, alert: "Email or password is invalid"
     end
   end
 

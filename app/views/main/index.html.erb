@@ -1,13 +1,55 @@
-
-
 <div class = "main_header">
-    <p>
-        <h1>Hier entsteht: BAHNHOFOTTOS</h1>
-    </p>
+    <!-- <p>
+        <h1 class="sign_header">Activity</h1>
+    </p> -->
 </div>
-<div class = "main_logo">
-    <%= link_to "https://github.com/Langschwanzpinguine/Bahnhofottos", target: "_blank" do %>
-        <%= image_tag "Bahnhofottos_logo.png", alt: "Bahnhofottos Logo", id: "main_logo" %>
-    <% end %>
 
+<div class="feed">
+  <% if @stations.length > 0%>
+    <%@stations.each do |station| %>
+      <div class="feed_entry">
+        <div class="message-container <%= station.user.id == Current.user.id ? 'user-message' : 'friend-message'%>">
+          <div class="feed_message">
+            <h3 class="feed_message_head"><b><%= station.user.username %></b> took a photo of a train station</h3>
+            <img src="<%= url_for(station.image.variant(resize_to_fit: [300, 300])) %>" alt="Image of <%= station.name %>" class="feed_image" onclick="openModal('<%= url_for(station.image) %>')">
+            <p class="feed_info">
+              <i class="fa-solid fa-train fa-fw"></i> <%= station.name %> <br><i class="fa-solid fa-calendar-days fa-fw"></i> <%= station.created_at.strftime('%d %B %H:%M')%></p>
+          </div>
+          <img src="<%=url_for(station.user.avatar.variant(resize_to_fill: [400,400])) %>" alt="User Profile" class="profile-picture_feed" onclick="window.location = '<%= "/users/#{station.user.id}" %>'">
+        </div>
+      </div>
+    <%end %>
+  <%else%>
+    <div class="no_entries">
+      <p>You dont have any photos, yet...</p>
+      <i class="fa-solid fa-image"></i>
+    </div>
+  <% end %>
 </div>
+
+<div id="photoViewWrapper" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+
+<script>
+    function openModal(url) {
+        let modal = document.getElementById("photoViewWrapper");
+        let modalImage = document.getElementById("modalImage");
+        modal.style.display = "flex";
+        modalImage.src = url;
+    }
+
+    function closeModal() {
+        let modal = document.getElementById("photoViewWrapper");
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        let modal = document.getElementById("photoViewWrapper");
+        if (event.target == modal) {
+            closeModal();
+        }
+    }
+</script>
+

@@ -8,6 +8,9 @@ class Account::UsersController < ApplicationController
   def create
     @user = User.new(user_params)
 
+    profile_pic_num = rand(8) + 1
+    @user.avatar.attach(io: File.open("app/assets/images/Profilbild_0#{profile_pic_num}.png"), filename: 'propic.png')
+
     if @user.save
       session[:user_id] = @user.id
       redirect_to root_path, notice: "Successfully created Otto"
@@ -22,25 +25,55 @@ class Account::UsersController < ApplicationController
     redirect_to root_url, notice: "Logged out and destroyed user!"
   end
 
-  def profile
-  end
-
   def settings
+    @photo = Current.user.avatar
+    json_file = Rails.root.join('public', 'data/grouped_countries.json')
+    info_file = Rails.root.join('public', 'data/compiled_country_info.json')
+    @country_data = JSON.parse(File.read(json_file))
+    @country_info = JSON.parse(File.read(info_file))
   end
 
   def change_username
     if Current.user.update(username_params)
-      redirect_to profile_path, notice: "Username changed"
+      redirect_to settings_path, notice: "Username changed"
     else
-      render :settings
+      redirect_to settings_path, alert: "Invalid username!"
+    end
+  end
+
+  def upload_avatar
+    if avatar_params[:avatar].present? && Current.user.avatar.attach(avatar_params[:avatar])
+      redirect_to settings_path, notice: "Profile picture uploaded"
+    else
+      redirect_to settings_path, alert: "No image selected!"
+    end
+  end
+
+  def view_profile
+    user = User.find_by(id: params[:user_id])
+    if Current.user.friend_with?(user)
+      @user = user
+      render :visit_profile
+    elsif user == current_user
+      redirect_to profile_path
+    else
+      redirect_to root_path, alert: "You are not friends with this user"
     end
   end
 
   private def user_params
-    params.require(:user).permit(:email, :password, :password_confirmation)
+    params.require(:user).permit(:email, :password, :password_confirmation, :username)
   end
 
   private def username_params
     params.require(:user).permit(:username)
+  end
+
+  private def avatar_params
+    if params[:user].present?
+      params.require(:user).permit(:avatar)
+    else
+      {}
+    end
   end
 end

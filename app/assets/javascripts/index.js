@@ -1,0 +1,1 @@
+console.log("I am running from the assets folder");

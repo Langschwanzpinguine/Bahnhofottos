@@ -1,11 +1,49 @@
 class User < ApplicationRecord
   validates :email, uniqueness: true, presence: true, format: {with: /[\w\-\.]+@([\w\-]+\.)+[\w\-]{2,4}/}
+  validates :username, :length => { :minimum => 3 }, if: :username_required?
+  validates :password, :length => { :minimum => 3, :maximum => 128 }, if: :password_required?
   has_secure_password
+  
+  # Frienships, rainbows 'n such
+  has_many :invitations
+  has_many :pending_invitations, -> { where confirmed: false }, class_name: 'Invitation', foreign_key: "friend_id"
 
-  before_create :init
+  has_one_attached :avatar
+  has_many :train_stations
 
-  def init
-    random_number = rand(10_000_000..99_999_999)
-    self.username  ||= "new_user_#{random_number}"
+  before_create :randomize_id
+
+  def randomize_id
+    begin
+      self.id = SecureRandom.random_number(1_000_000_000)
+    end while User.where(id: self.id).exists?
+
+    usernames1 = %w[Halt Highspeed Locomotive Platform Rail Railway Subway Station Track Train Traintrack]
+    usernames2 = %w[Adventurer Explorer Journeyer Pioneer Snapster Spotter Storyteller Tailes Trekker]
+    random_username = usernames1.sample + usernames2.sample
+    self.username  ||= random_username
+  end
+
+  def password_required?
+    new_record? || !password.blank?
+  end
+
+  def username_required?
+    !new_record?
+  end
+
+  def friends
+    friends_sent_invitation = Invitation.where(user_id: id, confirmed: true).pluck(:friend_id)
+    friends_received_invitation = Invitation.where(friend_id: id, confirmed: true).pluck(:user_id)
+    friends = friends_sent_invitation + friends_received_invitation
+    User.where(id: friends)
+  end
+
+  def friend_with?(user)
+    Invitation.confirmed_record?(id, user.id)
+  end
+
+  def send_invitation(user)
+    invitations.create(friend_id: user.id)
   end
 end
