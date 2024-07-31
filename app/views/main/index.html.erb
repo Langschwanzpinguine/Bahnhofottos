@@ -1,21 +1,35 @@
-<div class = "main_header">
-    <!-- <p>
-        <h1 class="sign_header">Activity</h1>
-    </p> -->
-</div>
+<style>
+    .content_wrapper{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+</style>
 
-<div class="feed">
+<div class="feed_content feed_photos" id="profile-1">
   <% if @stations.length > 0%>
     <%@stations.each do |station| %>
-      <div class="feed_entry">
-        <div class="message-container <%= station.user.id == Current.user.id ? 'user-message' : 'friend-message'%>">
-          <div class="feed_message">
-            <h3 class="feed_message_head"><b><%= station.user.username %></b> took a photo of a train station</h3>
-            <img src="<%= url_for(station.image.variant(resize_to_fit: [300, 300])) %>" alt="Image of <%= station.name %>" class="feed_image" onclick="openModal('<%= url_for(station.image) %>')">
-            <p class="feed_info">
-              <i class="fa-solid fa-train fa-fw"></i> <%= station.name %> <br><i class="fa-solid fa-calendar-days fa-fw"></i> <%= station.created_at.strftime('%d %B %H:%M')%></p>
+      <div class="profile_station_entry">
+        <div class="entry_column_left">
+          <div class="feed_entry">
+            <img src="<%=url_for(station.user.avatar.variant(resize_to_fill: [400,400])) %>" alt="User Profile" class="profile-picture_feed" onclick="window.location = '<%= "/users/#{station.user.id}" %>'">
+            <div class="feed_message">
+              <div class="feed_title"><b><%= station.user.username %></b> took a photo of a train station</div>
+              <div class="station_image_mobile">
+                <%= image_tag station.image.variant(resize_to_fit: [200,200]) ,class: "profile_station_photo", onclick: "openModal('#{url_for(station.image)}')"%>
+              </div>
+              <div>
+                <i class="fa-solid fa-train fa-fw"></i> <%= link_to "#{station.name}", "/map?country=#{station.country}&station=#{station.osm_id}"%> <img class="country-flag-small" src="https://flagsapi.com/<%= station.country %>/flat/16.png" alt='<%= "Flag of #{station.country}" %>'> <br>
+              </div>
+              <div>
+                <i class="fa-solid fa-calendar-days fa-fw"></i> <%= station.created_at.strftime('%d %B %H:%M')%>
+              </div>
+            </div>
+
           </div>
-          <img src="<%=url_for(station.user.avatar.variant(resize_to_fill: [400,400])) %>" alt="User Profile" class="profile-picture_feed" onclick="window.location = '<%= "/users/#{station.user.id}" %>'">
+        </div>
+        <div class="entry_column_right">
+          <%= image_tag station.image.variant(resize_to_fit: [200,200]) ,class: "profile_station_photo", onclick: "openModal('#{url_for(station.image)}')"%>
         </div>
       </div>
     <%end %>
@@ -26,6 +40,14 @@
     </div>
   <% end %>
 </div>
+<div class="profile_content user_achievements" id="profile-2">
+  <h2>Achievements</h2>
+  <p>Fuck achievements</p>
+</div>
+<div class="profile_content user_achievements" id="profile-3">
+  <h2>Statistics</h2>
+  <p>Maybe some nice stats here</p>
+</div>
 
 <div id="photoViewWrapper" class="modal">
   <span class="close" onclick="closeModal()">&times;</span>
@@ -33,20 +55,34 @@
 </div>
 
 <script>
+    let currentTab = 0;
+
+    function showContent(tabIndex) {
+        document.getElementById(`profile-${currentTab + 1}`).style.display = 'none';
+        document.getElementById(`profile-${tabIndex + 1}`).style.display = 'block';
+        document.getElementsByClassName('tab')[currentTab].classList.remove('active_tab');
+        document.getElementsByClassName('tab')[tabIndex].classList.add('active_tab');
+        currentTab = tabIndex;
+
+    }
+    showContent(0);
+
     function openModal(url) {
-        let modal = document.getElementById("photoViewWrapper");
-        let modalImage = document.getElementById("modalImage");
+        var modal = document.getElementById("photoViewWrapper");
+        var modalImage = document.getElementById("modalImage");
         modal.style.display = "flex";
         modalImage.src = url;
     }
 
+    // Function to close the modal
     function closeModal() {
-        let modal = document.getElementById("photoViewWrapper");
+        var modal = document.getElementById("photoViewWrapper");
         modal.style.display = "none";
     }
 
+    // Close the modal when clicking outside of the modal content
     window.onclick = function(event) {
-        let modal = document.getElementById("photoViewWrapper");
+        var modal = document.getElementById("photoViewWrapper");
         if (event.target == modal) {
             closeModal();
         }

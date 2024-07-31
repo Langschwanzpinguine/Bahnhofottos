@@ -707,6 +707,13 @@ input[type="submit"] {
 .country-flag {
   vertical-align: middle;
   margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.country-flag-small {
+  vertical-align: middle;
+  margin-left: 2px;
+  margin-bottom: 2px;
 }
 
 .own_id{
@@ -794,40 +801,25 @@ input[type="submit"] {
   color: red;
 }
 
-.feed{
-  padding: 20px;
-  width: 100%;
-  position: relative;
+.feed_content {
+  display: none;
   flex: 1;
   transition: transform 0.3s ease;
-  z-index: 5;
+}
+
+.feed_photos{
+  max-height: 100vh;
+  overflow: scroll;
+}
+
+.station_image_mobile{
+  display: none;
 }
 
 .message-container {
   display: flex;
   margin: 10px;
 }
-
-.profile-picture_feed {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.feed_message {
-  padding: 20px;
-  background-color: #e1e1e1;
-  border-radius: 10px;
-  background: var(--bg);
-  color: var(--color-off-white);
-}
-.feed_message h3{
-  font-size: 1.2em;
-  margin-bottom: 1em;
-  font-weight: normal;
-}
-
 
 .friend-message {
   flex-direction: row-reverse;
@@ -847,13 +839,18 @@ input[type="submit"] {
 
 .feed_entry {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin: 10px;
 }
 
-.feed_message_head {
-  font-size: 16px;
-  margin: 0;
+.feed_message {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+}
+.feed_message a{
+  text-decoration: none;
+  color: var(--color-dark-text);
 }
 
 .feed_image {
@@ -864,18 +861,24 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+.feed_title {
+  font-size: 1.4em;
+  font-weight: normal;
+  margin-top: 15px;
+  margin-bottom: 1em;
+}
 
 .feed_info {
   font-size: 15px;
-  margin: 5px 0;
+  margin: 5px 0 5px 4.4em;
 }
 
 .profile-picture_feed {
-  max-width: 100px;
-  height: auto;
+  max-width: 50px;
+  max-height: 50px;
   border-radius: 50%;
-  margin-left: 10px;
-  border: 4px solid var(--bg);
+  margin-right: 10px;
+  border: 3px solid var(--color-dark-text);
   cursor: pointer;
 }
 
@@ -953,4 +956,19 @@ input[type="submit"] {
 .only_bottom_margin{
   margin-top: 0;
   margin-bottom: 1em;
+}
+
+@media (width <= 950px) {
+  /* feed media query*/
+  .station_image_mobile{
+    display: flex;
+    margin-bottom: 1em;
+  }
+  .profile_station_photo{
+    width: 50vw;
+  }
+  .entry_column_right{
+    display: none;
+  }
+
 }
