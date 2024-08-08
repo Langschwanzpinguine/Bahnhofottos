@@ -8,6 +8,16 @@ class User < ApplicationRecord
   has_many :invitations
   has_many :pending_invitations, -> { where confirmed: false }, class_name: 'Invitation', foreign_key: "friend_id"
 
+  has_many :friendships,
+           ->(user) { FriendshipsQuery.both_ways(user_id: user.id) },
+           inverse_of: :user,
+           dependent: :destroy
+
+  has_many :friends,
+           ->(user) { UsersQuery.friends(user_id: user.id, scope: true) },
+           through: :friendships,
+           class_name: 'User'
+
   has_one_attached :avatar
   has_many :train_stations
 
@@ -32,15 +42,8 @@ class User < ApplicationRecord
     !new_record?
   end
 
-  def friends
-    friends_sent_invitation = Invitation.where(user_id: id, confirmed: true).pluck(:friend_id)
-    friends_received_invitation = Invitation.where(friend_id: id, confirmed: true).pluck(:user_id)
-    friends = friends_sent_invitation + friends_received_invitation
-    User.where(id: friends)
-  end
-
-  def friend_with?(user)
-    Invitation.confirmed_record?(id, user.id)
+  def friend_with?(friend_id)
+    friends.exists?(friend_id)
   end
 
   def send_invitation(user)

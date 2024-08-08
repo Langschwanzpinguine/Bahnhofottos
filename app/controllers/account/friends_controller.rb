@@ -20,19 +20,20 @@ class Account::FriendsController < ApplicationController
       redirect_to friends_path, alert: "You can't be friends with yourself. Or can you?"
     elsif Invitation.exists?(Current.user.id, friend_id)
       redirect_to friends_path, alert: "There already is an open request with this user"
-    elsif Invitation.confirmed_record?(Current.user.id, friend_id)
+    elsif Current.user.friend_with?(friend_id)
       redirect_to friends_path, alert: "You're already friends with this user"
     else
       Current.user.send_invitation(friend)
-      redirect_to friends_path, notice: "Request sent to user: "+friend.username
+      redirect_to friends_path, notice: "Request sent to user: #{friend.username}"
     end
   end
 
   def accept_invitation
     invitation_id = invitation_params
     invitation = Invitation.find_by(id: invitation_id)
-    invitation.confirmed = true
-    invitation.save
+    friendship = Friendship.new(user: Current.user, friend: invitation.user)
+    friendship.save
+    invitation.destroy
     redirect_to friends_path, notice: "Request accepted!"
   end
 
@@ -44,11 +45,8 @@ class Account::FriendsController < ApplicationController
   end
 
   def unfriend
-    friend_id = friend_params
-    invitations = Invitation.find_invitations(Current.user.id, friend_id)
-    invitations.each do |invitation|
-      invitation.destroy
-    end
+    friend_id = friend_params[:friend_id]
+    Friendship.unfriend(Current.user.id, friend_id)
     redirect_to friends_path, notice: "Friendship destroyed!"
   end
 
