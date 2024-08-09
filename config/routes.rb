@@ -2,8 +2,9 @@ Rails.application.routes.draw do
   root to: "main#index"
 
   get "/map", to: "map#index", as: :map
-  patch "/map/station_image", to: "map#upload_station_image", as: "station_image"
-  get "/map/station_image", to: "map#fetch_image"
+  patch "/image/station_image", to: "image#upload_station_image", as: "station_image"
+  delete "/image/station_image", to: "image#delete_station_image", as: "delete_image"
+  get "/image/station_image", to: "image#fetch_image", as: "fetch_image"
 
   post "/api/overpass/stations", to: "overpass#stations"
 
