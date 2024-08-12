@@ -675,7 +675,10 @@ input[type="submit"] {
 }
 
 .entry_column_right{
+  display: flex;
+  flex-direction: column;
   height: initial;
+  align-items: end;
 }
 
 .station {
@@ -956,6 +959,23 @@ input[type="submit"] {
 .only_bottom_margin{
   margin-top: 0;
   margin-bottom: 1em;
+}
+
+.dropdown{
+  position: initial;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.dropdown_content{
+  display: none;
+  position: relative;
+  z-index: 999;
+}
+
+.dropdown_button{
+  margin-bottom: 10px;
 }
 
 @media (width <= 950px) {

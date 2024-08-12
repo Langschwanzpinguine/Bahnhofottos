@@ -34,9 +34,14 @@
             <p><i class="fa-fw fa-solid fa-building"></i> <b>Operator</b>: <%=  station.operator  %></p>
           <% end %>
           <p class="score"><i class="fa-fw fa-solid fa-star"></i> Score: 12 pts</p>
-          <%= button_to "Delete", delete_image_path(osm_id: station.osm_id), class: "button main_button", method: :delete, data: { turbo_confirm: "Are you sure?" } %>
         </div>
         <div class="entry_column_right">
+          <div id="dropButton" class="dropdown">
+            <button class="button dropdown_button" onclick="showDropdown()"><i class="fa-solid fa-bars"></i></button>
+            <div id="dropMenu" class="dropdown_content">
+              <%= button_to "Delete", delete_image_path(osm_id: station.osm_id), class: "button main_button", method: :delete, data: { turbo_confirm: "Are you sure?" } %>
+            </div>
+          </div>
           <%= image_tag station.image.variant(resize_to_fit: [200,200]) ,class: "profile_station_photo", onclick: "openModal('#{url_for(station.image)}')"%>
         </div>
       </div>
@@ -93,6 +98,15 @@
         var modal = document.getElementById("photoViewWrapper");
         if (event.target == modal) {
             closeModal();
+        }
+    }
+
+    function showDropdown() {
+        var dropDown = document.getElementById("dropMenu");
+        if (dropDown.style.display !== "block") {
+            dropDown.style.display = "block";
+        } else {
+            dropDown.style.display = "none";
         }
     }
 </script>
