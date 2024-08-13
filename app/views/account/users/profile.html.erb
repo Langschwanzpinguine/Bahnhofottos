@@ -20,6 +20,7 @@
 </div>
 <div class="profile_content user_photos" id="profile-1">
   <% if Current.user.train_stations.length > 0%>
+    <% station_counter = 0 %>
     <%Current.user.train_stations.each do |station| %>
       <div class="profile_station_entry">
         <div class="entry_column_left">
@@ -37,16 +38,17 @@
         </div>
         <div class="entry_column_right">
           <div id="dropButton" class="dropdown">
-            <%= button_tag "", class: "button dropdown_button", onclick: "showDropdown()" do %>
+            <%= button_tag "", class: "button dropdown_button", onclick: "showDropdown(#{station_counter})" do %>
               <i class="fa-solid fa-bars"></i>
             <% end %>
-            <div id="dropMenu" class="dropdown_content">
+            <div id="dropMenu_<%= station_counter %>" class="dropdown_content">
               <%= button_to "Delete", delete_image_path(osm_id: station.osm_id), class: "button main_button", method: :delete, data: { turbo_confirm: "Are you sure?" } %>
             </div>
           </div>
           <%= image_tag station.image.variant(resize_to_fit: [200,200]) ,class: "profile_station_photo", onclick: "openModal('#{url_for(station.image)}')"%>
         </div>
       </div>
+      <% station_counter += 1 %>
     <%end %>
   <%else%>
     <div class="no_entries">
@@ -103,17 +105,17 @@
         }
     }
 
-    function showDropdown() {
-        var dropDown = document.getElementById("dropMenu");
+    function showDropdown(station_counter) {
+        var dropDown = document.getElementById("dropMenu_"+station_counter);
         if (dropDown.style.display !== "block") {
             dropDown.style.display = "block";
         } else {
-            closeDropdown();
+            closeDropdown(station_counter);
         }
     }
 
-    function closeDropdown() {
-        var dropDown = document.getElementById("dropMenu");
+    function closeDropdown(station_counter) {
+        var dropDown = document.getElementById("dropMenu_"+station_counter);
         dropDown.style.display = "none";
     }
 </script>
