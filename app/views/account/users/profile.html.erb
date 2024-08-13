@@ -20,7 +20,7 @@
 </div>
 <div class="profile_content user_photos" id="profile-1">
   <% if Current.user.train_stations.length > 0%>
-    <%Current.user.train_stations.each do |station| %>
+    <%Current.user.train_stations.order(created_at: :desc).each do |station| %>
       <div class="profile_station_entry">
         <div class="entry_column_left">
           <h3 class="station">
