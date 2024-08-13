@@ -731,13 +731,21 @@ input[type="submit"] {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 1em;
 }
 
-.invite_left, .invite_right, .friend_right, .friend_left{
+.invite_left, .friend_left{
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-right: auto;
+}
+
+.invite_right, .friend_right{
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  margin-right: min(25rem);
 }
 
 .invite_left p, .friend_left p{
