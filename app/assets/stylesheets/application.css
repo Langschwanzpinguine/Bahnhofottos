@@ -676,9 +676,9 @@ input[type="submit"] {
 
 .entry_column_right{
   display: flex;
-  flex-direction: column;
   height: initial;
-  align-items: end;
+  align-items: center;
+  padding-right: 10px;
 }
 
 .station {
@@ -695,9 +695,8 @@ input[type="submit"] {
   height: auto;
   border-radius: 5px;
   cursor: pointer;
+  z-index: 1;
 }
-
-
 
 .score {
   font-weight: bold;
@@ -962,20 +961,26 @@ input[type="submit"] {
 }
 
 .dropdown{
-  position: initial;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: end;
+  position: relative;
 }
 
 .dropdown_content{
   display: none;
-  position: relative;
+  position: absolute;
+  right: -12px;
+  top: -40px;
   z-index: 9;
 }
 
 .dropdown_button{
-  margin-bottom: 0.5em;
+  position: absolute;
+  right: -35px;
+  top: -63px;
+  background: none;
+  margin-bottom: 0;
+  padding: 0.5em 0.7em;
+  transform: rotate(90deg);
+  z-index: 9;
 }
 
 @media (width <= 950px) {
@@ -990,5 +995,4 @@ input[type="submit"] {
   .entry_column_right{
     display: none;
   }
-
 }

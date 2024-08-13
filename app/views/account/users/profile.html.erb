@@ -37,15 +37,13 @@
           <p class="score"><i class="fa-fw fa-solid fa-star"></i> Score: 12 pts</p>
         </div>
         <div class="entry_column_right">
+          <%= image_tag station.image.variant(resize_to_fit: [200,200]) ,class: "profile_station_photo", onclick: "openModal('#{url_for(station.image)}')"%>
           <div id="dropButton" class="dropdown">
-            <%= button_tag "", class: "button dropdown_button", onclick: "showDropdown(#{station_counter})" do %>
-              <i class="fa-solid fa-bars"></i>
-            <% end %>
+            <%= button_tag "...", class: "button dropdown_button", onclick: "showDropdown(#{station_counter})" %>
             <div id="dropMenu_<%= station_counter %>" class="dropdown_content">
               <%= button_to "Delete", delete_image_path(osm_id: station.osm_id), class: "button main_button", method: :delete, data: { turbo_confirm: "Are you sure?" } %>
             </div>
           </div>
-          <%= image_tag station.image.variant(resize_to_fit: [200,200]) ,class: "profile_station_photo", onclick: "openModal('#{url_for(station.image)}')"%>
         </div>
       </div>
       <% station_counter += 1 %>
