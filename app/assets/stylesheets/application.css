@@ -971,11 +971,11 @@ input[type="submit"] {
 .dropdown_content{
   display: none;
   position: relative;
-  z-index: 999;
+  z-index: 9;
 }
 
 .dropdown_button{
-  margin-bottom: 10px;
+  margin-bottom: 0.5em;
 }
 
 @media (width <= 950px) {

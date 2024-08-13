@@ -37,7 +37,9 @@
         </div>
         <div class="entry_column_right">
           <div id="dropButton" class="dropdown">
-            <button class="button dropdown_button" onclick="showDropdown()"><i class="fa-solid fa-bars"></i></button>
+            <%= button_tag "", class: "button dropdown_button", onclick: "showDropdown()" do %>
+              <i class="fa-solid fa-bars"></i>
+            <% end %>
             <div id="dropMenu" class="dropdown_content">
               <%= button_to "Delete", delete_image_path(osm_id: station.osm_id), class: "button main_button", method: :delete, data: { turbo_confirm: "Are you sure?" } %>
             </div>
@@ -106,8 +108,13 @@
         if (dropDown.style.display !== "block") {
             dropDown.style.display = "block";
         } else {
-            dropDown.style.display = "none";
+            closeDropdown();
         }
+    }
+
+    function closeDropdown() {
+        var dropDown = document.getElementById("dropMenu");
+        dropDown.style.display = "none";
     }
 </script>
 
